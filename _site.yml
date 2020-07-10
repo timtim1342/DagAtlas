@@ -1,0 +1,34 @@
+name: "tald"
+new_session: yes
+# resolves problem with same? references
+navbar:
+  title: "TALD"
+  type: inverse
+  left:
+    - text: "About"
+      href: ./about.html
+    - text: "Features"
+      icon: fa-atlas
+      menu:
+        - text: "Major topics"
+          href: ./topics.html
+        - text: "Features"
+          href: ./features.html
+        - text: "Markup"
+          href: ./markup.html
+    - text: "References"
+      href: ./references.html
+    - text: "Contact"
+      href: ./contact.html
+    - text: "Acknowledgement"
+      href: ./acknow.html
+    - text: "Changes"
+      href: ./changes.html
+output:
+  html_document:
+    include:  
+      in_header: ./html/include_head.html
+      after_body: ./html/footer.html
+    theme: lumen   
+# readable lumen yeti
+    css: ./css/styles.css

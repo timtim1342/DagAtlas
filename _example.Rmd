@@ -1,0 +1,35 @@
+
+# Maps{.tabset .tabset-fade .tabset-pills}
+
+## Map: Extrapolated data
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width = 9.5}
+source('./R/features_maker.R')
+extr_map(fe)
+```
+
+## Map: General datapoints
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width = 9.5}
+source('./R/features_maker.R')
+gen_map(fe)
+```
+
+# Datatable
+
+```{r}
+source('./R/features_maker.R')
+db(fe)
+```
+
+# References
+
+```{r results = "asis", echo = FALSE}
+PrintBibliography(bib, .opts = list(check.entries = FALSE, sorting = "nyt", style = 'text'))
+```
+
+***
+
+<div class="tocify-extend-page" data-unique="tocify-extend-page" style="height: 0;"></div>
+<!-- remove extra whitespace at bottom produced by floating table of contents and plots. 
+Why do not work on GitHub?-->

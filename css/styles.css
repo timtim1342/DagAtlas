@@ -1,0 +1,26 @@
+.main-image {
+        position: relative;
+        display: table;
+        width: 100%;
+        height: 50vh;
+        margin-bottom: 5rem;
+        text-align: center;
+        background: #222 no-repeat center center;
+        background-size: cover;
+        overflow: hidden;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+    }
+
+.attrib {
+      position:absolute;
+      bottom:10px;
+      right: 20px;
+      text-align: right;
+      color: #F5F5F5;
+    }
+    
+body {
+  font-size: 14pt; 
+   }
+   
+

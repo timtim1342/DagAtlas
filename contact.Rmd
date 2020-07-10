@@ -1,0 +1,12 @@
+---
+title: "Contact us"
+output:
+  html_document:
+    include:
+      in_header: ./html/header_contact.html
+---
+***
+
+You can always contact us via email at <cauatlas@gmail.com>
+
+***

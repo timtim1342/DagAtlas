@@ -1,0 +1,207 @@
+---
+title: "Philosophy"
+output: 
+  html_document:
+    include:
+      in_header: ./html/header_about.html
+    toc: true
+    toc_depth: 2
+    
+---
+
+***
+
+# A bit of history
+
+# TALD approach
+
+The idea of the Typological Atlas of Daghestan was to create a WALS-style resource for the languages of Daghestan and their neighbors. The WALS approach assigns one value for each linguistic feature to one language, which corresponds to one datapoint on the map.
+
+In the initial approach of the Dagatlas project, a single value was assigned to one language, which corresponds to a multitude of datapoints, namely all villages of the area where this language is spoken.
+
+Below are two visualizations corresponding to the same dummy feature set ([Table 1](#t1) below): WALS vs Dagatlas style.
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE)
+
+# packages
+library(tidyverse)
+library(lingtypology)
+library(DT)
+
+# load data
+vill <- read_tsv("./data/villages.csv") # villages dataset
+meta <- read_tsv("./data/meta.csv") # language metadata and colors
+fe <- read_tsv("./data/example.csv") # example dataset
+
+# preparation of data
+fe <- fe %>% 
+  filter(core == 'yes')
+
+vill <- vill[complete.cases(vill$lat),] # remove villages for which we do not have coordinates (yet)
+meta_core <- meta %>% # remove idioms not (yet) recognized as distinct
+  filter(core == "yes")
+vill_meta <- merge(vill, meta_core, by = "lang") # merge villages and coordinates with language metadata
+fe_vill <- inner_join(fe, vill_meta, by = "lang") # merge villages, coordinates, and language metadata with feature information
+fe_vill$datapoint <- "extrapolated datapoint"
+```
+
+### Map 1. {.tabset .tabset-fade .tabset-pills}
+
+#### Dagatlas style
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width = 9.5}
+# draw a map
+map.feature(lang.gltc(fe_vill$glottocode),
+            latitude = fe_vill$lat,
+            longitude = fe_vill$lon,
+            features = fe_vill$lang, # color feature = language
+            color = fe_vill$lang_color,
+            stroke.features = fe_vill$value, # stroke.feature = your feature value
+            stroke.color = c("black", "white"),
+            label = fe_vill$lang,
+            zoom.control = T,
+            popup = paste("<b>Village:</b>", fe_vill$village, "<br>",
+                          "<b>Datapoint:</b>", fe_vill$datapoint),
+            width = 3, stroke.radius = 8,
+            legend = FALSE)
+```
+
+#### WALS style
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+# filter core languages
+core_meta <- meta %>%
+  filter(core == "yes")
+core_data <- left_join(fe, core_meta, by = "lang")
+core_data$datapoint <- "general datapoint"
+# draw a map
+map.feature(lang.gltc(core_data$glottocode),
+            latitude = core_data$gltc_lat,
+            longitude = core_data$gltc_lon,
+            features = core_data$lang, # color feature = language
+            color = core_data$lang_color,
+            stroke.features = core_data$value, # stroke.feature = your feature value
+            stroke.color = c("black", "white"),
+            label = core_data$lang,
+            zoom.control = T,
+            popup = paste("<b>Datapoint:</b>", core_data$datapoint),
+            width = 3, stroke.radius = 8,
+            legend = FALSE)
+```
+
+### Table 1. First consonant of the word for 'bridge' {#t1}
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+fe %>% 
+  select(c(id, lang, feature, value, form))-> dtable
+
+DT::datatable(dtable,
+              escape = FALSE, 
+              rownames = FALSE,
+              options = list(
+                columnDefs = list(list(searchable = FALSE, targets = 0)), 
+                pageLength = 10, 
+                autoWidth = TRUE,
+                dom = '')
+              )
+```
+
+A benefit of the Dagatlas approach is that it shows the boundaries of languages more accurately. A drawback is that it leads to gross overgeneralization and erases dialectal differences, since both images are based on the same data.
+
+To improve accuracy, we currently collect all attested values for a given feature, taking into account any 'doculect' we have data on, including standard languages, dialects spoken in multiple villages and single-village idioms, as in [Table 2](#t2).
+
+### Table 2. First consonant of the word for 'bridge' (extended) {#t2}
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+fe <- read_tsv("./data/example.csv")
+fe %>% 
+  select(c(id, lang, idiom, feature, value, form))-> dtable
+
+DT::datatable(dtable,
+              escape = FALSE, 
+              rownames = FALSE,
+              options = list(
+                columnDefs = list(list(searchable = FALSE, targets = 0)), 
+                pageLength = 10, 
+                autoWidth = TRUE,
+                dom = '')
+              )
+```
+
+We then have to connect these more detailed observations on languages and idioms to the villages on the map, for which we use the villages dataset.
+
+# The East Caucasian villages dataset
+
+The [East Caucasian villages dataset](https://github.com/sverhees/master_villages) contains a list of villages, with coordinates and the language spoken there. In most cases, the dataset has no information about the particular dialect spoken in the village. [Table 3](#t3) shows data for three Avar villages.
+
+### Table 3. Sample of Avar villages from the villages dataset {#t3}
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+vill %>%
+  filter(village == 'Car' | village == 'Kusur' | village == 'Khunzakh') %>% 
+  select(c(village, lat, lon, lang, idiom))-> dtable
+
+DT::datatable(dtable,
+              escape = FALSE, 
+              rownames = FALSE,
+              options = list(
+                columnDefs = list(list(searchable = FALSE, targets = 0)), 
+                pageLength = 10, 
+                autoWidth = TRUE,
+                dom = '')
+              )
+```
+
+For Car we know it is part of the Zaqatala dialect group, while the other two villages simply represent the language 'Avar'. Of these two villages, the variety spoken in Khunzakh is close to the Standard, while Kusur is an isolated village in southern Daghestan surrounded by Lezgic villages, where a divergent dialect of Avar is spoken. Unfortunately, as you can see, the dataset doesn't know this. So we cannot plot the value for Kusur - the village will be colored according to a general datapoint for the Avar language for now. 
+
+# Core languages
+
+As a result of this mismatch in datasets, we will need a column in our feature dataset, that tells us which values to pick for the map visualization. In the case of [Table 2](#t2), we have to pick which value we want to represent each language: do we prefer _ƛ'-_ (Standard Avar) _sː-_ (Kusur) or _kːj-_ (Zaqatala) to represent Avar? Probably we will choose Standard Avar for now.
+
+Now let's say that, looking at [Table 2](#t2), we do not trust the data for the Khwarshi proper dialect of Khwarshi, so we prefer to take the data from Kwantlada, on which Khalilova's 2009 grammar is based. For Kwantlada we have two observations, so we have to choose which one will represent the Khwarshi language: _t'uro_ or _t'ɨro_. In this case, the difference in the observations does not change the value of the feature (initial consonant), so it doesn't matter. In other cases the relative frequency of a variant or the reliability of the source for a particular variant can be important.
+
+Again, we need a column that tells us which value to pick for coloring the Khwarshi villages on the map: we want a specific observation from an alternative dialect. All the other data on Khwarshi should be ignored.
+
+We have a list of 33 core languages (see [Map 2.](#m2)) attested in the area (and each of them may branch out into infinite numbers of varieties): 29 East Caucasian languages, 3 Turkic and 1 Indo-European. These are the languages we want to cover with at least one value if possible. So the column core in our feature data shows which observations we take from our data to represent these core languages.
+
+### Map 2. Core languages {#m2}
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+# filter core languages
+core_meta <- meta %>%
+  filter(core == "yes")
+# draw a map
+map.feature(lang.gltc(core_meta$glottocode),
+            latitude = core_meta$gltc_lat,
+            longitude = core_meta$gltc_lon,
+            features = core_meta$aff, # color feature = language
+            color = core_meta$lang_color,
+            label = core_meta$lang,
+            zoom.control = T,
+            width = 3, stroke.radius = 8)
+```
+
+So the data for the first consonant of 'bridge' would look like this:
+
+### Table 5. First consonant of the word for 'bridge' (extended) with core / non-core marking
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+fe <- read_tsv("./data/example.csv")
+fe %>% 
+  select(c(id, lang, idiom, type, core, feature, value, form))-> dtable
+
+DT::datatable(dtable,
+              escape = FALSE, 
+              rownames = FALSE,
+              options = list(
+                columnDefs = list(list(searchable = FALSE, targets = 0)), 
+                pageLength = 10, 
+                autoWidth = TRUE,
+                dom = '')
+              )
+```
+
+***
+<div class="tocify-extend-page" data-unique="tocify-extend-page" style="height: 0;"></div>
+<!-- remove extra whitespace at bottom produced by floating table of contents and plots. -->
