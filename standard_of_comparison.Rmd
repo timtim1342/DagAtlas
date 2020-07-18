@@ -185,7 +185,7 @@ A quite controversial question, which lies behind the classification of spatiall
 [^1]: The superelative suffix *-t:-iš* is mentioned by Mikailov (1967: 60) as the marker used to code the standard of comparison in Archi, but Kibrik (1977: 59) reports the dedicated comparative marker *-χur* instead.
 
 ```{r setup, include=FALSE} 
-# make this part as a function and add it to example code
+# make this part as a function and add it to the example code
 knitr::opts_chunk$set(echo = FALSE, message = FALSE)
 
 # packages
