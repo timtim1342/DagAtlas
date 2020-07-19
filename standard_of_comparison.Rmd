@@ -1,5 +1,5 @@
 ---
-title: "Standard of comparison in comparative constructions"
+title: "Standard of comparison"
 author: "Chiara Naccarato"
 output: html_document
 
