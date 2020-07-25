@@ -1,4 +1,4 @@
-id	title	authors	area	major topic	filename
+id	title	author	area	major_topic	filename
 1	Number of agreement classes	Inga Kartozia	Morphology	Classes	classes
 2	Presence of Affective	Denis Arsentjev	Morphology		affective
 3	Evidentiality as part of the tense system	Samira Verhees	Morphology	Evidentiality	evidentiality_tense
@@ -9,9 +9,5 @@ id	title	authors	area	major topic	filename
 8	Presence of pharyngealization	George Moroz, Violetta Ivanova	Phonology	Phonology	pharyngealization
 9	Elevation in the demonstrative system	Timofey Mukhin	Nominal Categories		elevation
 10	Standard of comparison	Chiara Naccarato	Morphology		standard_of_comparison
-NA	The use of an emphatic particle to form numerals and/or reflexive pronouns	Aigul Zakirova	NA		in progress
-NA	Encoding of predicative possession (floating genitives, locative forms, etc.)	Chiara Naccarato	NA		in progress
-NA	Permanent and temporary possession	Chiara Naccarato	NA		in progress
-NA	Grammaticalization of FIND	Samira Verhees	NA		in progress
-NA	General converbs	Fyodor Golosov	NA		in progress
-NA	Class agreement slot in case paradigms	Rita Popova	NA		in progress
+11	The perfect	Samira Verhees	Morphology	Evidentiality	perfects
+12	Particles of reported speech and inference	Samira Verhees	Morphology	Evidentiality	particles
