@@ -2,13 +2,14 @@ library(tidyverse)
 library(bib2df)
 library(stringi)
 
-lib <- read_tsv("./data/biblib.csv")  # file from the drive
+# make as a function!
+lib <- read_tsv("./data/features/ref_tables/standard_of_comparison.csv")  # file from the drive ./data/biblib.csv
 
 # add eng_transl to title
-# lib %>% 
-#   mutate(title = gsub(" \\[NA\\]", "", paste(title, " [", gsub("\\{|\\}", "", title_translation), "]",sep = ''))) %>% 
-#   mutate(booktitle = gsub(" \\[NA\\]|NA", "", paste(gsub("\\{|\\}", "", booktitle), " [", gsub("\\{|\\}", "", booktitle_translation), "]",sep = ''))) %>%
-#   select(-c(comment, contributor, booktitle_translation, title_translation))-> lib
+lib %>%
+  mutate(title = gsub(" \\[NA\\]", "", paste(title, " [", gsub("\\{|\\}", "", title_translation), "]",sep = ''))) %>%
+  mutate(booktitle = gsub(" \\[NA\\]|NA", "", paste(gsub("\\{|\\}", "", booktitle), " [", gsub("\\{|\\}", "", booktitle_translation), "]",sep = ''))) %>%
+  select(-c(comment, contributor, booktitle_translation, title_translation))-> lib
 
 lib %>%
   mutate(author = gsub(' и ', ' and ', author)) %>% 
@@ -32,5 +33,5 @@ lib %>%
 #   mutate(title = t)-> lib
  
 
-df2bib(lib, "./data/bibliography.bib")
-write_tsv(lib, "./data/biblib.csv")  # temporal solution
+df2bib(lib, "./data/features/ref_bibs/standard_of_comparison.bib")  # ./data/bibliography.bib
+write_tsv(lib, "./data/features/ref_tables/standard_of_comparison.csv")  # temporal solution ./data/biblib.csv

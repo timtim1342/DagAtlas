@@ -67,7 +67,7 @@ gen_map <- function(fe) {
  return(mp)
 }
 
-db <- function(fe) {
+d_b <- function(fe) {
   # select which feature data you want to show in the datatable
   dtable <- fe %>%
     mutate(value = factor(value)) %>%

@@ -16,9 +16,9 @@ library(DT)
 
 dtable <- read_tsv("./data/topics.csv")
 #add links to the titles
-# dtable %>% 
-#   mutate(feature = paste('<a href=', filename, '.html>', title, '</a>', sep = '')) %>%
-#   select(-c(filename, title))-> dtable
+dtable %>%
+  mutate(feature = paste('<a href=', filename, '.html>', title, '</a>', sep = '')) %>%
+  select(-c(filename, title))-> dtable
 
 ```
 ``` {r}

@@ -7,7 +7,9 @@ output:
 ---
 
 ***
+This project would not have been realised in its present form without advice and assistance of a number of people. In addition to the authors of the [articles](features.html) we are very grateful to [Michael Daniel](https://www.hse.ru/en/staff/michael_daniel), [Timur Maisak](https://www.hse.ru/en/staff/maisak), [George Moroz](https://www.hse.ru/en/org/persons/103489498), [Konstantin Filatov](https://www.hse.ru/en/org/persons/190921062), [Samira Verhees](https://www.hse.ru/en/staff/samiraverhees), [Chiara Naccarato](https://www.hse.ru/en/org/persons/224233250), [Timofey Mukhin](https://www.hse.ru/en/org/persons/208514310).
 
+Photos presented on the site are taken by Michael Daniel, Timur Maisak, Timofey Mukhin and Konstantin Filatov?.
 
 
 ***

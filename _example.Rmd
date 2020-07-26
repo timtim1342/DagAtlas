@@ -19,16 +19,16 @@ gen_map(fe)
 
 ```{r}
 source('./R/features_maker.R')
-db(fe)
+d_b(fe)
 ```
 
-# References
+# Datatable references
 
 ```{r results = "asis", echo = FALSE}
-PrintBibliography(bib, .opts = list(check.entries = FALSE, sorting = "nyt", style = 'text'))
+PrintBibliography(bib, .opts = list(check.entries = FALSE))
 ```
 
-***
+# Text references
 
 <div class="tocify-extend-page" data-unique="tocify-extend-page" style="height: 0;"></div>
 <!-- remove extra whitespace at bottom produced by floating table of contents and plots. 

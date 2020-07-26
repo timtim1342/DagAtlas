@@ -2,7 +2,9 @@
 title: "Standard of comparison"
 author: "Chiara Naccarato"
 output: html_document
-bibliography: ./data/features/ref_bibs/standard_of_comparison.bib
+bibliography: 
+  - ./data/features/ref_bibs/standard_of_comparison.bib
+  # - ./data/bibliography.bib
 link-citations: true
 ---
 ---------------------------------------
@@ -197,7 +199,7 @@ library(RefManageR)
 # make this part as a function and add it to example code
 
 bib <- ReadBib(file = "./data/bibliography.bib")
-BibOptions(bib.style = "authoryear", style = "html", cite.style = "authoryear", max.names = 2, sorting = "nyt")  # style = "html"
+BibOptions(bib.style = "authoryear", style = "text", cite.style = "authoryear", max.names = 2, sorting = "nyt")  # style = "html"
 
 # load data
 fe <- read_tsv("./data/features/tables/standard_of_comparison.csv") # feature dataset

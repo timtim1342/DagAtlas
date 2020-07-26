@@ -7,7 +7,25 @@ output:
 ---
 
 ***
+#### 00.00.2020
 
+New feature chapters added:
 
+- Number of agreement classes
+- Presence of Affective
+- Evidentiality as part of the tense system
+- Gemination
+- System of laterals
+- Presence of voiced uvular stop
+- Presence of nasalization
+- Presence of pharyngealization
+- Elevation in the demonstrative system
+- Standard of comparison
+- The perfect
+- Particles of reported speech and inference
+
+New major topics added:
+
+- Evidentiality
 
 ***

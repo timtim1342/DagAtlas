@@ -1,0 +1,396 @@
+---
+title: "Particles of reported speech and inference"
+author: "Samira Verhees"
+output: html_document
+bibliography: ./data/features/ref_bibs/evidentiality.bib
+link-citations: true
+---
+---------------------------------------
+
+# Chapter
+## Particles of reported speech and inference
+
+General chapter: [Evidentiality](evidentiality.html)
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE)
+
+# packages
+
+library(tidyverse)
+library(lingtypology)
+library(DT)
+
+# load data
+
+vill <- read_tsv("data/villages.csv") # villages dataset
+meta <- read_tsv("data/meta.csv") # language metadata and colors
+particles <- read_tsv("data/features/tables/particles.csv") # feature dataset
+
+# preparation of data
+
+vill <- vill[complete.cases(vill$lat),] # remove villages for which we do not have coordinates (yet)
+
+meta_core <- meta %>% # remove idioms not (yet) recognized as distinct
+  filter(core == "yes")
+
+vill_meta <- merge(vill, meta_core, by = "lang") # merge villages and coordinates with language metadata
+
+# set for reportative particles
+
+particlesrep_core <- particles %>%
+  filter(`core:rep` == "yes")
+
+particlesrep_vill <- merge(vill_meta, particlesrep_core, by = "lang") # merge villages, coordinates, and language metadata with feature information
+
+particlesrep_vill$datapoint <- "extrapolated datapoint"
+
+# set for quotative particles
+
+particlesquot_core <- particles %>%
+  filter(`core:quot` == "yes")
+
+particlesquot_vill <- merge(vill_meta, particlesquot_core, by = "lang") # merge villages, coordinates, and language metadata with feature information
+
+particlesquot_vill$datapoint <- "extrapolated datapoint"
+
+```
+
+
+## Introduction
+
+Particles marking reported speech can be divided into two general types: 
+
+1. Quotative
+2. Reportative
+
+A quotative marks an utterance as being a quote (@one). Usually it accompanies a clause headed by a speech verb. 
+
+(@one) Botlikh [@alexeyevverheesunpub]
+
+<ul>
+<table> 
+  <tr>
+	<td><i>iš-qa&nbsp;</td></i> <td><i>ʁʷa-ba=<b>talu</b>&nbsp;</td></i> <td><i>hiƛ’-u&nbsp;</td></i> <td><i>hu-šːu-χi&nbsp;</td></i>
+	</tr>
+  <tr>
+  <td>home-apud.lat&nbsp;</td> <td>come-imp=quot&nbsp;</td> <td>say-aor&nbsp;</td> <td>dem-m-apud&nbsp;</td>
+  </tr>
+  <tr>
+	<td colspan="3">‘They told him: “go home!”’</td>
+  </tr>
+</table>
+</ul>
+
+In most East Caucasian languages the quoted utterance is a form of semi-direct speech. The utterance is presented from the point of view of the original interlocutor, with the exception of pronouns. If an argument in the quoted utterance is co-referent with the original interlocutor, the personal pronoun is replaced with a reflexive (@two).    
+
+(@two) Andi: Mixed [@maisak2017: 3]
+
+<ul>
+<table> 
+  <tr>
+	<td><i>isa-di&nbsp;</td></i> <td><i>rac’ːin-dːu&nbsp;</td></i>
+	</tr>
+  <tr>
+  <td>Jesus-erg&nbsp;</td> <td>ask-prf&nbsp;</td>
+  </tr>
+  <tr>
+	<td><i><b>en.š-la</b>&nbsp;</td></i> <td><i>ɬe-di=<b>ɬoʁo</b>&nbsp;</td></i> <td><i>rela&nbsp;</td></i> <td><i>ɢobi=<b>dːu</b>&nbsp;</td></i>
+	</tr>
+  <tr>
+  <td>self.m-super&nbsp;</td> <td>who-erg=quot&nbsp;</td> <td>hand&nbsp;</td> <td>touch.aor=quot&nbsp;</td>
+  </tr>  
+  <tr>
+	<td colspan="3">‘Jesus asked, “Who touched me?”’ </td>
+  </tr>
+</table>
+</ul>
+
+Reportatives indicate that a proposition is based on hearsay (@three). Unlike the quotative, it does not take non-indicative moods like imperatives in its scope.
+
+(@three) Avar	[@forker2018avar]
+
+<ul>
+<table> 
+  <tr>
+	<td><i>Murad-i-ca&nbsp;</td></i> <td><i>dars&nbsp;</td></i> <td><i>ɬazab-ize&nbsp;</td></i> <td><i>b-ug=<b>ila</b>&nbsp;</td></i>
+	</tr>
+	<tr>
+	<td>Murad-obl-erg&nbsp;</td> <td>lesson&nbsp;</td>	<td>learn.by.heart-inf&nbsp;</td> <td>n-cop=evid&nbsp;</td>
+	</tr>
+	<tr>
+	<td colspan="3">‘Murad will learn the lesson by heart.’ (<b>as they say</b>).</td>
+  </tr>
+</table>
+</ul>
+
+Quotatives can also be employed to indicate a kind of hearsay in the form of a depersonalized quote (@four).
+
+(@four) Bezhta [@khalilova2011: 44]
+
+<ul>
+<table> 
+  <tr>
+	<td><i>hugi&nbsp;</td></i> <td><i>biλoγa&nbsp;</td></i> <td><i>Ø-enλ’-eyo-<b>λo</b>.&nbsp;</td></i>
+	</tr>
+	<tr>
+	<td>he&nbsp;</td> <td>house.near&nbsp;</td> <td>i-go-pst.w-quot&nbsp;</td>
+	</tr>
+	<tr>
+	<td colspan="3">‘He went home, <b>they said</b>.’</td>
+  </tr>
+</table>
+</ul>
+
+Note that quotatives are not quotative evidentials. The latter are described in Aikhenvald as marking “reported information with an overt reference to the authorship of the quoted source”  [-@aikhenvald2004: 327]. The quotative markers described in this chapter are quotative indexes as defined by Güldemann [-@guldemann2008: 1]: they signal “the presence of reported speech”, which does not necessarily imply the presence of an overt source.
+
+The dataset also contains a few particles that are discussed in papers on evidentiality. Some of them belong to other knowledge categories. They would merit a separate chapter if there were enough descriptions of similar items. Unfortunately, this is not the case.
+
+The aim of this chapter is to compare the distribution of quotative and reportative markers, as well as the morphosyntactic form they take (particle or full verb). The expectation is that dedicated reportative markers are rarer than quotatives, and that more and less grammaticalized markers (i.e. particles vs. verb forms) will cluster together in particular branches of the family.
+
+## Summary
+
+Quotatives are attested in almost all languages of the family, while reportatives and other dedicated evidential particles are much rarer. Reported speech particles often transparently originate from a verb of speech. In some cases a full verb is used as a kind of particle at the synchronic level (@five).
+
+(@five) Dargwa: Sanzhi [@forker2019b: 176]
+
+<ul>
+<table> 
+  <tr>
+	<td><i>xːunul-li&nbsp;</td></i> <td><i>tiladi&nbsp;</td></i> <td><i>b-arq’-ib&nbsp;</td></i> <td><i>ca-b&nbsp;</td></i>
+	</tr>
+	<tr>
+	<td>woman-erg&nbsp;</td> <td>request&nbsp;</td> <td>n-do.pfv-pret&nbsp;</td> <td>be-n&nbsp;</td>
+	</tr>
+	<tr>
+	<td><i>hel-i-cːe&nbsp;</td></i> <td><i>“ma-ax-utːa!”&nbsp;</td></i> <td><i><b>r-ik’-ul</b>&nbsp;</td></i>
+	</tr>
+	<tr>
+	<td>that-obl-in&nbsp;</td> <td>proh-go-proh.sg&nbsp;</td> <td>f-say.ipfv-icvb&nbsp;</td>
+	</tr>
+	<tr>
+	<td colspan="3">‘His wife begged him “Do not go!”’</td>
+  </tr>
+</table>
+</ul>
+
+An inferential particle from an ‘appear’-type verb so far is attested only for Lak.[^1]
+
+[^1]: Example (@six) is a partial example.
+
+(@six) Lak [@friedman2007: 368]
+
+<ul>
+<table> 
+  <tr>
+	<td><i>ina&nbsp;</td></i>	<td><i>uwčːu&nbsp;</td></i>	<td><i>x-unu-<b>kːar-a</b>&nbsp;</td></i>
+	</tr>
+	<tr>
+	<td>you&nbsp;</td> <td>drunk&nbsp;</td> <td>become-past.ger-appear-2sg&nbsp;</td>
+	</tr>
+	<tr>
+	<td colspan="3">‘You have <b>apparently</b> become drunk.’</td>
+  </tr>
+</table>
+</ul>
+
+Particles marking general indirect evidentiality are attested in Karata and Kryz. The semantics of the Karata particle are unclear and require further investigation. Kryz borrowed the particle <i>-mIš</i> from Azerbaijani. Most likely this is a copy of the copular particle <i>-(i)mIš</i> and not of the perfect suffix <i>-mIš</i>, since the latter has lost the indirect evidential function (as discussed in chapter [Evidentiality in the tense system](evidentiality_tense.html)). In addition, the target form attaches to various inflected verb forms. In example (@seven), <i>-miš</i> indicates “non-direct evidence in the past”, see Authier [-@authier2010: 16]
+
+(@seven) Kryz: Alik [@authier2010: 16]
+
+<ul>
+<table> 
+  <tr>
+	<td><i>u-cbar&nbsp;</td></i> <td><i>ʕa-b-xhr-i&nbsp;</td></i> <td><i>k’ul-ci&nbsp;</td></i> <td><i>cuxud&nbsp;</td></i> <td><i>q’ay-ca-<b>miş</b>&nbsp;</td></i>
+	</tr>
+	<tr>
+	<td>3-hpl&nbsp;</td> <td>pv-hpl-come.pf-part&nbsp;</td> <td>house-gen&nbsp;</td> <td>master&nbsp;</td> <td>die-perf-evid&nbsp;</td>
+	</tr>
+	<tr>
+	<td colspan="3">‘The master of the house where they arrived had died.’</td>
+  </tr>
+</table>
+</ul>
+
+## Areal Distribution
+
+The areal distribution of the features is noisy, which probably results from descriptive gaps. The surveyed Turkic languages, for example, appear to lack reported speech particles altogether based on the referenced sources, while such forms are well-attested in other Turkic languages, see for example Greed [-@greed2014] on Tatar.
+
+## Related features
+
+- [Evidentiality in the tense system](evidentiality_tense.html)
+- [Evidential auxiliaries]()
+
+## Maps
+
+### Map 1. Quotative particles{.tabset .tabset-fade .tabset-pills}
+
+#### Map: Extrapolated data
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width = 9.5}
+
+map.feature(lang.gltc(particlesquot_vill$glottocode),
+            latitude = particlesquot_vill$lat,
+            longitude = particlesquot_vill$lon,
+            features = particlesquot_vill$lang, # color feature = language
+            color = particlesquot_vill$lang_color,
+            stroke.features = particlesquot_vill$`value:quot`, # stroke.feature = your feature value
+            stroke.color = c("black", "white"), 
+            label = particlesquot_vill$lang,
+            zoom.control = T,
+            popup = paste("<b>Village:</b>", particlesquot_vill$village, "<br>", 
+                          "<b>Source:</b>", particlesquot_vill$source, particlesquot_vill$page, "<br>",
+                          "<b>Datapoint:</b>", particlesquot_vill$datapoint),
+            width = 3, stroke.radius = 8,
+            legend = FALSE)
+```
+
+#### Map: General datapoints
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width = 9.5}
+
+particlesquot_core_meta <- merge(particlesquot_core, meta_core, by = "lang")
+
+particlesquot_core_meta$datapoint <- "general datapoint"
+
+map.feature(lang.gltc(particlesquot_core_meta$glottocode),
+            features = particlesquot_core_meta$lang,
+            color = particlesquot_core_meta$lang_color,
+            legend = FALSE,
+            stroke.features = particlesquot_core_meta$`value:quot`,
+            stroke.color = c("black", "white"),
+            label = particlesquot_core_meta$lang,
+            zoom.control = T,
+            popup = paste("<b>Source:</b>", particlesquot_core_meta$source, particlesquot_core_meta$page, "<br>",
+                          "<b>Datapoint:</b>", particlesquot_core_meta$datapoint))
+
+```
+
+### Map 2. Quotative particles: structure{.tabset .tabset-fade .tabset-pills}
+
+#### Map: Extrapolated data
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width = 9.5}
+
+map.feature(lang.gltc(particlesquot_vill$glottocode),
+            latitude = particlesquot_vill$lat,
+            longitude = particlesquot_vill$lon,
+            features = particlesquot_vill$lang, # color feature = language
+            color = particlesquot_vill$lang_color,
+            stroke.features = particlesquot_vill$`value:structure`, # stroke.feature = your feature value
+            stroke.color = c("white", "black", "deeppink"), 
+            label = particlesquot_vill$lang,
+            zoom.control = T,
+            popup = paste("<b>Village:</b>", particlesquot_vill$village, "<br>", 
+                          "<b>Source:</b>", particlesquot_vill$source, particlesquot_vill$page, "<br>",
+                          "<b>Datapoint:</b>", particlesquot_vill$datapoint),
+            width = 3, stroke.radius = 8,
+            legend = FALSE)
+```
+
+#### Map: General datapoints
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width = 9.5}
+
+map.feature(lang.gltc(particlesquot_core_meta$glottocode),
+            features = particlesquot_core_meta$lang,
+            color = particlesquot_core_meta$lang_color,
+            legend = FALSE,
+            stroke.features = particlesquot_core_meta$`value:structure`,
+            stroke.color = c("white", "black", "deeppink"),
+            label = particlesquot_core_meta$lang,
+            zoom.control = T,
+            popup = paste("<b>Source:</b>", particlesquot_core_meta$source, particlesquot_core_meta$page, "<br>",
+                          "<b>Datapoint:</b>", particlesquot_core_meta$datapoint))
+
+```
+
+### Map 3. Reportative particles{.tabset .tabset-fade .tabset-pills}
+
+#### Map: Extrapolated data
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width = 9.5}
+
+map.feature(lang.gltc(particlesrep_vill$glottocode),
+            latitude = particlesrep_vill$lat,
+            longitude = particlesrep_vill$lon,
+            features = particlesrep_vill$lang, # color feature = language
+            color = particlesrep_vill$lang_color,
+            stroke.features = particlesrep_vill$`value:rep`, # stroke.feature = your feature value
+            stroke.color = c("black", "white"), 
+            label = particlesrep_vill$lang,
+            zoom.control = T,
+            popup = paste("<b>Village:</b>", particlesrep_vill$village, "<br>", 
+                          "<b>Source:</b>", particlesrep_vill$source, particlesrep_vill$page, "<br>",
+                          "<b>Datapoint:</b>", particlesrep_vill$datapoint),
+            width = 3, stroke.radius = 8,
+            legend = FALSE)
+```
+
+#### Map: General datapoints
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width = 9.5}
+
+particlesrep_core_meta <- merge(particlesrep_core, meta_core, by = "lang")
+
+particlesrep_core_meta$datapoint <- "general datapoint"
+
+map.feature(lang.gltc(particlesrep_core_meta$glottocode),
+            features = particlesrep_core_meta$lang,
+            color = particlesrep_core_meta$lang_color,
+            legend = FALSE,
+            stroke.features = particlesrep_core_meta$`value:rep`,
+            stroke.color = c("black", "white"),
+            label = particlesrep_core_meta$lang,
+            zoom.control = T,
+            popup = paste("<b>Source:</b>", particlesrep_core_meta$source, particlesrep_core_meta$page, "<br>",
+                          "<b>Datapoint:</b>", particlesrep_core_meta$datapoint))
+
+```
+
+### Map 4. Reportative particles: structure{.tabset .tabset-fade .tabset-pills}
+
+#### Map: Extrapolated data
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width = 9.5}
+
+map.feature(lang.gltc(particlesrep_vill$glottocode),
+            latitude = particlesrep_vill$lat,
+            longitude = particlesrep_vill$lon,
+            features = particlesrep_vill$lang, # color feature = language
+            color = particlesrep_vill$lang_color,
+            stroke.features = particlesrep_vill$`value:structure`, # stroke.feature = your feature value
+            stroke.color = c("white", "black", "deeppink"), 
+            label = particlesrep_vill$lang,
+            zoom.control = T,
+            popup = paste("<b>Village:</b>", particlesrep_vill$village, "<br>", 
+                          "<b>Source:</b>", particlesrep_vill$source, particlesrep_vill$page, "<br>",
+                          "<b>Datapoint:</b>", particlesrep_vill$datapoint),
+            width = 3, stroke.radius = 8,
+            legend = FALSE)
+```
+
+#### Map: General datapoints
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width = 9.5}
+
+map.feature(lang.gltc(particlesrep_core_meta$glottocode),
+            features = particlesrep_core_meta$lang,
+            color = particlesrep_core_meta$lang_color,
+            legend = FALSE,
+            stroke.features = particlesrep_core_meta$`value:structure`,
+            stroke.color = c("white", "black", "deeppink"),
+            label = particlesrep_core_meta$lang,
+            zoom.control = T,
+            popup = paste("<b>Source:</b>", particlesrep_core_meta$source, particlesrep_core_meta$page, "<br>",
+                          "<b>Datapoint:</b>", particlesrep_core_meta$datapoint))
+
+```
+
+
+
+
+## Datatable
+
+## References
+

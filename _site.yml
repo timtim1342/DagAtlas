@@ -14,16 +14,16 @@ navbar:
           href: ./topics.html
         - text: "Features"
           href: ./features.html
-        - text: "Markup"
-          href: ./markup.html
-    - text: "References"
-      href: ./references.html
-    - text: "Contact"
-      href: ./contact.html
-    - text: "Acknowledgement"
-      href: ./acknow.html
+        - text: "Method"
+          href: ./method.html
     - text: "Changes"
       href: ./changes.html
+    - text: "Contact"
+      href: ./contact.html
+    - text: "References"
+      href: ./references.html
+    - text: "Acknowledgement"
+      href: ./acknow.html
 output:
   html_document:
     include:  

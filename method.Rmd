@@ -1,0 +1,59 @@
+---
+title: "Method"
+output:
+  html_document:
+    include:
+      in_header: ./html/header_method.html
+---
+
+***
+
+# List of columns
+
+Here is a full list of possible columns in a feature table:
+
+**id** - unique number for each row / observation in dataset
+
+**lang** - language name
+
+**idiom** - a dialect, a village variety, or simply the standard language
+
+**type** - specifies whether the idiom is a village variety (village) or something else (idiom)
+
+**core** - specifies whether to use a certain value for mapping (see [Core languages](./about.html))
+
+**feature** - the name of the feature
+
+**value** - the relevant values of the feature, e.g. attested/not attested
+
+**source** - reference to the source
+
+**page** - relevant page in the source
+
+**comment** - any comment
+
+**contributor** - the contributor's name
+
+**form** - a wordform or an affix for a phonetic or lexical feature (if applicable)
+
+**example_as_in_source** -  an example of how the form is used (if applicable)
+
+**example** - example in Caucasiologist transcription with morpheme boundaries (if applicable)
+
+**translation_as_in_source** - translation of the example
+
+**translation** - the contributor's English translation of the example
+
+**gloss** - glosses for the example
+
+**example_source** - reference to the source of the example
+
+**example_page** - page reference for the example
+
+**example_comment** - comments on the example
+
+# Map visualization
+
+For map visualizations we use the [Lingtypology](https://github.com/ropensci/lingtypology) package for R.
+
+***
