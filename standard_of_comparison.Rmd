@@ -210,7 +210,7 @@ In nine languages the standard of comparison is marked with a dedicated suffix, 
 </table>
 </ul>
 
-However, it should be pointed out that, in some cases, such comparative suffixes apparently include a spatial suffix, e.g. Khinalug *-q’il:i* (elative *-l:i*), Northern Tabasaran *-t’an* and Southern Tabasaran *-č’an* / *-dakan* (elative *-an*), Budukh *-wor* (elative *-r*). So, in such cases, we might assume that a spatial form specialized in the encoding of the standard of comparison. In addition, Archi *-χur* is reported to have some residual spatial usages [@danielganenkov2009: 673-674].
+However, it should be pointed out that, in some cases, such comparative suffixes apparently include a spatial suffix, e.g. Khinalug *-q’ilːi* (elative *-lːi*), Northern Tabasaran *-t’an* and Southern Tabasaran *-č’an* / *-dakan* (elative *-an*), Budukh *-wor* (elative *-r*). So, in such cases, we might assume that a spatial form specialized in the encoding of the standard of comparison. In addition, Archi *-χur* is reported to have some residual spatial usages [@danielganenkov2009: 673-674].
 
 ## Summary and distribution
 
@@ -233,7 +233,7 @@ The maps below show the distribution of values across languages. Specifically, t
 ## Notes
 
 [^1]: A few exceptions are constituted by Nakh languages, which have a morphological comparative degree, and Armenian, which features the comparative marker *aveli* ‘more’. While in Ingush and Bats the comparative degree of the adjective co-occurs with case marking of the standard of comparison, in Chechen one option excludes the other. That is, comparison is marked either on the adjective or on the standard of comparison [@nichols1994: 30]. In Armenian, the comparative marker *aveli* can be omitted when comparison is marked on the standard [@dum-tragut2009: 532].
-[^2]: The superelative suffix *-t:-iš* is mentioned by [@mikailov1967: 60] as the marker used to code the standard of comparison in Archi, but [@kibrik1977: 59] reports the dedicated comparative marker *-χur* instead. For the representation on maps we chose the variant reported by [@kibrik1977], which appears to be the only option for the encoding of the standard of comparison in the Archi Corpus [@kibriketal2007].
+[^2]: The superelative suffix *-tː-iš* is mentioned by [@mikailov1967: 60] as the marker used to code the standard of comparison in Archi, but [@kibrik1977: 59] reports the dedicated comparative marker *-χur* instead. For the representation on maps we chose the variant reported by [@kibrik1977], which appears to be the only option for the encoding of the standard of comparison in the Archi Corpus [@kibriketal2007].
 [^3]: We use the term “ablative” instead of “elative” for cases in which the case suffix is not complex (i.e. is not constituted by a localization marker plus a directionality marker).
 [^4]: In Bagvalal, both superelative and contessive are possible. For the representation on maps we chose the contessive marker because it is mentioned in both the available sources for Bagvalal [@sosenskaja2001] and [@magomedova2004], whereas the superelative is only mentioned by [@sosenskaja2001: 409].
 [^5]: Note that in Northern Akhvakh the translative marker *-une* is derived from the elative (elative *-u* + *-ne*), and that the translative is taking up most of the functions originally associated with the elative, whereas the elative alone is being employed more and more rarely [@magomedbekova1967: 60].
