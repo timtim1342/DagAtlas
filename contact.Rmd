@@ -9,6 +9,4 @@ output:
 
 You can always contact us via email at <cauatlas@gmail.com>.
 
-The feature datasets are stored on our [GitHub page]().
-
 ***

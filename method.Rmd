@@ -8,52 +8,63 @@ output:
 
 ***
 
+# Data
+
+The datasets for the atlas (as well as the accompanying pages) were mostly created by students of the School of Linguistics of NRU HSE Moscow, as part of a workshop. They collect data from available literature and work out an appropriate typological classification for the feature.
+
+The data can be accessed through the interface of the atlas, or downloaded directly from the [GitHub page]().
+
+Below is a specification of mandatory columns for each dataset. Note that a particular dataset may have additional columns.
+
+
 # List of columns
 
 Here is a full list of possible columns in a feature table:
 
-**id** - unique number for each row / observation in dataset
+**id** - unique number for each row / observation in dataset.
 
-**lang** - language name
+**lang** - language name following the naming conventions of the East Caucasian villages dataset.
 
-**idiom** - a dialect, a village variety, or simply the standard language
+**idiom** - a dialect, a village variety, or simply the standard language.
 
-**type** - specifies whether the idiom is a village variety (village) or something else (idiom)
+**type** - specifies whether the idiom is a village variety (village) or something else (idiom).
 
-**core** - specifies whether to use a certain value for mapping (see [Core languages](./about.html))
+**core** - specifies whether to use a certain value for mapping.
 
-**feature** - the name of the feature
+**feature** - the name of the feature.
 
-**value** - the relevant values of the feature, e.g. attested/not attested
+**value** - the relevant values of the feature, e.g. attested/not attested.
 
-**source** - reference to the source
+**source** - reference to the source on which the information is based.
 
-**page** - relevant page in the source
+**page** - relevant page in the source.
 
-**comment** - any comment
+**comment** - any comment the contributor would like to add.
 
-**contributor** - the contributor's name
+**contributor** - the contributor's name.
 
-**form** - a wordform or an affix for a phonetic or lexical feature (if applicable)
+If applicable:
 
-**example_as_in_source** -  an example of how the form is used (if applicable)
+**form** - a word form or an affix in case of grammatical features, a word in case of a lexical feature, graphemes for phonetic features.
 
-**example** - example in Caucasiologist transcription with morpheme boundaries (if applicable)
+**example_as_in_source** -  an example of how the form is used.
 
-**translation_as_in_source** - translation of the example
+**example** - example in Caucasiologist transcription with morpheme boundaries.
 
-**translation** - the contributor's English translation of the example
+**translation_as_in_source** - translation of the example.
 
-**gloss** - glosses for the example
+**translation** - the contributor's English translation of the example.
 
-**example_source** - reference to the source of the example
+**gloss** - glosses for the example.
 
-**example_page** - page reference for the example
+**example_source** - reference to the source of the example.
 
-**example_comment** - comments on the example
+**example_page** - page reference for the example.
+
+**example_comment** - any comments on the example.
 
 # Map visualization
 
-For map visualizations we use the [Lingtypology](https://github.com/ropensci/lingtypology) package for R.
+For map visualizations we use the [Lingtypology](https://github.com/ropensci/lingtypology) (*moroz2017*) package for [R](https://www.r-project.org/).
 
 ***

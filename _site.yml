@@ -22,8 +22,8 @@ navbar:
       href: ./contact.html
     - text: "References"
       href: ./references.html
-    - text: "Acknowledgement"
-      href: ./acknow.html
+    - text: "Team"
+      href: ./team.html
 output:
   html_document:
     include:  
