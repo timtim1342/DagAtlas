@@ -244,4 +244,26 @@ The maps below show the distribution of values across languages. Specifically, t
 [^5]: Note that in Northern Akhvakh the translative marker *-une* is derived from the elative (elative *-u* + *-ne*), and that the translative is taking up most of the functions originally associated with the elative, whereas the elative alone is being employed more and more rarely [@magomedbekova1967: 60].
 [^6]: It should be noted that the labels employed here for localization markers do not always coincide with the labels employed in the sources consulted. This mostly concerns the Russian-language literature, in which such labels are rarely employed (in most Russian-language grammars the different localization markers are listed by simply naming them “series 1”, “series 2”, etc.). For more details on the semantics of localization markers and their partially overlapping meanings, see [].
 
+<<<<<<< HEAD
 # References
+=======
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE)
+
+# packages
+library(tidyverse)
+library(lingtypology)
+library(RefManageR)
+
+# make this part as a function and add it to example code
+
+bib <- ReadBib(file = "./data/bibliography.bib")
+BibOptions(bib.style = "authoryear", style = "text", cite.style = "authoryear", max.names = 2, sorting = "nyt")  # style = "html"
+
+# load data
+fe <- read_tsv("./data/features/tables/standard_of_comparison.csv") # feature dataset
+```
+
+```{r, child="_example.Rmd"}
+```
+>>>>>>> 28778c04e01add5ed386e3fe7c7f28021ea712aa
