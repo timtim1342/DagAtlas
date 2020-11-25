@@ -4,43 +4,60 @@ library(lingtypology)
 library(DT)
 
 extr_map <- function(fe) {
-  vill <- read_tsv("./data/villages.csv") # villages dataset
+  vill <- read_csv("./data/villages.csv") # villages dataset
   meta <- read_tsv("./data/meta.csv") # language metadata and colors
   
   # preparation of data
   vill <- vill[complete.cases(vill$lat),] # remove villages for which we do not have coordinates (yet)
+  vill <- vill %>% 
+    filter(kutans == 'FALSE')  # убирает кутаны
+  
   meta_core <- meta %>% # remove idioms not (yet) recognized as distinct
     filter(core == "yes")
-  vill_meta <- merge(vill, meta_core, by = "lang") # merge villages and coordinates with language metadata
-  fe_vill <- merge(vill_meta, fe, by = "lang") # merge villages, coordinates, and language metadata with feature information
-  fe_vill$datapoint <- "extrapolated datapoint"
   
+  vill_meta <- merge(vill, meta_core, by = "lang") # merge villages and coordinates with language metadata
+  vill_meta <- vill_meta %>% 
+    mutate(idiom = idiom.y)  # почему там два разных идиома?
+  
+   fe_vill <- merge(vill_meta, fe, by = "lang") # merge villages, coordinates, and language metadata with feature information
+   fe_vill$datapoint <- "extrapolated datapoint"
+  
+
   mp <- map.feature(lang.gltc(fe_vill$glottocode),
-                      latitude = fe_vill$lat,
-                      longitude = fe_vill$lon,
-                      features = fe_vill$lang, # color feature = language
-                      color = fe_vill$lang_color,
-                      stroke.features = fe_vill$value, # stroke.feature = your feature value
-                      stroke.color = c("black", "white"),
-                      label = fe_vill$lang,
-                      zoom.control = T,
-                      popup = paste("<b>Village:</b>", fe_vill$village, "<br>",
-                                    "<b>Source:</b>", fe_vill$source, fe_vill$page, "<br>",
-                                    "<b>Datapoint:</b>", fe_vill$datapoint),
-                      width = 3, stroke.radius = 8,
-                      legend = FALSE)
+                    latitude = fe_vill$lat,
+                    longitude = fe_vill$lon,
+                    features = fe_vill$lang, # color feature = language
+                    color = fe_vill$lang_color,
+                    stroke.features = fe_vill$value, # stroke.feature = your feature value
+                    stroke.color = c("black", "white"),
+                    label = fe_vill$lang,
+                    zoom.control = T,
+                    popup = paste("<b>Village:</b>", fe_vill$village, "<br>",
+                                  "<b>Source:</b>", fe_vill$source, fe_vill$page, "<br>",
+                                  "<b>Datapoint:</b>", fe_vill$datapoint),
+                    width = 3,
+                    stroke.radius = 8,
+                    legend = FALSE)
+  
   return(mp)
 }
 
 gen_map <- function(fe) {
-  vill <- read_tsv("./data/villages.csv") # villages dataset
+  vill <- read_csv("./data/villages.csv") # villages dataset
   meta <- read_tsv("./data/meta.csv") # language metadata and colors
   
   # preparation of data
   vill <- vill[complete.cases(vill$lat),] # remove villages for which we do not have coordinates (yet)
+  vill <- vill %>% 
+    filter(kutans == 'FALSE')  # убирает кутаны
+  
   meta_core <- meta %>% # remove idioms not (yet) recognized as distinct
     filter(core == "yes")
+  
   vill_meta <- merge(vill, meta_core, by = "lang") # merge villages and coordinates with language metadata
+  vill_meta <- vill_meta %>% 
+    mutate(idiom = idiom.y)  # почему там два разных идиома?
+  
   fe_vill <- merge(vill_meta, fe, by = "lang") # merge villages, coordinates, and language metadata with feature information
   fe_vill$datapoint <- "extrapolated datapoint"
   
@@ -52,8 +69,8 @@ gen_map <- function(fe) {
   
   # draw a map
  mp <- map.feature(lang.gltc(core_data$glottocode),
-              latitude = core_data$gltc_lat,
-              longitude = core_data$gltc_lon,
+              latitude = core_data$gen_lat,  # gltc_lat
+              longitude = core_data$gen_lon,  # gltc_lon
               features = core_data$lang, # color feature = language
               color = core_data$lang_color,
               stroke.features = core_data$value, # stroke.feature = your feature value

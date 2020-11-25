@@ -20,7 +20,22 @@
     }
     
 body {
-  font-size: 14pt; 
+  font-size: 14pt;
    }
    
+.gloss {
+  font-variant:small-caps;
+}
 
+#htmlwidget-244aaddf2639520a3f5a{ /*карты на about. временное решение*/
+  width: 100% !important;
+  height: 700px !important;
+}
+
+#htmlwidget-6f66dca5431bfb50b4e6{
+  width: 100% !important;
+}
+
+#htmlwidget-0fe3e3821db73c9def68{
+  width: 100% !important;
+}

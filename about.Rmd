@@ -17,7 +17,7 @@ library(lingtypology)
 library(DT)
 
 # load data
-vill <- read_tsv("./data/villages.csv") # villages dataset
+vill <- read_csv("./data/villages.csv") # villages dataset
 meta <- read_tsv("./data/meta.csv") # language metadata and colors
 fe <- read_tsv("./data/example.csv") # example dataset
 
@@ -69,6 +69,14 @@ Originally the idea was to create a resource similar to the World Atlas of Langu
 #             width = 3, stroke.radius = 8)
 
 # all villages
+vill_meta$lang <- factor(vill_meta$lang, levels =c(
+  "Dargwa", "Lak", "Bats", "Ingush", "Chechen", "Khinalug",
+  "Archi", "Tsakhur", "Rutul", "Kryz", "Budukh", "Udi",
+  "Lezgian", "Agul", "Tabasaran", "Avar", "Andi", "Botlikh",
+  "Godoberi", "Chamalal", "Bagvalal", "Tindi", "Karata",
+  "Akhvakh", "Tsez", "Hinuq", "Bezhta", "Hunzib", "Khwarshi",
+  "Armenian", "Kumyk", "Nogai", "Azerbaijani", "Tat", "Georgian"))
+
 map.feature(lang.gltc(vill_meta$glottocode),
             latitude = vill_meta$lat,
             longitude = vill_meta$lon,
@@ -78,7 +86,8 @@ map.feature(lang.gltc(vill_meta$glottocode),
             zoom.control = T,
             popup = paste("<b>Village:</b>", vill_meta$village),
             width = 3, stroke.radius = 8,
-            legend = T)
+            legend = T
+            )
 ```
 
 In the approach of WALS, each language is represented by a single point on the map. TALD currently offers two alternative visualizations (see [Map 2.](#m2)):
@@ -100,8 +109,8 @@ core_data <- left_join(fe, core_meta, by = "lang")
 core_data$datapoint <- "general datapoint"
 # draw a map
 map.feature(lang.gltc(core_data$glottocode),
-            latitude = core_data$gltc_lat,
-            longitude = core_data$gltc_lon,
+            latitude = core_data$gen_lat, # gltc_lat
+            longitude = core_data$gen_lon,  # gltc_lon
             features = core_data$lang, # color feature = language
             color = core_data$lang_color,
             stroke.features = core_data$value, # stroke.feature = your feature value

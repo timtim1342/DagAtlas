@@ -16,10 +16,14 @@ The project is led by [Michael Daniel](https://www.hse.ru/en/staff/michael_danie
 
 Students currently working on features are: [Timofey Mukhin](https://www.hse.ru/en/org/persons/208514310), Samira Ochs, Rita Popova, [Anastasia Panova](https://www.hse.ru/en/staff/apanova), Sara Zadykian.
 
-Students who have contributed in the past are: Inga Kartozia, Denis Arsentjev, Violetta Ivanova.
+Students who have contributed in the past are: Inga Kartozia, Denis Arsentjev, Violetta Ivanova, Fyodor Golosov.
 
-Timofey Mukhin is responsible for the TALD website.
+[Timofey Mukhin](language.html) is responsible for the TALD website.
 
-Photos presented on the site are taken by Michael Daniel, [Timur Maisak](https://www.hse.ru/en/staff/maisak), Timofey Mukhin and Konstantin Filatov?.
+Photos presented on the site are taken by [Michael Daniel](https://www.hse.ru/en/staff/michael_daniel), [Timur Maisak](https://www.hse.ru/en/staff/maisak), [Timofey Mukhin](https://www.hse.ru/en/org/persons/208514310) and [Konstantin Filatov](https://www.hse.ru/en/org/persons/190921062).
+
+## Contact us
+
+You can always contact us via email at <cauatlas@gmail.com>.
 
 ***

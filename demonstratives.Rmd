@@ -1,0 +1,12 @@
+---
+title: "Demonstratives"
+author: "Timofey Mukhin"
+---
+
+---------------------------------------
+
+-[Types of demonstrative systems](types_of_demonstrative_systems.html)
+
+-[The number of distance contrasts expressed by demonstratives](distance_contrasts.html)
+
+-[Elevation in the demonstrative systems](elevation.html)

@@ -18,8 +18,6 @@ navbar:
           href: ./method.html
     - text: "Changes"
       href: ./changes.html
-    - text: "Contact"
-      href: ./contact.html
     - text: "References"
       href: ./references.html
     - text: "Team"

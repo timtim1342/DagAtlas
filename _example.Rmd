@@ -22,13 +22,11 @@ source('./R/features_maker.R')
 d_b(fe)
 ```
 
-# Datatable references
+# References
 
 ```{r results = "asis", echo = FALSE}
 PrintBibliography(bib, .opts = list(check.entries = FALSE))
 ```
-
-# Text references
 
 <div class="tocify-extend-page" data-unique="tocify-extend-page" style="height: 0;"></div>
 <!-- remove extra whitespace at bottom produced by floating table of contents and plots. 

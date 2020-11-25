@@ -36,7 +36,7 @@ DT::datatable(dtable,
               escape = FALSE, 
               rownames = FALSE,
               options = list(
-                pageLength = 10, 
+                pageLength = 150, 
                 autoWidth = TRUE,
                 dom = 'fltpi')
               )

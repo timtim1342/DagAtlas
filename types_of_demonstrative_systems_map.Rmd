@@ -1,0 +1,27 @@
+---
+title: "Types of demonstrative systems"
+author: "Timofey Mukhin"
+---
+
+---------------------------------------
+
+See the chapter [here](types_of_demonstrative_systems.html).
+
+```{r setup, include=FALSE} 
+# make this part as a function and add it to example code
+knitr::opts_chunk$set(echo = FALSE, message = FALSE)
+
+# packages
+library(tidyverse)
+library(lingtypology)
+library(RefManageR)
+
+bib <- ReadBib(file = "./data/bibliography.bib")
+BibOptions(style = "html", bib.style = "authoryear", cite.style = "authoryear", max.names = 2)
+
+# load data
+fe <- read_tsv("data/features/tables/system_type.csv") # feature dataset
+```
+
+```{r, child="_example.Rmd"}
+```
