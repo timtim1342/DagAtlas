@@ -2,6 +2,7 @@
 title: "Standard of comparison"
 author: "Chiara Naccarato"
 output: html_document
+css: ./styles.css
 bibliography: 
   - ./data/features/ref_bibs/standard_of_comparison.bib
   # - ./data/bibliography.bib
@@ -12,50 +13,44 @@ link-citations: true
 
 # Chapter
 
-See maps [here](standard_of_comparison_map.html).
+See [data and maps](standard_of_comparison_map.html).
 
-## The standard of comparison in comparative constructions
+
+## Introduction and typological background
 
 Comparative constructions typically involve three elements: a predicate and two noun phrases denoting the object of comparison and the **standard of comparison**. In example (@one) the object of comparison is constituted by the first noun phrase (*the tree*), while the second noun phrase (*the house*) is the standard of comparison (the preposition *than* is the standard marker).
 
 (@one) _The tree is higher **than the house**_.
 
-This chapter focuses on the morphological coding of the standard of comparison in comparative constructions. In the languages of Daghestan, the standard of comparison is usually expressed by a **spatial form**, i.e. an inflected form of a nominal normally expressing a spatial relation. The adjective in these constructions is usually not inflected for degree.[^1] 
+This chapter investigates the morphological coding of the standard of comparison in comparative constructions. In the languages of Daghestan, the standard of comparison is usually marked with a **spatial form**, i.e. an inflected form of a nominal normally expressing a spatial relation. A few languages employ dedicated comparative markers. The adjective in these constructions is usually not inflected for degree.[^1] 
+Spatial (or “Locational”) comparatives are the most frequent strategy in the languages of the world according to data from WALS (see @stassen2013). Cross-linguistically, other common strategies involve the use of particles (other than those expressing spatial relations), predicates meaning ‘exceed, surpass’, and conjoined comparatives (@stassen2013). Sometimes more than one strategy is available in one and the same language. In the languages of Daghestan, for instance, constructions with postpositions or special comparative particles are also found.
+Depending on the nature of the marker employed, spatially coded comparatives can be divided into three types: *At*-comparatives (i.e. essives), *To*-comparatives (i.e. latives), and *From*-comparatives (i.e. elatives or ablatives) (cf. @stassen2013). 
+This variation within the group of spatially coded comparatives, which was not considered for the purposes of the WALS map of comparative constructions, is the focus of the present investigation (see @stassen1985 for a typological parallel). Our goal is to classify the languages of Daghestan according to the type of **spatial form used to mark the standard of comparison**.
 
-Spatial (or “Locational”) comparatives are the most frequent strategy in the languages of the world according to data from WALS [@stassen2013] ([see](https://wals.info/feature/121A#4/41.57/33.00)). Cross-linguistically, other common strategies involve the use of particles (other than those expressing spatial relations), predicates meaning ‘exceed, surpass’, and conjoined comparatives [@stassen2013]. Sometimes more than one strategy is available in one and the same language. In the languages of Daghestan, for instance, constructions with postpositions or special comparative particles are also found.
-
-Depending on the nature of the marker employed, spatially coded comparatives can be divided into three types: At-comparatives (i.e. essives), To-comparatives (i.e. latives), and From-comparatives (i.e. elatives or ablatives) (cf. [@stassen2013]). 
-
-This variation within the group of spatially coded comparatives, which was not considered for the purposes of the WALS map of comparative constructions, is the focus of the present investigation. Our goal is to classify the languages of Daghestan according to the **type of spatial form used to mark the standard of comparison**.
 
 ## The standard of comparison in the languages of Daghestan
 
-In the languages of Daghestan the standard of comparison is usually marked with a spatial form (see [Spatial forms]). There are cases, though less frequent, of languages featuring a specialized comparative marker (see [Specialized comparative markers]).
+In the languages of Daghestan the standard of comparison is usually marked with a spatial form (see [Spatial forms]). A few languages feature dedicated comparative markers (see [Dedicated comparative markers]).
 
-### Spatial forms 
 
-In comparative constructions, most languages of Daghestan mark the standard of comparison with a spatial form. In different languages, variation is observed with respect to both the directionality marker (see [Directionality markers]) and the localization marker (see [Localization markers]) employed (on directionality and localization markers see []).
+### Spatial forms
+
+In comparative constructions, most languages of Daghestan mark the standard of comparison with a spatial form. However, variation is observed with respect to both the directionality marker (see [Directionality markers]) and the localization marker (see [Localization markers]) employed (on directionality and localization markers see the chapter on [Spatial cases]). 
+
 
 #### Directionality markers
 
 Most languages of Daghestan mark the standard of comparison with an **elative** form, cf. example (@two) from Standard Avar.
 
-(@two) Standard Avar [@bokarev1949: 165]
-
+(@two) Standard Avar (@bokarev1949: 165)
 <!--html_preserve-->
 <ul>
 <table> 
   <tr>
-    <td><i><b>di-da-sa&nbsp;</b></i></td>    <td><i>ɬik’-a-w&nbsp;</i></td>    <td><i>qazaq&nbsp;</i></td>
+    <td><i><b>di-da-sa&nbsp;</b></i></td>    <td><i>ɬik’-a-w&nbsp;</i></td>    <td><i>qazaq&nbsp;</i></td>    <td><i>du-je=gi&nbsp;</i></td>    <td><i>šːʷ-ela-r=in&nbsp;</i></td>
   </tr>
   <tr>
-    <td>1sg-sup-el&nbsp;</td>    <td>good-<span class="gloss">adjz-m&nbsp;</span></td>    <td>worker&nbsp;</td>
-  </tr>
-  <tr>
-    <td><i>du-je=gi&nbsp;</i></td>    <td><i>šːʷ-ela-r=in&nbsp;</i></td>    <td></td>
-  </tr>
-  <tr>
-    <td>2sg-dat=add&nbsp;</td>    <td>get-fut-neg=emph&nbsp;</td>    <td></td>
+    <td><b>I-<span class="gloss">sup-el&nbsp;</span></b></td>    <td>good-<span class="gloss">adjz-m&nbsp;</span></td>    <td>worker&nbsp;</td>     <td>you.<span class="gloss">sg-dat=add&nbsp;</span></td>    <td>get-<span class="gloss">fut-neg=emph&nbsp;</span></td>
   </tr>
   <tr>
     <td colspan="3">'You will also not get a better farm worker than me.'</td>
@@ -64,185 +59,266 @@ Most languages of Daghestan mark the standard of comparison with an **elative** 
 </ul>
 <!--/html_preserve-->
 
-There are 16 such languages: 
+There are 18 such languages (see [Table 1](#m1)). Note that Northern Akhvakh and Botlikh feature markers that are described in grammars as translative markers. However, their semantics is most often elative, so they are also included in this group.
 
-* 6 Avar-Andic: Standard Avar, Bagvalal, Botlikh, Chamalal, Godoberi, and Karata;
-* 6 Lezgic: Agul, Standard Lezgian, Archi,[^2] Kryz, Rutul, and Tsakhur;
-* 3 Tsezic: Hinuq, Tsez, and Xvarshi;
-* 1 Dargwa: Itsari.
+#### Table 1. Elative markers {#m1}
 
-To these languages we should add five languages in which **ablative**[^3] forms are used (@three): Udi (Lezgic), Kumyk, Nogai and Northern Azerbaijani (Turkic), and Armenian. Ablatives are commonly employed to mark the standard of comparison in the languages of the world [@creissels2009: 624].
+|Family > Branch|Language        |Suffix                   |
+|---------------|----------------|-------------------------|
+|EC > Avar-Andic|Avar (Std.)     |_-da-**sa**_             |
+|               |Akhvakh (North.)|_-g-**une**_             |
+|               |Bagvalal[^2]    |_-la-**sː**_             |
+|               |Botlikh         |_-č'u-**ku**_            |
+|               |Chamalal        |_-č'-**oː**_             |
+|               |Godoberi        |_-č'u-**ru**_            |
+|               |Karata          |_-a-**gal**/-č'o-**gal**_|
+|EC > Lezgic    |Agul            |_-la-**s**_              |
+|               |Archi[^3]       |_-tː-**iš**_             |
+|               |Kryz            |_-v-**ar**_              |
+|               |Lezgian (Std.)  |_-l-**aj**_              |
+|               |Rutul[^4]       |_-**la**_                |
+|               |Tsakhur         |_-l-**e**_               |
+|EC > Tsezic    |Hinuq[^5]       |_-ƛ'o-**s**_             |
+|               |Khwarshi        |_-λ'a-**zi**_            |
+|               |Tsez            |_-ƛ'-**aj**_             |
+|EC > Dargwa    |Itsari          |_-li(ː)-**r**_           |
+|               |Tanti           |_-ja-**r**_              |
 
-(@three) North Azerbaijani [@shiralievsevortyan1971: 47]
+Five languages feature **ablative** markers (see [Table 2](#m2)). We use the term “ablative” instead of “elative” for languages that do not have bimorphemic spatial case systems, cf. Standard Azerbaijani (@three). On maps, however, elative and ablative markers are merged into a single group.
 
+#### Table 2. Ablative markers {#m2}
+
+|Family > Branch |Language          |Suffix       |
+|----------------|------------------|-------------|
+|EC > Lezgic     |Udi               |_-χun_       |
+|Turkic > Kipchak|Kumyk             |_-dan (-den)_|
+|                |Nogai             |_-den_       |
+|Turkic > Oghuz  |Azerbaijani (Std.)|_-dan (-dən)_|
+|IE > Armenic    |Armenian          |_-ic'_       |
+
+(@three) Standard Azerbaijani (@shiralievsevortyan1971: 47)
+<!--html_preserve-->
 <ul>
 <table> 
   <tr>
     <td><i>Bakı&nbsp;</i></td>    <td><i><b>Kirovabad-dan&nbsp;</b></i></td>    <td><i>böyük-dür&nbsp;</i></td>
   </tr>
   <tr>
-    <td>Baku&nbsp;</td>    <td>Kirovabad-abl&nbsp;</td>    <td>big-cop.3sg&nbsp;</td>
+    <td>Baku&nbsp;</td>    <td><b>Kirovabad-<span class="gloss">abl&nbsp;</span></b></td>    <td>big-<span class="gloss">cop.3sg&nbsp;</span></td>
   </tr>
   <tr>
     <td colspan="3">'Baku is bigger than Kirovabad.'</td>
   </tr>
 </table>
 </ul>
+<!--/html_preserve-->
 
-**Essives** are also quite frequent in Daghestan, cf. example (@four) from Tindi (Avar-Andic). They are found in 8 languages:
+Tat (Iranian < Indo-European) differs from all the other languages in that it does not have case inflection. The standard of comparison is marked with the ablative adposition *ez*, cf. example (@four).
 
-* 3 Avar-Andic: Andi, Bagvalal,[^4] and Tindi (Avar-Andic);
-* 3 Dargwa: Akusha (= Standard Dargwa), Mehweb, and Kubachi;
-* 1 Tsezic: Bezhta;
-* 1 Nakh: Bats.
-
-(@four) Tindi [@magomedova2012: 79]
-
+(@four) Tat (@authier2012: 76)
+<!--html_preserve-->
 <ul>
 <table> 
   <tr>
-    <td><i>wacːi&nbsp;</i></td>    <td><i>kj'e-ja&nbsp;</i></td>    <td><i>rehã-ɬːiː &nbsp;</i></td>
+    <td><i>me&nbsp;</i></td>    <td><i><b>ez&nbsp;</b></i></td>    <td><i>tü&nbsp;</i></td>   <td><i>ziyodte&nbsp;</i></td>   <td><i>ʕämeldan&nbsp;</i></td>    <td><i>vediromo-r-um&nbsp;</i></td>  
   </tr>
   <tr>
-    <td>brother&nbsp;</td>    <td>two-num&nbsp;</td>    <td>year-nm.obl.erg&nbsp;</td>
+    <td>I&nbsp;</td>    <td><b><span class="gloss">abl&nbsp;</span></b></td>    <td><span class="gloss">you.sg&nbsp;</span></td>   <td>more&nbsp;</td>   <td>wily&nbsp;</td>    <td>come_out-<span class="gloss">aor-1&nbsp;</span></td> 
   </tr>
   <tr>
-    <td><i>muk'u-w&nbsp;</i></td>    <td><i>ija&nbsp;</i></td>    <td><i><b>jacːu-č'i&nbsp;</b></i></td>
+    <td colspan="3">'I turned out to be smarter than you.'</td>
+  </tr>
+</table>
+</ul>
+<!--/html_preserve-->
+
+Five languages mark the standard of comparison with **essive** suffixes, cf. example (@five) from Tindi. Essives are usually zero-marked, i.e. no overt directionality marker follows the localization marker. In Dargwa languages, the localization marker is followed by noun class (gender) markers when the noun form is essive (see [Table 3](#m3).
+
+(@five) Tindi (@magomedova2012: 79)
+<!--html_preserve-->
+<ul>
+<table> 
+  <tr>
+    <td><i>wacːi&nbsp;</i></td>    <td><i>kj'e-ja&nbsp;</i></td>    <td><i>rehã-ɬːiː &nbsp;</i></td>   <td><i>muk'u-w&nbsp;</i></td>    <td><i>ija&nbsp;</i></td>    <td><i><b>jacːu-č'i&nbsp;</b></i></td>
   </tr>
   <tr>
-    <td>little-m&nbsp;</td>    <td>cop&nbsp;</td>    <td>sister-cont&nbsp;</td>
+    <td>brother&nbsp;</td>    <td>two-<span class="gloss">num&nbsp;</span></td>    <td>year-<span class="gloss">nm.obl.erg&nbsp;</span></td>   <td>little-<span class="gloss">m&nbsp;</span></td>    <td><span class="gloss">cop&nbsp;</span></td>    <td><b>sister.<span class="gloss">obl-cont&nbsp;</span></b></td>
   </tr>
   <tr>
     <td colspan="3">'The brother is two years younger than the sister.'</td>
   </tr>
 </table>
 </ul>
+<!--/html_preserve-->
 
-**Latives** and **translatives** were found in two cases only. Northern Akhvakh (Avar-Andic) features the supertranslative case (@five),[^5] while in Hinuq (Tsezic) the so-called aloc-lative (i.e. animate location lative) is used alongside the superelative (Forker 2019), cf. example (@six).
+#### Table 3. Essive markers {#m3}
 
-(@five) Northern Akhvakh [@magomedbekova1967: 67]
+|Family > Branch|Language     |Suffix  |
+|---------------|-------------|--------|
+|EC > Avar-Andic|Tindi        |_-č'i_  |
+|EC > Dargwa    |Dargwa (Std.)|_-či-CM_|
+|               |Kubachi      |_-ži-CM_|
+|               |Mehweb       |_-če-CM_|
+|EC > Nakh      |Bats         |_-χ_    |
 
-<ul>
-<table> 
-  <tr>
-    <td><i><b>jacːo-g-une&nbsp;</b></i></td>    <td><i>wacːi&nbsp;</i></td>    <td><i>šoda&nbsp;</i></td>  <td><i>gudi&nbsp;</i></td>
-  </tr>
-  <tr>
-    <td>sister.obl-sup-trans&nbsp;</td>    <td>brother&nbsp;</td>    <td>good&nbsp;</td>  <td>cop.m&nbsp;</td>
-  </tr>
-  <tr>
-    <td colspan="3">'The brother is better than the sister.'</td>
-  </tr>
-</table>
-</ul>
+Three other languages mark the standard of comparison with spatial forms that do not include an overt directionality marker. These languages differ from the languages in [Table 3](#m3) in that they display **essive/lative** syncretism (see [Table 4](#m4)).
 
-(@six) Hinuq [@forker2019: NA]
+#### Table 4. Essive/lative markers {#m4}
 
+|Family > Branch|Language|Suffix      |
+|---------------|--------|------------|
+|EC > Avar-Andic|Andi    |_-č'u_      |
+|               |Bagvalal|_-č'_       |
+|EC > Tsezic    |Bezhta  |_-ʁa (-ʁoj)_|
+
+Hinuq (Tsezic < EC) differs from the other languages in terms of both the directionality marker and the localization marker employed, and features the aloc-lative (i.e. animate location lative) suffix to mark the standard of comparison (@forker2019), cf. example (@six). However, as mentioned above, the superelative marker is also employed in certain contexts.
+
+(@six) Hinuq (@forker2019)
+<!--html_preserve-->
 <ul>
 <table> 
   <tr>
     <td><i>hago&nbsp;</i></td>  <td><i><b>di-de-r&nbsp;</b></i></td>    <td><i>ɬora&nbsp;</i></td>    <td><i>ƛeb-a&nbsp;</i></td>  <td><i>Ø-eˁžiy&nbsp;</i></td>  <td><i>goɬ&nbsp;</i></td>
   </tr>
   <tr>
-    <td>he&nbsp;</td>  <td>I.obl-aloc-lat&nbsp;</td>    <td>three.obl&nbsp;</td>    <td>year-in&nbsp;</td>  <td>m-big&nbsp;</td>  <td>cop&nbsp;</td>
+    <td>he&nbsp;</td>  <td><b>I.<span class="gloss">obl-aloc-lat&nbsp;</span></b></td>    <td>three.<span class="gloss">obl&nbsp;</span></td>    <td>year-<span class="gloss">in&nbsp;</span></td>  <td><span class="gloss">m</span>-big&nbsp;</td>  <td><span class="gloss">cop&nbsp;</span></td>
   </tr>
   <tr>
     <td colspan="3">'He is three years older than me.'</td>
   </tr>
 </table>
 </ul>
+<!--/html_preserve-->
 
 #### Localization markers
 
-The most common localization marker in spatial forms encoding the standard of comparison is **SUPER** (location on a surface),[^6] cf. (@two) and (@five). It is found in 17 languages:
+The most common localization marker in spatial forms encoding the standard of comparison is **SUPER** (location on a surface),[^6] cf. (@two). It is found in 17 languages (see [Table 5](#m5)).
 
-- 5 Lezgic: Standard Lezgian, Agul, Archi, Rutul, and Tsakhur;
-- 4 Avar-Andic: Standard Avar, Bagvalal, Karata, and Northern Akhvakh;
-- 4 Dargwa: Akusha (= Standard Dargwa), Itsari, Kubachi, and Mehweb;
-- 4 Tsezic: Bezhta, Hinuq, Tsez, and Xvarshi.
+#### Table 5. SUPER markers {#m5}
 
-In almost all Andic languages (i.e. Andi, Bagvalal, Botlikh, Chamalal, Godoberi, and Tindi), the localization marker **CONT** (localization in contact with a surface) is found, cf. example (@four) from Tindi. The only exceptions are Northern Akhvakh and Karata, where we find the localization SUPER. However, it should be noted that we do find CONT in the varieties of Karata spoken in Tukita (Daniel p.c.) and Anchix [@gadzhimagomedov2019].
+|Family > Branch|Language        |Suffix              |
+|---------------|----------------|--------------------|
+|EC > Avar-Andic|Avar (Std.)     |_-**da**-sa_        |
+|               |Akhvakh (North.)|_-**g**-une_        |
+|               |Bagvalal        |_-**la**-sː_        |
+|               |Karata          |_-**a**-gal_        |
+|EC > Tsezic    |Bezhta          |_-**ʁa** (-**ʁoj**)_|
+|               |Hinuq           |_-**ƛ'o**-s_        |
+|               |Khwarshi        |_-**λ'a**-zi_       |
+|               |Tsez            |_-**ƛ'**-aj_        |
+|EC > Dargwa    |Dargwa (Std.)   |_-**či**-CM_        |
+|               |Itsari          |_-**li(ː)**-r_      |
+|               |Kubachi         |_-**ži**-CM_        |
+|               |Mehweb          |_-**če**-CM_        |
+|               |Tanti           |_-**ja**-r_         |
+|EC > Lezgic    |Agul            |_-**la-s**_         |
+|               |Archi           |_-**tː**-iš_        |
+|               |Lezgian (Std.)  |_-**l**-aj_         |
+|               |Rutul           |_-**la**_           |
+|               |Tsakhur         |_-**l**-e_          |
 
-The localization marker **AD** (location in proximity to some entity) is used in Kryz (Lezgic), cf. (@seven), whereas in Bats (Nakh) we find **IN** (location inside some entity), cf. (@eight).
+In all Andic languages (except for Northern Akhvakh) the localization marker **CONT** (localization in contact with a surface) is found, cf. example (@five) and [Table 6](#m6). In Karata, CONT is used alongside SUPER (@pasquereau2010: 60). It is also used in the varieties of Karata spoken in Tukita (Daniel p.c.) and Anchix (@gadzhimagomedov2019). 
 
-(@seven) Kryz [@authier2009: 183]
+#### Table 6. CONT markers {#m6}
 
+|Family > Branch|Language|Suffix        |
+|---------------|--------|--------------|
+|EC > Avar-Andic|Andi    |_-**č'u**_    |
+|               |Bagvalal|_-**č'**_     |
+|               |Botlikh |_-**č'u**-ku_ |
+|               |Chamalal|_-**č'**-oː_  |
+|               |Godoberi|_-**č'u**-ru_ |
+|               |Karata  |_-**č'o**-gal_|
+|               |Tindi   |_-**č'i**_    |
+
+The localization marker **AD** (location in proximity to some entity) is used in Kryz (Lezgic < EC), cf. (@seven), whereas in Bats (Nakh < EC) we find **IN** (location inside some entity), cf. (@eight).
+
+(@seven) Kryz (@authier2009: 183)
+<!--html_preserve-->
 <ul>
 <table> 
   <tr>
-    <td><i>lu&nbsp;</i></td>  <td><i>utağ;</i></td>    <td><i><b>la'a-be-var&nbsp;</b></i></td>    <td><i>an&nbsp;</i></td>  <td><i>ghala-yu&nbsp;</i></td>
+    <td><i>lu&nbsp;</i></td>  <td><i>utağ&nbsp;</i></td>    <td><i><b>la'a-be-var&nbsp;</b></i></td>    <td><i>an&nbsp;</i></td>  <td><i>ghala-yu&nbsp;</i></td>
   </tr>
   <tr>
-    <td>dem&nbsp;</td>  <td>room&nbsp;</td>    <td>other-npl-ad.el&nbsp;</td>    <td>ptc&nbsp;</td>  <td>good-cop.f&nbsp;</td>
+    <td><span class="gloss">dem&nbsp;</span></td>  <td>room&nbsp;</td>    <td><b>other-<span class="gloss">npl-ad.el&nbsp;</span></b></td>    <td><span class="gloss">ptc&nbsp;</span></td>  <td>good-<span class="gloss">cop.f&nbsp;</span></td>
   </tr>
   <tr>
     <td colspan="3">'This room is more beautiful than the others.'</td>
   </tr>
 </table>
 </ul>
+<!--/html_preserve-->
 
-(@eight) Bats [@desheriev1953: 64]
-
+(@eight) Bats (@desheriev1953: 64)
+<!--html_preserve-->
 <ul>
 <table> 
   <tr>
     <td><i>seː&nbsp;</i></td>  <td><i>wašo&nbsp;</i></td>    <td><i>xeː&nbsp;</i></td>    <td><i><b>wašo-χ&nbsp;</b></i></td>  <td><i>iazi-wχ&nbsp;</i></td>  <td><i>w-a&nbsp;</i></td>
   </tr>
   <tr>
-    <td>I.gen&nbsp;</td>  <td>brother&nbsp;</td>    <td>you.sg.gen&nbsp;</td>    <td>brother-in&nbsp;</td>  <td>good-cmpr&nbsp;</td>  <td>m-cop&nbsp;</td>
+    <td>I.<span class="gloss">gen&nbsp;</span></td>  <td>brother&nbsp;</td>    <td>you.<span class="gloss">sg.gen&nbsp;</span></td>    <td><b>brother-<span class="gloss">in&nbsp;</span></b></td>  <td>good-<span class="gloss">cmpr&nbsp;</span></td>  <td><span class="gloss">m-cop&nbsp;</span></td>
   </tr>
   <tr>
     <td colspan="3">'My brother is better than yours.'</td>
   </tr>
 </table>
 </ul>
+<!--/html_preserve-->
 
-### Specialized comparative markers
+### Dedicated comparative markers
 
-In nine languages the standard of comparison is marked with a dedicated suffix, sometimes called “comparative suffix” (@nine). These are: Chechen and Ingush (Nakh), Hunzib (Tsezic), Archi, Budukh, Mukhad Rutul and Tabasaran (Lezgic), Khinalug and Lak.
+In nine languages the standard of comparison is marked with a dedicated suffix, sometimes called “comparative suffix”, cf. [Table 7](#m7) and example (@nine) from Chechen (Nakh < EC).
 
-(@nine) Chechen [@nichols1994: 30]
+#### Table 7. Dedicated comparative markers {#m7}
 
+|Family > Branch|Language |Suffix   |
+|---------------|---------|---------|
+|EC > Lezgic    |Archi    |_-χur_   |
+|               |Budukh   |_-wor_   |
+|               |Rutul    |_-qaʔ_   |
+|               |Tabasaran|_-t'an_  |
+|EC > Tsezic    |Hunzib   |_-yɑː_   |
+|EC > Khinalug  |Khinalug |_-q'ilːi_|
+|EC > Lak       |Lak      |_-jar_   |
+|EC > Nakh      |Chechen  |_-(a)l_  |
+|               |Ingush   |_-l_     |
+
+(@nine) Chechen (@nichols1994: 30)
+<!--html_preserve-->
 <ul>
 <table> 
   <tr>
     <td><i>iza&nbsp;</i></td>    <td><i><b>suo-l&nbsp;</b></i></td>    <td><i>dika&nbsp;</i></td>    <td><i>v-u&nbsp;</i></td>
   </tr>
   <tr>
-    <td>3sg&nbsp;</td>    <td>1sg-cmpr&nbsp;</td>    <td>good&nbsp;</td>    <td>m-cop&nbsp;</td>
+    <td>he&nbsp;</td>    <td><b>I-<span class="gloss">cmpr&nbsp;</span></b></td>    <td>good&nbsp;</td>    <td><span class="gloss">m-cop&nbsp;</span></td>
   </tr>
   <tr>
     <td colspan="3">'He is better than me.'</td>
   </tr>
 </table>
 </ul>
+<!--/html_preserve-->
 
-However, it should be pointed out that, in some cases, such comparative suffixes apparently include a spatial suffix, e.g. Khinalug *-q’il:i* (elative *-l:i*), Northern Tabasaran *-t’an* and Southern Tabasaran *-č’an* / *-dakan* (elative *-an*), Budukh *-wor* (elative *-r*). So, in such cases, we might assume that a spatial form specialized in the encoding of the standard of comparison. In addition, Archi *-χur* is reported to have some residual spatial usages [@danielganenkov2009: 673-674].
+However, it should be pointed out that, in some cases, such comparative suffixes apparently include a spatial suffix, e.g. Khinalug -*q’ilːi* (elative -*lːi*), Tabasaran -*t’an* (elative -*an*), Budukh -*wor* (elative -*r*). In such cases, we might assume that a spatial form specialized in the encoding of the standard of comparison. In addition, Archi -*χur* is reported to have some residual spatial usages (@danielganenkov2009: 673-674).
 
-## Summary and distribution
 
-[Table 1](#m1) summarizes the results related to the possible combinations of directionality and localization markers for the encoding of the standard of comparison in the languages of Daghestan.
+### Summary and distribution
 
-### Table 1. Possible combinations of directionality and localization markers and their frequency {#m1}
+The standard of comparison in the languages of Daghestan is most often marked by a spatial form. Even in languages featuring a dedicated comparative marker, a possible spatial origin is often detectable. 
+Concerning directionality, elative markers are by far the most frequent option, and occur in 24 languages (see [Table 1](#m1) and [Table 2](#m2)). Elative markers are also the alleged source of some of the comparative markers in [Table 7](#m7). Essive and lative markers are less frequent: the former are found in eight languages, three of which show essive/lative syncretism, whereas a purely lative marker is found in one language only (see [Table 3](#m3) and [Table 4](#m4)). 
+As for localization markers, SUPER is the most common marker, which is found in 17 languages (see [Table 5](#m5)), whereas CONT occurs in seven languages, all belonging to the Andic branch of East Caucasian languages (see [Table 6](#m6)). Only two languages feature other localization markers: Kryz (AD) and Bats (IN). 	
+The distribution of values across languages is represented on maps. [Map 1] shows the distribution of dedicated markers vs. different types of spatial markers (elative, essive, essive/lative, lative). [Map 2] includes only languages featuring spatial markers and shows the distribution of different localization markers (SUPER, CONT, AD, IN). The distribution of values on maps does not reveal any noteworthy areal or genealogical clustering. The only exception is constituted by the localization CONT, which is found exclusively in Andic languages.
 
-|     |SUPER|CONT|AD|IN|Other/none|Total|
-|-----|-----|----|--|--|----------|-----|
-|EL   |12   |3   |1 |--|5 (ABL)   |21   |
-|ESS  |4    |3   |--|1 |--        |8    |
-|LAT  |--   |--  |--|--|1 (A-LOC) |1    |
-|TRANS|1    |--  |--|--|--        |1    |
-|Total|17   |6   |1 |1 |6         |31   |
 
-The results show that elative is the most frequent directionality marker, as it is employed in 21 languages, and SUPER is the most common localization marker, which is represented in 17 languages in our sample. The combination of these two markers is the most widespread option in the languages of Daghestan, while other combinations are less frequent. Languages featuring dedicated comparative suffixes are not included in Table 1. However, if we consider that at least some of them clearly show a possible elative origin (cf. []), the predominance of elative semantics appears as even more notable. 
-
-The maps below show the distribution of values across languages. Specifically, they include: a) the distribution of spatial vs. dedicated (i.e. synchronically non-spatial) markers; b) the distribution of different directionality markers (elative, essive, allative, translative); and c) the distribution of different localization markers (SUPER, CONT, AD, IN, other/none). The distribution of values on maps does not reveal any noteworthy areal or genealogical clustering. The only exception is constituted by the localization CONT, which is found exclusively in Andic languages.
-
-[^1]: A few exceptions are constituted by Nakh languages, which have a morphological comparative degree, and Armenian, which features the comparative marker *aveli* ‘more’. While in Ingush and Bats the comparative degree of the adjective co-occurs with case marking of the standard of comparison, in Chechen one option excludes the other. That is, comparison is marked either on the adjective or on the standard of comparison [@nichols1994: 30]. In Armenian, the comparative marker *aveli* can be omitted when comparison is marked on the standard [@dum-tragut2009: 532].
-[^2]: The superelative suffix *-t:-iš* is mentioned by [@mikailov1967: 60] as the marker used to code the standard of comparison in Archi, but [@kibrik1977: 59] reports the dedicated comparative marker *-χur* instead. For the representation on maps we chose the variant reported by [@kibrik1977], which appears to be the only option for the encoding of the standard of comparison in the Archi Corpus [@kibriketal2007].
-[^3]: We use the term “ablative” instead of “elative” for cases in which the case suffix is not complex (i.e. is not constituted by a localization marker plus a directionality marker).
-[^4]: In Bagvalal, both superelative and contessive are possible. For the representation on maps we chose the contessive marker because it is mentioned in both the available sources for Bagvalal [@sosenskaja2001] and [@magomedova2004], whereas the superelative is only mentioned by [@sosenskaja2001: 409].
-[^5]: Note that in Northern Akhvakh the translative marker *-une* is derived from the elative (elative *-u* + *-ne*), and that the translative is taking up most of the functions originally associated with the elative, whereas the elative alone is being employed more and more rarely [@magomedbekova1967: 60].
-[^6]: It should be noted that the labels employed here for localization markers do not always coincide with the labels employed in the sources consulted. This mostly concerns the Russian-language literature, in which such labels are rarely employed (in most Russian-language grammars the different localization markers are listed by simply naming them “series 1”, “series 2”, etc.). For more details on the semantics of localization markers and their partially overlapping meanings, see [].
+[^1]: A few exceptions are constituted by Nakh languages, which have a morphological comparative degree, Tat, Armenian and Georgian, which feature lexical comparative markers meaning ‘more’. While in Ingush and Bats the comparative degree of the adjective co-occurs with case marking of the standard of comparison, in Chechen one option excludes the other. That is, comparison is marked either on the adjective or on the standard of comparison (Nichols 1994: 30). In Armenian and Georgian, the comparative markers *aveli* and *upro* can be omitted when comparison is marked on the standard (@dum-tragut2009: 532; @hewitt2005: 40). In Tat, the comparative meaning is expressed by the adverbs *diye=ş* (*de=ş*) or *ziyodte* 'more', while the morphological comparative marker -*te* is found more rarely (@authier2012: 75-76).
+[^2]: In Bagvalal, both superelative and contessive are possible (see [Table 4](#m4)). For the representation on maps we chose the contessive marker because it is mentioned in both the available sources for Bagvalal (@sosenskaja2001 and @magomedova2004), whereas the superelative is only mentioned in (@sosenskaja2001: 409).
+[^3]: The superelative suffix -*tː-iš* is mentioned in (@mikailov1967: 60) as the marker used to code the standard of comparison in Archi, but (@kibrik1977: 59) reports the dedicated comparative marker -*χur* instead. For the representation on maps we chose the variant reported in (@kibrik1977), which appears to be the only option for the encoding of the standard of comparison in the Archi Corpus (@kibriketal2007).
+[^4]: In Rutul (Mukhad dialect), two options are available to mark the standard of comparison, i.e. the superelative marker -*la* and the dedicated comparative marker -*qaʔ* (see [Table 5](#m5)). For the representation on maps we chose the marker -*qaʔ* because it is mentioned in both the available sources for the Mukhad dialect of Rutul (@maxmudova2002 and @ibragimov2004), whereas the superelative is only mentioned in (@ibragimov2004: 75).
+[^5]: In Hinuq, the superelative -*ƛ'o-s* is used by younger speakers in constructions expressing difference in age (@forker2019).
+[^6]: It should be noted that the labels employed here for localization markers do not always coincide with the labels employed in the sources consulted. This mostly concerns the Russian-language literature, in which such labels are rarely employed (in most Russian-language grammars different localization markers are listed by simply naming them “series 1”, “series 2”, etc.). For more details on the semantics of localization markers, see [Spatial cases].
 
 <<<<<<< HEAD
 # References
