@@ -10,7 +10,7 @@ link-citations: true
 
 # Chapter
 
-See maps [here](evidentiality_tense_map.html).
+See [data and maps](evidentiality_tense_map.html).
 
 General chapter: [Evidentiality](evidentiality.html)
 

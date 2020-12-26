@@ -11,7 +11,7 @@ link-citations: true
 
 # Chapter
 
-See maps [here](types_of_demonstrative_systems_map.html).
+See [data and maps](types_of_demonstrative_systems_map.html).
 
 General chapter: [Demonstratives](demonstratives.html)
 

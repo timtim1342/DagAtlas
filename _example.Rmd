@@ -18,8 +18,10 @@ gen_map(fe)
 # Datatable
 
 ```{r}
+fe <- fe %>% 
+  mutate(value = factor(value))
 source('./R/features_maker.R')
-d_b(fe)
+d_b(fe, c('lang', 'family', 'aff', 'idiom', 'feature', 'value', 'source', 'page'))
 ```
 
 # References

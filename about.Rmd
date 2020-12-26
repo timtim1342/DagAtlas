@@ -16,6 +16,8 @@ library(tidyverse)
 library(lingtypology)
 library(DT)
 
+library(RefManageR)
+
 # load data
 vill <- read_csv("./data/villages.csv") # villages dataset
 meta <- read_tsv("./data/meta.csv") # language metadata and colors
@@ -147,6 +149,25 @@ As our atlas and the descriptive efforts of Caucasiologists progress, the maps w
 # The atlas
 
 The atlas essentially consists of datasets about linguistic features. Each dataset has its own page with a short text about the feature and its distribution, maps, and a searchable table for the data. Pages about features cross-reference each other and are linked to general chapters.
+<!-- надо что-то с этим сделать -->
+
+# How to cite{.tabset .tabset-fade .tabset-pills} 
+
+## Text
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE, results='asis'}
+# bib <- ReadBib(file = "./data/how_to_cite.bib")
+# Cite(bib['tald2020'])
+# PrintBibliography(bib['tald2020'], .opts = list(style="markdown"))
+
+```
+Names, ed. _TALD_. Moscow: Linguistic Convergence Laboratory, NRU HSE, 2020. URL: https://timtim1342.github.io/.
+
+## BibTeX
+
+```{r comment=''}
+cat(readLines('./data/how_to_cite.bib'), sep = '\n')
+```
 
 ***
 

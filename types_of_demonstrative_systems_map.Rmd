@@ -5,7 +5,7 @@ author: "Timofey Mukhin"
 
 ---------------------------------------
 
-See the chapter [here](types_of_demonstrative_systems.html).
+See [chapter](types_of_demonstrative_systems.html).
 
 ```{r setup, include=FALSE} 
 # make this part as a function and add it to example code

@@ -11,7 +11,7 @@ link-citations: true
 
 # Chapter
 
-See maps [here](elevation_map.html).
+See [data and maps](elevation_map.html).
 
 General chapter: [Demonstratives](demonstratives.html)
 

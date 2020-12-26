@@ -53,7 +53,7 @@ particlesquot_vill$datapoint <- "extrapolated datapoint"
 
 ## Maps
 
-See the chapter [here](particles.html).
+See [chapter](particles.html).
 
 ### Map 1. Quotative particles{.tabset .tabset-fade .tabset-pills}
 

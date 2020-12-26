@@ -9,7 +9,7 @@ link-citations: true
 
 # Chapter
 
-See maps [here](particles_map.html).
+See [data and maps](particles_map.html).
 
 General chapter: [Evidentiality](evidentiality.html)
 

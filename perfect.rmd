@@ -1,5 +1,5 @@
 ---
-title: "The perfect"
+title: "Perfect"
 author: "Samira Verhees"
 output: html_document
 bibliography: ./data/features/ref_bibs/evidentiality.bib
@@ -9,7 +9,7 @@ link-citations: true
 
 # Chapter
 
-See maps [here](perfect_map.html).
+See [data and maps](perfect_map.html).
 
 ## Introduction
 

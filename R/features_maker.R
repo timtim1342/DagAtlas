@@ -84,11 +84,20 @@ gen_map <- function(fe) {
  return(mp)
 }
 
-d_b <- function(fe) {
+d_b <- function(fe, col_names) {
+  meta <- read_tsv("./data/meta.csv") # language metadata and colors
+  # preparation of data
+  meta <- meta %>%
+    filter(core == "yes") %>% 
+    select(lang, family, aff)
+  fe <- left_join(meta, fe, by = "lang")
+  fe <- fe %>% 
+    mutate(aff = factor(aff)) %>% 
+    mutate(family = factor(family))
+  
   # select which feature data you want to show in the datatable
   dtable <- fe %>%
-    mutate(value = factor(value)) %>%
-    select(c(id, lang, idiom, feature, value, source, page, contributor))
+    select(col_names)
   cit <- vector("character", length(dtable$source))
   for (i in seq_along(dtable$source))
   {
@@ -113,8 +122,7 @@ d_b <- function(fe) {
                       rownames = FALSE,
                       extensions = 'Buttons',  # buttons
                       options = list(
-                        columnDefs = list(list(searchable = FALSE, targets = 0)),
-                        pageLength = 5,
+                        pageLength = 5,  # columnDefs = list(list(searchable = FALSE, targets = 0)),
                         paging = TRUE,
                         searching = TRUE,
                         fixedColumns = TRUE,

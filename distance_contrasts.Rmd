@@ -1,5 +1,5 @@
 ---
-title: "The number of distance contrasts expressed by demonstratives"
+title: "Distance contrasts expressed by demonstratives"
 author: "Timofey Mukhin"
 output: html_document
 bibliography: 
@@ -11,13 +11,13 @@ link-citations: true
 
 # Chapter
 
-See maps [here](distance_contrasts_map.html).
+See [data and maps](distance_contrasts_map.html).
 
 General chapter: [Demonstratives](demonstratives.html)
 
 ## Number of contrasts
 
-Both mono- and polycentric demonstratives may distinguish more than two ways of distance contrasts.[^1] Some languages of the sample, in addition to distance-marked demonstratives, have a demonstrative that is neutral. For example, Ingush has the demonstratives je (proximal) and dwaara (non-proximal), and the demonstrative *yz*, which does not express distance contrast.[^2] (@nichols2011: 179). Systems with a neutral demonstrative have been classified as featuring a two-way contrast.
+Both mono- and polycentric demonstratives may distinguish more than two ways of distance contrasts.[^1] Some languages of the sample, in addition to distance-marked demonstratives, have a demonstrative that is neutral. For example, Ingush has the demonstratives *je* (proximal) and *dwaara* (non-proximal), and the demonstrative *yz*, which does not express distance contrast.[^2] (@nichols2011: 179). Systems with a neutral demonstrative have been classified as featuring a two-way contrast.
 
 [Maps](distance_contrasts_map.html) show the number of distance contrasts expressed by demonstratives. As presented on the map, demonstratives of all languages of the sample express either two- or three-way distance contrasts. Languages with a two-way opposition are less common than those with a three-way opposition: languages with the latter type of opposition are almost twice as many as the languages of the former type, see [Table 1](#m1). Languages belonging to the same branch are almost always dissimilar in the number of contrasts expressed by demonstratives. Only Lezgic languages seem to have consistently three-way contrast systems (except for Budukh, which features a two-way system).
 

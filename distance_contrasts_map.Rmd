@@ -1,11 +1,11 @@
 ---
-title: "The number of distance contrasts expressed by demonstratives"
+title: "Distance contrasts expressed by demonstratives"
 author: "Timofey Mukhin"
 ---
 
 ---------------------------------------
 
-See the chapter [here](distance_contrasts.html).
+See [chapter](distance_contrasts.html).
 
 ```{r setup, include=FALSE} 
 # make this part as a function and add it to example code

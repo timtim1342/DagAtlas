@@ -7,7 +7,7 @@ link-citations: true
 
 ---------------------------------------
 
-See the chapter [here](standard_of_comparison.html).
+See [chapter](standard_of_comparison.html).
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, message = FALSE)

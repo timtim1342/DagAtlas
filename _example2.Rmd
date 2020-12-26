@@ -1,0 +1,61 @@
+
+# Map 1{.tabset .tabset-fade .tabset-pills} 
+
+`r mapname1`
+
+## Map: Extrapolated data
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width = 9.5}
+fe <- fe %>%
+  mutate(value = value1) 
+source('./R/features_maker.R')
+extr_map(fe)
+```
+
+## Map: General datapoints
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width = 9.5}
+source('./R/features_maker.R')
+gen_map(fe)
+```
+
+# Map 2{.tabset .tabset-fade .tabset-pills}
+
+`r mapname2`
+
+## Map: Extrapolated data
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width = 9.5}
+fe <- fe %>%
+  mutate(value = value2)
+source('./R/features_maker.R')
+extr_map(fe)
+```
+
+## Map: General datapoints
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width = 9.5}
+source('./R/features_maker.R')
+gen_map(fe)
+```
+
+# Datatable
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+fe <- fe %>% 
+  mutate(value1 = factor(value1)) %>% # change to value1
+   mutate(value2 = factor(value2)) # change to value2
+source('./R/features_maker.R')
+d_b(fe, c('lang', 'family', 'aff', 'idiom', 'feature', 'value1', 'value2', 'source', 'page'))
+```
+
+# References
+
+```{r results = "asis", echo = FALSE}
+PrintBibliography(bib, .opts = list(check.entries = FALSE))
+```
+
+<div class="tocify-extend-page" data-unique="tocify-extend-page" style="height: 0;"></div>
+<!-- remove extra whitespace at bottom produced by floating table of contents and plots. 
+Why do not work on GitHub?-->
+

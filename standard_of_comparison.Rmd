@@ -320,26 +320,4 @@ The distribution of values across languages is represented on maps. [Map 1] show
 [^5]: In Hinuq, the superelative -*ƛ'o-s* is used by younger speakers in constructions expressing difference in age (@forker2019).
 [^6]: It should be noted that the labels employed here for localization markers do not always coincide with the labels employed in the sources consulted. This mostly concerns the Russian-language literature, in which such labels are rarely employed (in most Russian-language grammars different localization markers are listed by simply naming them “series 1”, “series 2”, etc.). For more details on the semantics of localization markers, see [Spatial cases].
 
-<<<<<<< HEAD
 # References
-=======
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE, message = FALSE)
-
-# packages
-library(tidyverse)
-library(lingtypology)
-library(RefManageR)
-
-# make this part as a function and add it to example code
-
-bib <- ReadBib(file = "./data/bibliography.bib")
-BibOptions(bib.style = "authoryear", style = "text", cite.style = "authoryear", max.names = 2, sorting = "nyt")  # style = "html"
-
-# load data
-fe <- read_tsv("./data/features/tables/standard_of_comparison.csv") # feature dataset
-```
-
-```{r, child="_example.Rmd"}
-```
->>>>>>> 28778c04e01add5ed386e3fe7c7f28021ea712aa

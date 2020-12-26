@@ -10,13 +10,13 @@ output:
 
 [The TALD project](https://ilcl.hse.ru/en/projects/) would not have been realised in its present form without advice and assistance of a number of people. 
 
-The project is led by [Michael Daniel](https://www.hse.ru/en/staff/michael_daniel), [George Moroz](https://www.hse.ru/en/org/persons/103489498), and [Konstantin Filatov](https://www.hse.ru/en/org/persons/190921062).
+The project is led by [Michael Daniel](https://www.hse.ru/en/staff/michael_daniel), [George Moroz](https://www.hse.ru/en/org/persons/103489498), [Chiara Naccarato](https://www.hse.ru/en/org/persons/224233250), [Samira Verhees](https://www.hse.ru/en/staff/samiraverhees), and [Konstantin Filatov](https://www.hse.ru/en/org/persons/190921062).
 
 [Chiara Naccarato](https://www.hse.ru/en/org/persons/224233250) and [Samira Verhees](https://www.hse.ru/en/staff/samiraverhees) coordinate the workshop for students.
 
-Students currently working on features are: [Timofey Mukhin](https://www.hse.ru/en/org/persons/208514310), Samira Ochs, Rita Popova, [Anastasia Panova](https://www.hse.ru/en/staff/apanova), Sara Zadykian.
+Students currently working on features are: [Timofey Mukhin](https://www.hse.ru/en/org/persons/208514310), Samira Ochs, [Anastasia Panova](https://www.hse.ru/en/staff/apanova), Sara Zadykian.
 
-Students who have contributed in the past are: Inga Kartozia, Denis Arsentjev, Violetta Ivanova, Fyodor Golosov.
+Students who have contributed in the past are: Inga Kartozia, Denis Arsentjev, Violetta Ivanova, Fyodor Golosov, Rita Popova.
 
 [Timofey Mukhin](language.html) is responsible for the TALD website.
 

@@ -5,7 +5,7 @@ author: "Timofey Mukhin"
 
 ---------------------------------------
 
-See the chapter [here](elevation.html).
+See [chapter](elevation.html).
 
 ```{r setup, include=FALSE} 
 # make this part as a function and add it to example code
