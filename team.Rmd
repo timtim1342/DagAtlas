@@ -14,9 +14,11 @@ The project is led by [Michael Daniel](https://www.hse.ru/en/staff/michael_danie
 
 [Chiara Naccarato](https://www.hse.ru/en/org/persons/224233250) and [Samira Verhees](https://www.hse.ru/en/staff/samiraverhees) coordinate the workshop for students.
 
-Students currently working on features are: [Timofey Mukhin](https://www.hse.ru/en/org/persons/208514310), Samira Ochs, [Anastasia Panova](https://www.hse.ru/en/staff/apanova), Sara Zadykian.
+Our consultants are: [Timur Maisak](https://www.hse.ru/en/staff/maisak), [Aigul Zakirova](https://www.hse.ru/en/org/persons/190888832).
 
-Students who have contributed in the past are: Inga Kartozia, Denis Arsentjev, Violetta Ivanova, Fyodor Golosov, Rita Popova.
+Participants currently working on features are: [Nina Dobrushina](https://www.hse.ru/en/staff/dobrushina), [Evgeniya Klyagina](https://www.hse.ru/org/persons/224839526), [Timofey Mukhin](https://www.hse.ru/en/org/persons/208514310), [Polina Nasledskova](https://www.hse.ru/en/org/persons/190905106), [Ivan Netkachev](https://www.hse.ru/org/persons/190905500), Samira Ochs, [Anastasia Panova](https://www.hse.ru/en/staff/apanova), Sara Zadykian.
+
+Students who have contributed in the past are: Denis Arsentjev, Fyodor Golosov, Violetta Ivanova, Inga Kartozia, Rita Popova.
 
 [Timofey Mukhin](language.html) is responsible for the TALD website.
 
