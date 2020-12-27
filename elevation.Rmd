@@ -19,13 +19,13 @@ General chapter: [Demonstratives](demonstratives.html)
 
 Besides distance contrast, demonstrative systems can additionally distinguish elevation and have special stems meaning above or below the deictic center. Elevation can be expressed by independent pronouns, as in Archi (see [Table 1](#m1)), or by an affix attaching to the demonstrative stem, as in Tindi (see [Table 2](#m2)). When elevation is expressed by affixes, the location at the level of the deictic center is usually also marked.
 
-### Table 1. Archi demonstratives (@kibrik1977: 124) {#m1}
+### Table 1. Archi demonstratives [@kibrik1977: 124] {#m1}
 
 |proximal|medial|distal|above|below|
 |-----|-----|----|--|--|
 |*ja-*|*jamu-*|*to-*|*ʀodo-*|*godo-*|
 
-### Table 2. Tindi demonstratives (@magomedova2003: 558)[^1] {#m2}
+### Table 2. Tindi demonstratives [@magomedova2003: 558][^1] {#m2}
 
 ||proximal|non proximal|
 |-----|-----|----|
@@ -35,13 +35,13 @@ Besides distance contrast, demonstrative systems can additionally distinguish el
 
 Demonstrative systems like Archi, that have independent pronouns for expressing elevation, can have separate stems for each spatial meaning (as in Archi) or can express some of them together by one stem. E.g. Agul demonstrative le is used as both medial, as in (@one), and above, as in (@two), demonstratives.[^2] In [Table 3](#m3), the Agul demonstrative system is presented.
 
-### Table 3. Agul demonstratives (@ganenkovetal2009: 15){#m3}
+### Table 3. Agul demonstratives [@ganenkovetal2009: 15]{#m3}
 
 |proximal|medial/above|distal|below|
 |-----|-----|----|--|
 |*me-*|*le-*|*te-*|*ge-*|
 
-(@one) *le* used as the medial demonstrative. Agul (@ganenkovetal2009: 14)
+(@one) *le* used as the medial demonstrative. Agul [@ganenkovetal2009: 14]
 
 <!--html_preserve-->
 <ul>
@@ -59,7 +59,7 @@ Demonstrative systems like Archi, that have independent pronouns for expressing 
 </ul>
 <!--/html_preserve-->
 
-(@two) *le* used as the above demonstrative. Agul (@ganenkovetal2009: 14)
+(@two) *le* used as the above demonstrative. Agul [@ganenkovetal2009: 14]
 
 <!--html_preserve-->
 <ul>
