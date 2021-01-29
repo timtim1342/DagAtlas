@@ -23,9 +23,9 @@ Comparative constructions typically involve three elements: a predicate and two 
 (@one) _The tree is higher **than the house**_.
 
 This chapter investigates the morphological coding of the standard of comparison in comparative constructions. In the languages of Daghestan, the standard of comparison is usually marked with a **spatial form**, i.e. an inflected form of a nominal normally expressing a spatial relation. A few languages employ dedicated comparative markers. The adjective in these constructions is usually not inflected for degree.[^1] 
-Spatial (or “Locational”) comparatives are the most frequent strategy in the languages of the world according to data from WALS (see [@stassen2013]). Cross-linguistically, other common strategies involve the use of particles (other than those expressing spatial relations), predicates meaning ‘exceed, surpass’, and conjoined comparatives [@stassen2013]. Sometimes more than one strategy is available in one and the same language. In the languages of Daghestan, for instance, constructions with postpositions or special comparative particles are also found.
-Depending on the nature of the marker employed, spatially coded comparatives can be divided into three types: *At*-comparatives (i.e. essives), *To*-comparatives (i.e. latives), and *From*-comparatives (i.e. elatives or ablatives) (cf. [@stassen2013]). 
-This variation within the group of spatially coded comparatives, which was not considered for the purposes of the WALS map of comparative constructions, is the focus of the present investigation (see [@stassen1985] for a typological parallel). Our goal is to classify the languages of Daghestan according to the type of **spatial form used to mark the standard of comparison**.
+Spatial (or “Locational”) comparatives are the most frequent strategy in the languages of the world according to data from WALS; see [@stassen2013]. Cross-linguistically, other common strategies involve the use of particles (other than those expressing spatial relations), predicates meaning ‘exceed, surpass’, and conjoined comparatives [@stassen2013]. Sometimes more than one strategy is available in one and the same language. In the languages of Daghestan, for instance, constructions with postpositions or special comparative particles are also found.
+Depending on the nature of the marker employed, spatially coded comparatives can be divided into three types: *At*-comparatives (i.e. essives), *To*-comparatives (i.e. latives), and *From*-comparatives (i.e. elatives or ablatives); cf. [@stassen2013]. 
+This variation within the group of spatially coded comparatives, which was not considered for the purposes of the WALS map of comparative constructions, is the focus of the present investigation; see [@stassen1985] for a typological parallel. Our goal is to classify the languages of Daghestan according to the type of **spatial form used to mark the standard of comparison**.
 
 
 ## The standard of comparison in the languages of Daghestan
@@ -38,7 +38,7 @@ In the languages of Daghestan the standard of comparison is usually marked with 
 In comparative constructions, most languages of Daghestan mark the standard of comparison with a spatial form. However, variation is observed with respect to both the directionality marker (see [Directionality markers]) and the localization marker (see [Localization markers]) employed (on directionality and localization markers see the chapter on [Spatial cases]). 
 
 
-#### Directionality markers
+### Directionality markers
 
 Most languages of Daghestan mark the standard of comparison with an **elative** form, cf. example (@two) from Standard Avar.
 
@@ -190,7 +190,7 @@ Hinuq (Tsezic < EC) differs from the other languages in terms of both the direct
 </ul>
 <!--/html_preserve-->
 
-#### Localization markers
+### Localization markers
 
 The most common localization marker in spatial forms encoding the standard of comparison is **SUPER** (location on a surface),[^6] cf. (@two). It is found in 17 languages (see [Table 5](#m5)).
 
@@ -305,7 +305,7 @@ In nine languages the standard of comparison is marked with a dedicated suffix, 
 However, it should be pointed out that, in some cases, such comparative suffixes apparently include a spatial suffix, e.g. Khinalug -*q’ilːi* (elative -*lːi*), Tabasaran -*t’an* (elative -*an*), Budukh -*wor* (elative -*r*). In such cases, we might assume that a spatial form specialized in the encoding of the standard of comparison. In addition, Archi -*χur* is reported to have some residual spatial usages [@danielganenkov2009: 673-674].
 
 
-### Summary and distribution
+## Summary and distribution
 
 The standard of comparison in the languages of Daghestan is most often marked by a spatial form. Even in languages featuring a dedicated comparative marker, a possible spatial origin is often detectable. 
 Concerning directionality, elative markers are by far the most frequent option, and occur in 24 languages (see [Table 1](#m1) and [Table 2](#m2)). Elative markers are also the alleged source of some of the comparative markers in [Table 7](#m7). Essive and lative markers are less frequent: the former are found in eight languages, three of which show essive/lative syncretism, whereas a purely lative marker is found in one language only (see [Table 3](#m3) and [Table 4](#m4)). 
