@@ -24,8 +24,9 @@ BibOptions(bib.style = "authoryear", style = "html", cite.style = "authoryear", 
 
 # load data
 fe <- read_tsv("./data/features/tables/standard_of_comparison.csv") # feature dataset
-
+mapname1 <- 'Directionality'
+mapname2 <- 'Localization'
 ```
 
-```{r, child="_example.Rmd"}
+```{r, child="_example2.Rmd"}
 ```

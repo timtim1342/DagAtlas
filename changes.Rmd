@@ -7,7 +7,7 @@ output:
 ---
 
 ***
-#### 00.00.2020
+#### January 2021
 
 New feature chapters added:
 
@@ -20,8 +20,10 @@ New feature chapters added:
 - Presence of nasalization
 - Presence of pharyngealization
 - Elevation in the demonstrative system
+- Distance contrasts expressed by demonstratives
+- Types of demonstrative systems
 - Standard of comparison
-- The perfect
+- Perfect
 - Particles of reported speech and inference
 
 New major topics added:

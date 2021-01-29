@@ -15,6 +15,9 @@ extr_map <- function(fe) {
   meta_core <- meta %>% # remove idioms not (yet) recognized as distinct
     filter(core == "yes")
   
+  fe <- fe %>% 
+    filter(core == "yes")
+  
   vill_meta <- merge(vill, meta_core, by = "lang") # merge villages and coordinates with language metadata
   vill_meta <- vill_meta %>% 
     mutate(idiom = idiom.y)  # почему там два разных идиома?
@@ -52,6 +55,9 @@ gen_map <- function(fe) {
     filter(kutans == 'FALSE')  # убирает кутаны
   
   meta_core <- meta %>% # remove idioms not (yet) recognized as distinct
+    filter(core == "yes")
+  
+  fe <- fe %>% 
     filter(core == "yes")
   
   vill_meta <- merge(vill, meta_core, by = "lang") # merge villages and coordinates with language metadata
@@ -120,7 +126,7 @@ d_b <- function(fe, col_names) {
                       filter = "top",
                       escape = FALSE,
                       rownames = FALSE,
-                      extensions = 'Buttons',  # buttons
+                      extensions = c('Buttons', 'FixedColumns'),  # buttons
                       options = list(
                         pageLength = 5,  # columnDefs = list(list(searchable = FALSE, targets = 0)),
                         paging = TRUE,
@@ -128,6 +134,7 @@ d_b <- function(fe, col_names) {
                         fixedColumns = TRUE,
                         ordering = TRUE,
                         dom = 'fBltpi',  # add map-lang-link button, fff
+                        scrollX = TRUE,
                         buttons = list(list(
                         extend = 'collection',
                         buttons = c('csv', 'excel', 'pdf'),

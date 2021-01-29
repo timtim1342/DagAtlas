@@ -4,6 +4,8 @@ output:
   html_document:
     include:
       in_header: ./html/header_method.html
+bibliography: ./data/method.bib
+link-citations: true
 ---
 
 ***
@@ -65,6 +67,6 @@ If applicable:
 
 # Map visualization
 
-For map visualizations we use the [Lingtypology](https://github.com/ropensci/lingtypology) (*moroz2017*) package for [R](https://www.r-project.org/).
+For map visualizations we use the [Lingtypology](https://github.com/ropensci/lingtypology) [@moroz2017] package for [R](https://www.r-project.org/)
 
-***
+# References

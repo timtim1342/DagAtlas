@@ -28,7 +28,7 @@ dtable %>%
 dtable %>% 
   mutate(feature = paste('<a href=', filename, '.html>', title, '</a>', sep = '')) %>%
   mutate(major_topic = ifelse(!is.na(topic_filename), paste('<a href=', topic_filename, '.html>', major_topic, '</a>', sep = ''), '')) %>%
-  select(c(id, feature, author, major_topic, area))-> dtable
+  select(c(feature, author, major_topic, area))-> dtable
 
 ```
 ``` {r}
@@ -38,7 +38,6 @@ DT::datatable(dtable,
               escape = FALSE, 
               rownames = FALSE,
               options = list(
-                columnDefs = list(list(searchable = FALSE, targets = 0)), 
                 pageLength = 10, 
                 autoWidth = TRUE,
                 dom = 'ftpi')

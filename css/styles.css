@@ -40,3 +40,7 @@ body {
 #htmlwidget-0fe3e3821db73c9def68{
   width: 100% !important;
 }
+
+cite {
+  font-style: normal;
+}

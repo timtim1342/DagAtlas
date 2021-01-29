@@ -6,7 +6,7 @@ output: html_document
 
 ---------------------------------------
 
-See [chapter](evidentiality_tense_map.html).
+See [chapter](evidentiality_tense.html).
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, message = FALSE)

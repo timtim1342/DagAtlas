@@ -15,7 +15,7 @@ library(lingtypology)
 library(RefManageR)
 
 bib <- ReadBib(file = "./data/bibliography.bib")
-BibOptions(style = "html", bib.style = "authoryear", cite.style = "authoryear", max.names = 2)
+BibOptions(bib.style = "authoryear", style = "html", cite.style = "authoryear", max.names = 2, sorting = "nyt")
 
 # load data
 fe <- read_tsv("data/features/tables/gemination.tsv") # feature dataset
