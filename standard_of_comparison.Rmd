@@ -217,7 +217,7 @@ The most common localization marker in spatial forms encoding the standard of co
 |               |Rutul           |_-**la**_           |
 |               |Tsakhur         |_-**l**-e_          |
 
-In all Andic languages (except for Northern Akhvakh) the localization marker **CONT** (localization in contact with a surface) is found, cf. example (@five) and [Table 6](#m6). In Karata, CONT is used alongside SUPER [@pasquereau2010: 60]. It is also used in the varieties of Karata spoken in Tukita (Daniel p.c.) and Anchix [@gadzhimagomedov2019]. 
+In all Andic languages (except for Northern Akhvakh) the localization marker **CONT** (localization in contact with a surface) is found, cf. example (@five) and [Table 6](#m6). In Karata, CONT is used alongside SUPER [@pasquereau2010: 60]. It is also used in the varieties of Karata spoken in Tukita (Michael Daniel p.c.) and Anchix (Konstantin Filatov p.c.). 
 
 #### Table 6. CONT markers {#m6}
 
