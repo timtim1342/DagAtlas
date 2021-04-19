@@ -16,7 +16,7 @@ link-citations: true
 See [data and maps](standard_of_comparison_map.html).
 
 
-## Introduction and typological background
+## Introduction
 
 Comparative constructions typically involve three elements: a predicate and two noun phrases denoting the object of comparison and the **standard of comparison**. In example (@one) the object of comparison is constituted by the first noun phrase (*the tree*), while the second noun phrase (*the house*) is the standard of comparison (the preposition *than* is the standard marker).
 
@@ -28,7 +28,7 @@ Depending on the nature of the marker employed, spatially coded comparatives can
 This variation within the group of spatially coded comparatives, which was not considered for the purposes of the WALS map of comparative constructions, is the focus of the present investigation; see [@stassen1985] for a typological parallel. Our goal is to classify the languages of Daghestan according to the type of **spatial form used to mark the standard of comparison**.
 
 
-## The standard of comparison in the languages of Daghestan
+## Results
 
 In the languages of Daghestan the standard of comparison is usually marked with a spatial form (see [Spatial forms]). A few languages feature dedicated comparative markers (see [Dedicated comparative markers]).
 
@@ -82,7 +82,7 @@ There are 18 such languages (see [Table 1](#m1)). Note that Northern Akhvakh and
 |               |Khwarshi        |_-λ'a-**zi**_            |
 |               |Tsez            |_-ƛ'-**aj**_             |
 |EC > Dargwa    |Itsari          |_-li(ː)-**r**_           |
-|               |Tanti           |_-ja-**r**_              |
+|               |Tanty           |_-ja-**r**_              |
 
 Five languages feature **ablative** markers (see [Table 2](#m2)). We use the term “ablative” instead of “elative” for languages that do not have bimorphemic spatial case systems, cf. Standard Azerbaijani (@three). On maps, however, elative and ablative markers are merged into a single group.
 
@@ -210,7 +210,7 @@ The most common localization marker in spatial forms encoding the standard of co
 |               |Itsari          |_-**li(ː)**-r_      |
 |               |Kubachi         |_-**ži**-CM_        |
 |               |Mehweb          |_-**če**-CM_        |
-|               |Tanti           |_-**ja**-r_         |
+|               |Tanty           |_-**ja**-r_         |
 |EC > Lezgic    |Agul            |_-**la-s**_         |
 |               |Archi           |_-**tː**-iš_        |
 |               |Lezgian (Std.)  |_-**l**-aj_         |
@@ -305,7 +305,7 @@ In nine languages the standard of comparison is marked with a dedicated suffix, 
 However, it should be pointed out that, in some cases, such comparative suffixes apparently include a spatial suffix, e.g. Khinalug -*q’ilːi* (elative -*lːi*), Tabasaran -*t’an* (elative -*an*), Budukh -*wor* (elative -*r*). In such cases, we might assume that a spatial form specialized in the encoding of the standard of comparison. In addition, Archi -*χur* is reported to have some residual spatial usages [@danielganenkov2009: 673-674].
 
 
-## Summary and distribution
+## Distribution
 
 The standard of comparison in the languages of Daghestan is most often marked by a spatial form. Even in languages featuring a dedicated comparative marker, a possible spatial origin is often detectable. 
 Concerning directionality, elative markers are by far the most frequent option, and occur in 24 languages (see [Table 1](#m1) and [Table 2](#m2)). Elative markers are also the alleged source of some of the comparative markers in [Table 7](#m7). Essive and lative markers are less frequent: the former are found in eight languages, three of which show essive/lative syncretism, whereas a purely lative marker is found in one language only (see [Table 3](#m3) and [Table 4](#m4)). 
