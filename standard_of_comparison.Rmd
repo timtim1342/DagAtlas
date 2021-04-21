@@ -153,13 +153,13 @@ Five languages mark the standard of comparison with **essive** suffixes, cf. exa
 
 #### Table 3. Essive markers {#m3}
 
-|Family > Branch|Language     |Suffix  |
-|---------------|-------------|--------|
-|EC > Avar-Andic|Tindi        |_-č'i_  |
-|EC > Dargwa    |Dargwa (Std.)|_-či-CM_|
-|               |Kubachi      |_-ži-CM_|
-|               |Mehweb       |_-če-CM_|
-|EC > Nakh      |Bats         |_-χ_    |
+|Family > Branch|Language|Suffix  |
+|---------------|--------|--------|
+|EC > Avar-Andic|Tindi   |_-č'i_  |
+|EC > Dargwa    |Akusha  |_-či-CM_|
+|               |Kubachi |_-ži-CM_|
+|               |Mehweb  |_-če-CM_|
+|EC > Nakh      |Bats    |_-χ_    |
 
 Three other languages mark the standard of comparison with spatial forms that do not include an overt directionality marker. These languages differ from the languages in [Table 3](#m3) in that they display **essive/lative** syncretism (see [Table 4](#m4)).
 
@@ -206,7 +206,7 @@ The most common localization marker in spatial forms encoding the standard of co
 |               |Hinuq           |_-**ƛ'o**-s_        |
 |               |Khwarshi        |_-**λ'a**-zi_       |
 |               |Tsez            |_-**ƛ'**-aj_        |
-|EC > Dargwa    |Dargwa (Std.)   |_-**či**-CM_        |
+|EC > Dargwa    |Akusha          |_-**či**-CM_        |
 |               |Itsari          |_-**li(ː)**-r_      |
 |               |Kubachi         |_-**ži**-CM_        |
 |               |Mehweb          |_-**če**-CM_        |
