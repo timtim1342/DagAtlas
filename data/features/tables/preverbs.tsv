@@ -1,0 +1,39 @@
+id	lang	group/family	idiom	type	core	genlang_point	map	feature	value	value_name	source	page	comment	contributor	form	example_as_in_source	example	translation_as_in_source	translation	gloss	example_source	example_page	example_comment	date
+1	Agul	Lezgic	Central	dialect_toplevel	yes	yes	yes	Preverbs	12	Number of preverbs	magometov1970	158--165	3 slots	Evgenia Klyagina										10.2020
+2	Agul	Lezgic	Huppuq'	village	no	no	yes	Preverbs	12	Number of preverbs	maisakganenkov2016	3585--3590	2 slots	Evgenia Klyagina										10.2020
+3	Akhvakh	Andic	Northern Akhvakh	dialect_toplevel	yes	yes	yes	Preverbs	0	Number of preverbs	magomedbekova1967, creissels2016			Evgenia Klyagina										10.2020
+4	Andi	Andic	Andi	village	yes	yes	yes	Preverbs	0	Number of preverbs	cercvadze1965			Evgenia Klyagina										10.2020
+5	Archi	Lezgic	Archib	village	yes	yes	yes	Preverbs	0	Number of preverbs	kibrik1977, chumakina2016	ch: 3600--3601	only historical preverbs in some verbs	Evgenia Klyagina										10.2020
+6	Armenian	Armenian	Modern Eastern Armenian	dialect_toplevel	yes	yes	yes	Preverbs	24	Number of preverbs	dum-tragut2009	647--651		Evgenia Klyagina										10.2020
+7	Avar	Avar	Standard Avar	language	yes	yes	yes	Preverbs	0	Number of preverbs	gamzatov1983, alekseevetal2012	236--242, 147--148	adverbs  are in the process of morphologization	Evgenia Klyagina										10.2020
+8	Azerbaijani	Turkic	Standard Azerbaijani	language	yes	yes	yes	Preverbs	0	Number of preverbs	sirəliyevsevortyan1971			Evgenia Klyagina										10.2020
+9	Bagvalal	Andic	Kvanada	village	yes	yes	yes	Preverbs	0	Number of preverbs	kibrik2001			Evgenia Klyagina										10.2020
+10	Tsova-Tush	Nakh	Zemo-Alvani	village	yes	yes	yes	Preverbs	5	Number of preverbs	desheriev1953	81, 137, 152--153		Evgenia Klyagina										10.2020
+11	Bezhta	Tsezic	Bezhta	village	yes	yes	yes	Preverbs	0	Number of preverbs	madieva1965			Evgenia Klyagina										10.2020
+12	Botlikh	Andic	Botlikh	village	yes	yes	yes	Preverbs	0	Number of preverbs	alekseyevverhees2020			Evgenia Klyagina										10.2020
+13	Budukh	Lezgic	Budukh	village	yes	yes	yes	Preverbs	17	Number of preverbs	authierhaciyev2016	3560--3561		Evgenia Klyagina										10.2020
+14	Chamalal	Andic	Upper Gakvari	village	yes	yes	yes	Preverbs	0	Number of preverbs	bokarev1949			Evgenia Klyagina										10.2020
+15	Chechen	Nakh	Standard Chechen	language	yes	yes	yes	Preverbs	9	Number of preverbs	nichols1994	36		Evgenia Klyagina										10.2020
+16	Dargwa	Dargwa	Standard Dargwa (Akusha)	language	yes	yes	yes	Preverbs	18	Number of preverbs	abdullaev1954	158--162		Evgenia Klyagina										10.2020
+17	Dargwa	Dargwa	Mehweb	village	no	no	yes	Preverbs	5	Number of preverbs	danieletal2019	108--109		Evgenia Klyagina										10.2020
+18	Dargwa	Dargwa	Itsari	village	no	no	yes	Preverbs	12	Number of preverbs	sumbatovamutalov2003	62--63		Evgenia Klyagina										10.2020
+19	Dargwa	Dargwa	Kubachi	village	no	no	yes	Preverbs	10	Number of preverbs	magometov1963	179--181		Evgenia Klyagina										10.2020
+20	Godoberi	Andic	Godoberi	village	yes	yes	yes	Preverbs	0	Number of preverbs	kibrikatal1996			Evgenia Klyagina										10.2020
+21	Hinuq	Tsezic	Hinuq	village	yes	yes	yes	Preverbs	0	Number of preverbs	forker2013	191		Evgenia Klyagina										10.2020
+22	Hunzib	Tsezic	Hunzib	language	yes	yes	yes	Preverbs	0	Number of preverbs	vandenberg1995	74		Evgenia Klyagina										10.2020
+23	Ingush	Nakh	Standard Ingush	language	yes	yes	yes	Preverbs	21	Number of preverbs	nichols2011	346--369		Evgenia Klyagina										10.2020
+24	Karata	Andic	Karata	dialect_toplevel	yes	yes	yes	Preverbs	0	Number of preverbs	magomedbekova1971			Evgenia Klyagina										10.2020
+25	Khinalug	Khinalug	Khinalug	village	yes	yes	yes	Preverbs	10	Number of preverbs	schulze2016khinalug	3615		Evgenia Klyagina										10.2020
+26	Khwarshi	Tsezic	Kwantlada	village	yes	yes	yes	Preverbs	0	Number of preverbs	khalilova2009			Evgenia Klyagina										10.2020
+27	Kryz	Lezgic	Alik	village	yes	yes	yes	Preverbs	15	Number of preverbs	authier2009	127--133	in french	Evgenia Klyagina										10.2020
+28	Kumyk	Turkic	Standard Kumyk	language	yes	yes	yes	Preverbs	0	Number of preverbs	abdullaevaetal2014			Evgenia Klyagina										10.2020
+29	Lak	Lak	Standard Lak	language	yes	yes	yes	Preverbs	0	Number of preverbs	schulze2016lak	3624	historical preverbs	Evgenia Klyagina										10.2020
+30	Lezgian	Lezgic	Standard Lezgian	language	yes	yes	yes	Preverbs	22	Number of preverbs	haspelmath1993	167--174		Evgenia Klyagina										10.2020
+31	Nogai	Turkic	Standard Nogai	language	yes	yes	yes	Preverbs	0	Number of preverbs	baskakov1940			Evgenia Klyagina										10.2020
+32	Rutul	Lezgic	Luchek	village	yes	yes	yes	Preverbs	14	Number of preverbs	alekseev1994	226--228	SV: Was classified as Mukhad, but the source describes Luchek, specifically.	Evgenia Klyagina										10.2020
+33	Rutul	Lezgic	NA	NA		no	no	Preverbs	14	Number of preverbs	alekseev2016	3543		Evgenia Klyagina										10.2020
+34	Tabasaran	Lezgic	Standard Tabasaran	language	yes	yes	yes	Preverbs	7	Number of preverbs	alekseevshixalieva2003, magometov1965	61; 218		Evgenia Klyagina										10.2020
+35	Tindi	Andic	Tindi	village	yes	yes	yes	Preverbs	0	Number of preverbs	magomedova2012			Evgenia Klyagina										10.2020
+36	Tsakhur	Lezgic	Mishlesh	village	yes	yes	yes	Preverbs	0	Number of preverbs	kibriketal1999	58	lexemes with historical preverbs, no list of preverbs	Evgenia Klyagina										10.2020
+37	Tsez	Tsezic	Kedero	village	yes	yes	yes	Preverbs	0	Number of preverbs	bokarev1959			Evgenia Klyagina										10.2020
+38	Udi	Lezgic	Nidzh	village	yes	yes	yes	Preverbs	0	Number of preverbs	maisak2008, schulze2016udi	104--105, 3576	lexeme with historical preverbs	Evgenia Klyagina										10.2020

@@ -1,12 +1,3 @@
----
-title: "Elevation in the demonstrative systems"
-author: "Timofey Mukhin"
----
-
----------------------------------------
-
-See [chapter](elevation.html).
-
 ```{r setup, include=FALSE} 
 # make this part as a function and add it to example code
 knitr::opts_chunk$set(echo = FALSE, message = FALSE)
@@ -20,8 +11,21 @@ bib <- ReadBib(file = "./data/bibliography.bib")
 BibOptions(bib.style = "authoryear", style = "html", cite.style = "authoryear", max.names = 2, sorting = "nyt")
 
 # load data
-fe <- read_tsv("data/features/tables/elevation.csv") # feature dataset
+fe <- read_tsv("data/features/tables/elevation.tsv") # feature dataset
+
+fe %>% 
+  head(n=1) -> first_row
+mapname <- first_row$feature
+
+# yml header
+
+feature_id <- '9'
 ```
 
-```{r, child="_example.Rmd"}
+```{r, child="templates/_yml_header_map.Rmd"}
+```
+
+See [chapter](elevation.html).
+
+```{r, child="templates/_example.Rmd"}
 ```

@@ -1,19 +1,17 @@
----
-title: "Elevation in the demonstrative systems"
-author: "Timofey Mukhin"
-output: html_document
-bibliography: 
-  - ./data/features/ref_bibs/elevation.bib
-link-citations: true
----
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE)
 
----------------------------------------
+# yml header
+
+feature_id <- '9'
+```
+
+```{r, child="templates/_yml_header.Rmd"}
+```
 
 # Chapter
 
 See [data and maps](elevation_map.html).
-
-General chapter: [Demonstratives](demonstratives.html)
 
 ## Elevation
 
@@ -30,7 +28,7 @@ Besides distance contrast, demonstrative systems can additionally distinguish el
 ||proximal|non proximal|
 |-----|-----|----|
 |at the same level|*a-ja-* (< *ada-*)|*o-ja-* (< *oda-*)|
-|above|*a-ɬa-*)|*o-ɬa-*)|
+|above|*a-ɬa-*|*o-ɬa-*|
 |below|*a-ɟa-*|*o-ɟa-*|
 
 Demonstrative systems like Archi, that have independent pronouns for expressing elevation, can have separate stems for each spatial meaning (as in Archi) or can express some of them together by one stem. E.g. Agul demonstrative le is used as both medial, as in (@one), and above, as in (@two), demonstratives.[^2] In [Table 3](#m3), the Agul demonstrative system is presented.
@@ -88,6 +86,8 @@ In languages with elevation affixes, the latter can usually be attached to every
 |Distinguish elevation|15|
 |Do not distinguish elevation|18|
 
+```{r, child="templates/_how2cite.Rmd"}
+```
 
 [^1]:Note that Tindi demonstratives a- (proximal) and o- (distal) are also used without the elevation affixes -d, -ɬ, -ɟ.
 

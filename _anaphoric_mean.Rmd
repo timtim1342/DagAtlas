@@ -1,0 +1,16 @@
+---
+title: "Anaphoric demonstratives"
+author: "Timofey Mukhin"
+output: html_document
+# bibliography: 
+#   - ./data/features/ref_bibs/elevation.bib
+link-citations: true
+---
+
+---------------------------------------
+
+# Chapter
+
+See [data and maps](anaphoric_mean_map.html).
+
+General chapter: [Demonstratives](demonstratives.html)

@@ -1,234 +1,32 @@
----
-title: "Particles of reported speech and inference"
-author: "Samira Verhees"
-output: html_document
-bibliography: ./data/features/ref_bibs/evidentiality.bib
-link-citations: true
----
-
----------------------------------------
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, message = FALSE)
 
 # packages
-
 library(tidyverse)
 library(lingtypology)
-library(DT)
+library(RefManageR)
+
+# make this part as a function and add it to example code
+
+bib <- ReadBib(file = "./data/bibliography.bib")
+BibOptions(bib.style = "authoryear", style = "html", cite.style = "authoryear", max.names = 2, sorting = "nyt")
 
 # load data
+fe <- read_tsv("data/features/tables/particles.tsv") # feature dataset
+fe %>% 
+  head(n=1) -> first_row
+mapname1 <- first_row$value1_name
+mapname2 <- first_row$value2_name
 
-vill <- read_tsv("data/villages_old.csv") # villages dataset
-meta <- read_tsv("data/meta_old.csv") # language metadata and colors
-particles <- read_tsv("data/features/tables/particles.csv") # feature dataset
+# yml header
 
-# preparation of data
-
-vill <- vill[complete.cases(vill$lat),] # remove villages for which we do not have coordinates (yet)
-
-meta_core <- meta %>% # remove idioms not (yet) recognized as distinct
-  filter(core == "yes")
-
-vill_meta <- merge(vill, meta_core, by = "lang") # merge villages and coordinates with language metadata
-
-# set for reportative particles
-
-particlesrep_core <- particles %>%
-  filter(`core:rep` == "yes")
-
-particlesrep_vill <- merge(vill_meta, particlesrep_core, by = "lang") # merge villages, coordinates, and language metadata with feature information
-
-particlesrep_vill$datapoint <- "extrapolated datapoint"
-
-# set for quotative particles
-
-particlesquot_core <- particles %>%
-  filter(`core:quot` == "yes")
-
-particlesquot_vill <- merge(vill_meta, particlesquot_core, by = "lang") # merge villages, coordinates, and language metadata with feature information
-
-particlesquot_vill$datapoint <- "extrapolated datapoint"
-
+feature_id <- '14'
 ```
 
-## Maps
+```{r, child="templates/_yml_header_map.Rmd"}
+```
 
 See [chapter](particles.html).
 
-### Map 1. Quotative particles{.tabset .tabset-fade .tabset-pills}
-
-#### Map: Extrapolated data
-
-```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width = 9.5}
-
-map.feature(lang.gltc(particlesquot_vill$glottocode),
-            latitude = particlesquot_vill$lat,
-            longitude = particlesquot_vill$lon,
-            features = particlesquot_vill$lang, # color feature = language
-            color = particlesquot_vill$lang_color,
-            stroke.features = particlesquot_vill$`value:quot`, # stroke.feature = your feature value
-            stroke.color = c("black", "white"), 
-            label = particlesquot_vill$lang,
-            zoom.control = T,
-            popup = paste("<b>Village:</b>", particlesquot_vill$village, "<br>", 
-                          "<b>Source:</b>", particlesquot_vill$source, particlesquot_vill$page, "<br>",
-                          "<b>Datapoint:</b>", particlesquot_vill$datapoint),
-            width = 3, stroke.radius = 8,
-            legend = FALSE)
-```
-
-#### Map: General datapoints
-
-```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width = 9.5}
-
-particlesquot_core_meta <- merge(particlesquot_core, meta_core, by = "lang")
-
-particlesquot_core_meta$datapoint <- "general datapoint"
-
-map.feature(lang.gltc(particlesquot_core_meta$glottocode),
-            features = particlesquot_core_meta$lang,
-            color = particlesquot_core_meta$lang_color,
-            legend = FALSE,
-            stroke.features = particlesquot_core_meta$`value:quot`,
-            stroke.color = c("black", "white"),
-            label = particlesquot_core_meta$lang,
-            zoom.control = T,
-            popup = paste("<b>Source:</b>", particlesquot_core_meta$source, particlesquot_core_meta$page, "<br>",
-                          "<b>Datapoint:</b>", particlesquot_core_meta$datapoint))
-
-```
-
-### Map 2. Quotative particles: structure{.tabset .tabset-fade .tabset-pills}
-
-#### Map: Extrapolated data
-
-```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width = 9.5}
-
-map.feature(lang.gltc(particlesquot_vill$glottocode),
-            latitude = particlesquot_vill$lat,
-            longitude = particlesquot_vill$lon,
-            features = particlesquot_vill$lang, # color feature = language
-            color = particlesquot_vill$lang_color,
-            stroke.features = particlesquot_vill$`value:structure`, # stroke.feature = your feature value
-            stroke.color = c("white", "black", "deeppink"), 
-            label = particlesquot_vill$lang,
-            zoom.control = T,
-            popup = paste("<b>Village:</b>", particlesquot_vill$village, "<br>", 
-                          "<b>Source:</b>", particlesquot_vill$source, particlesquot_vill$page, "<br>",
-                          "<b>Datapoint:</b>", particlesquot_vill$datapoint),
-            width = 3, stroke.radius = 8,
-            legend = FALSE)
-```
-
-#### Map: General datapoints
-
-```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width = 9.5}
-
-map.feature(lang.gltc(particlesquot_core_meta$glottocode),
-            features = particlesquot_core_meta$lang,
-            color = particlesquot_core_meta$lang_color,
-            legend = FALSE,
-            stroke.features = particlesquot_core_meta$`value:structure`,
-            stroke.color = c("white", "black", "deeppink"),
-            label = particlesquot_core_meta$lang,
-            zoom.control = T,
-            popup = paste("<b>Source:</b>", particlesquot_core_meta$source, particlesquot_core_meta$page, "<br>",
-                          "<b>Datapoint:</b>", particlesquot_core_meta$datapoint))
-
-```
-
-### Map 3. Reportative particles{.tabset .tabset-fade .tabset-pills}
-
-#### Map: Extrapolated data
-
-```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width = 9.5}
-
-map.feature(lang.gltc(particlesrep_vill$glottocode),
-            latitude = particlesrep_vill$lat,
-            longitude = particlesrep_vill$lon,
-            features = particlesrep_vill$lang, # color feature = language
-            color = particlesrep_vill$lang_color,
-            stroke.features = particlesrep_vill$`value:rep`, # stroke.feature = your feature value
-            stroke.color = c("black", "white"), 
-            label = particlesrep_vill$lang,
-            zoom.control = T,
-            popup = paste("<b>Village:</b>", particlesrep_vill$village, "<br>", 
-                          "<b>Source:</b>", particlesrep_vill$source, particlesrep_vill$page, "<br>",
-                          "<b>Datapoint:</b>", particlesrep_vill$datapoint),
-            width = 3, stroke.radius = 8,
-            legend = FALSE)
-```
-
-#### Map: General datapoints
-
-```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width = 9.5}
-
-particlesrep_core_meta <- merge(particlesrep_core, meta_core, by = "lang")
-
-particlesrep_core_meta$datapoint <- "general datapoint"
-
-map.feature(lang.gltc(particlesrep_core_meta$glottocode),
-            features = particlesrep_core_meta$lang,
-            color = particlesrep_core_meta$lang_color,
-            legend = FALSE,
-            stroke.features = particlesrep_core_meta$`value:rep`,
-            stroke.color = c("black", "white"),
-            label = particlesrep_core_meta$lang,
-            zoom.control = T,
-            popup = paste("<b>Source:</b>", particlesrep_core_meta$source, particlesrep_core_meta$page, "<br>",
-                          "<b>Datapoint:</b>", particlesrep_core_meta$datapoint))
-
-```
-
-### Map 4. Reportative particles: structure{.tabset .tabset-fade .tabset-pills}
-
-#### Map: Extrapolated data
-
-```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width = 9.5}
-
-map.feature(lang.gltc(particlesrep_vill$glottocode),
-            latitude = particlesrep_vill$lat,
-            longitude = particlesrep_vill$lon,
-            features = particlesrep_vill$lang, # color feature = language
-            color = particlesrep_vill$lang_color,
-            stroke.features = particlesrep_vill$`value:structure`, # stroke.feature = your feature value
-            stroke.color = c("white", "black", "deeppink"), 
-            label = particlesrep_vill$lang,
-            zoom.control = T,
-            popup = paste("<b>Village:</b>", particlesrep_vill$village, "<br>", 
-                          "<b>Source:</b>", particlesrep_vill$source, particlesrep_vill$page, "<br>",
-                          "<b>Datapoint:</b>", particlesrep_vill$datapoint),
-            width = 3, stroke.radius = 8,
-            legend = FALSE)
-```
-
-#### Map: General datapoints
-
-```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width = 9.5}
-
-map.feature(lang.gltc(particlesrep_core_meta$glottocode),
-            features = particlesrep_core_meta$lang,
-            color = particlesrep_core_meta$lang_color,
-            legend = FALSE,
-            stroke.features = particlesrep_core_meta$`value:structure`,
-            stroke.color = c("white", "black", "deeppink"),
-            label = particlesrep_core_meta$lang,
-            zoom.control = T,
-            popup = paste("<b>Source:</b>", particlesrep_core_meta$source, particlesrep_core_meta$page, "<br>",
-                          "<b>Datapoint:</b>", particlesrep_core_meta$datapoint))
-
-```
-
-## Datatable
-
-````{r}
-
-# select which feature data you want to show in the datatable
-
-dtable <- particles 
-
-# generate searchable datatable
-
-DT::datatable(dtable, escape = TRUE, rownames = TRUE,
-              options = list(pageLength = 15, dom = 'ftip'))
+```{r, child="templates/_example2.Rmd"}
 ```

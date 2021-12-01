@@ -26,7 +26,9 @@ dtable %>%
 
 #add links to the titles
 dtable %>% 
-  mutate(feature = paste('<a href=', filename, '.html>', title, '</a>', sep = '')) %>%
+  mutate(feature = paste(title, '<br>', '<a href=', filename, '.html>', 'Chapter', '</a>', '|',
+                         '<a href=', filename, '_map.html>', 'Maps&Data', '</a>', 
+                         sep = '')) %>%
   mutate(major_topic = ifelse(!is.na(topic_filename), paste('<a href=', topic_filename, '.html>', major_topic, '</a>', sep = ''), '')) %>%
   select(c(feature, author, major_topic, area))-> dtable
 
@@ -38,9 +40,9 @@ DT::datatable(dtable,
               escape = FALSE, 
               rownames = FALSE,
               options = list(
-                pageLength = 10, 
+                pageLength = 150, 
                 autoWidth = TRUE,
-                dom = 'ftpi')
+                dom = 'fltpi')
               )
 ```
 

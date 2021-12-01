@@ -1,14 +1,3 @@
----
-title: "Standard of comparison"
-author: "Chiara Naccarato"
-output: html_document
-link-citations: true
----
-
----------------------------------------
-
-See [chapter](standard_of_comparison.html).
-
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, message = FALSE)
 
@@ -23,10 +12,22 @@ bib <- ReadBib(file = "./data/bibliography.bib")
 BibOptions(bib.style = "authoryear", style = "html", cite.style = "authoryear", max.names = 2, sorting = "nyt")
 
 # load data
-fe <- read_tsv("./data/features/tables/standard_of_comparison.csv") # feature dataset
-mapname1 <- 'Directionality'
-mapname2 <- 'Localization'
+fe <- read_tsv("./data/features/tables/standard_of_comparison.tsv") # feature dataset
+
+fe %>% 
+  head(n=1) -> first_row
+mapname1 <- first_row$value1_name
+mapname2 <- first_row$value2_name
+
+# yml header
+
+feature_id <- '12'
 ```
 
-```{r, child="_example2.Rmd"}
+```{r, child="templates/_yml_header_map.Rmd"}
+```
+
+See [chapter](standard_of_comparison.html).
+
+```{r, child="templates/_example2.Rmd"}
 ```

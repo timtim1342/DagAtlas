@@ -9,6 +9,8 @@
         background-size: cover;
         overflow: hidden;
         box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+        border: 10px solid #333;
+        border-width: 0px 0px 5px 0px;
     }
 
 .attrib {
@@ -28,19 +30,60 @@ body {
   font-variant:small-caps;
 }
 
-#htmlwidget-244aaddf2639520a3f5a{ /*карты на about. временное решение*/
-  width: 100% !important;
-  height: 700px !important;
-}
-
-#htmlwidget-6f66dca5431bfb50b4e6{
-  width: 100% !important;
-}
-
-#htmlwidget-0fe3e3821db73c9def68{
-  width: 100% !important;
-}
-
 cite {
   font-style: normal;
+}
+
+.copybutt {
+  outline: none;
+  border: 0;
+  background: transparent;
+  margin-left: auto;
+  display: block;
+}
+
+#cite1 {
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    padding: 9.5px;
+    margin: 0 0 10px;
+}
+
+/* footer ниже*/
+.footer-basic .copyright {
+  margin-top:15px;
+  text-align:center;
+  font-size:13px;
+  color:#aaa;
+  margin-bottom:0;
+}
+
+.footer-basic .lic {
+  font-size:13px;
+  text-align:center;
+}
+
+.footer-basic .social {
+  text-align:;
+}
+
+.footer-basic .social > a {
+  font-size:24px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:;
+  text-align:;
+  margin:0 8px;
+  color:inherit;
+  opacity:0.75;
+}
+
+/*для страницы references*/
+#myInput{
+  opacity: 0;
+  width: 1px;
+}
+.fas:hover{
+  opacity:0.5;
 }

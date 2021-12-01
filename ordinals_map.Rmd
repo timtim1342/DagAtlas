@@ -1,0 +1,31 @@
+```{r setup, include=FALSE} 
+# make this part as a function and add it to example code
+knitr::opts_chunk$set(echo = FALSE, message = FALSE)
+
+# packages
+library(tidyverse)
+library(lingtypology)
+library(RefManageR)
+
+bib <- ReadBib(file = "./data/bibliography.bib")
+BibOptions(bib.style = "authoryear", style = "html", cite.style = "authoryear", max.names = 2, sorting = "nyt")
+
+# load data
+fe <- read_tsv("data/features/tables/ordinals.tsv") # feature dataset
+
+fe %>% 
+  head(n=1) -> first_row
+mapname <- first_row$feature
+
+# yml header
+
+feature_id <- '16'
+```
+
+```{r, child="templates/_yml_header_map.Rmd"}
+```
+
+See [chapter](ordinals.html).
+
+```{r, child="templates/_example.Rmd"}
+```

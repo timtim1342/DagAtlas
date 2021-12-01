@@ -1,0 +1,35 @@
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE)
+
+# packages
+library(tidyverse)
+library(lingtypology)
+library(RefManageR)
+
+# make this part as a function and add it to example code
+
+bib <- ReadBib(file = "./data/bibliography.bib")
+BibOptions(bib.style = "authoryear", style = "html", cite.style = "authoryear", max.names = 2, sorting = "nyt")
+
+# load data
+fe <- read_tsv("./data/features/tables/optatives.tsv") # feature dataset
+
+fe %>% 
+  head(n=1) -> first_row
+mapname1 <- paste(toupper(substr(first_row$value1_name, 1, 1)), substr(first_row$value1_name, 2, nchar(first_row$value1_name)), sep="")
+mapname2 <- paste(toupper(substr(first_row$value2_name, 1, 1)), substr(first_row$value2_name, 2, nchar(first_row$value2_name)), sep="")
+mapname3 <- paste(toupper(substr(first_row$value3_name, 1, 1)), substr(first_row$value3_name, 2, nchar(first_row$value3_name)), sep="")
+mapname4 <- paste(toupper(substr(first_row$value4_name, 1, 1)), substr(first_row$value4_name, 2, nchar(first_row$value4_name)), sep="")
+
+# yml header
+
+feature_id <- '21'
+```
+
+```{r, child="templates/_yml_header_map.Rmd"}
+```
+
+See [chapter](optatives.html).
+
+```{r, child="templates/_example4.Rmd"}
+```

@@ -1,0 +1,72 @@
+---
+title: "Method"
+output:
+  html_document:
+    include:
+      in_header: ./html/header_method.html
+bibliography: ./data/method.bib
+link-citations: true
+---
+
+***
+
+# Data
+
+The datasets for the atlas (as well as the accompanying pages) were mostly created by students of the School of Linguistics of NRU HSE Moscow, as part of a workshop. They collect data from available literature and work out an appropriate typological classification for the feature.
+
+The data can be accessed through the interface of the atlas, or downloaded directly from the [GitHub page]().
+
+Below is a specification of mandatory columns for each dataset. Note that a particular dataset may have additional columns.
+
+
+# List of columns
+
+Here is a full list of possible columns in a feature table:
+
+**id** - unique number for each row / observation in dataset.
+
+**lang** - language name following the naming conventions of the East Caucasian villages dataset.
+
+**idiom** - a dialect, a village variety, or simply the standard language.
+
+**type** - specifies whether the idiom is a village variety (village) or something else (idiom).
+
+**core** - specifies whether to use a certain value for mapping.
+
+**feature** - the name of the feature.
+
+**value** - the relevant values of the feature, e.g. attested/not attested.
+
+**source** - reference to the source on which the information is based.
+
+**page** - relevant page in the source.
+
+**comment** - any comment the contributor would like to add.
+
+**contributor** - the contributor's name.
+
+If applicable:
+
+**form** - a word form or an affix in case of grammatical features, a word in case of a lexical feature, graphemes for phonetic features.
+
+**example_as_in_source** -  an example of how the form is used.
+
+**example** - example in Caucasiologist transcription with morpheme boundaries.
+
+**translation_as_in_source** - translation of the example.
+
+**translation** - the contributor's English translation of the example.
+
+**gloss** - glosses for the example.
+
+**example_source** - reference to the source of the example.
+
+**example_page** - page reference for the example.
+
+**example_comment** - any comments on the example.
+
+# Map visualization
+
+For map visualizations we use the [Lingtypology](https://github.com/ropensci/lingtypology) [@moroz2017] package for [R](https://www.r-project.org/).
+
+# References

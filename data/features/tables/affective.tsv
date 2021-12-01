@@ -1,34 +1,42 @@
-id	lang	idiom	type	core	feature	value	source	page	exception	comment	contributor
-1	Akhvakh			yes	Affective	no affective	kibrikkodzasov1990				Denis Arsentjev
-2	Andi			yes	Affective	affective	kibrikkodzasov1990				Denis Arsentjev
-3	Bagvalal			yes	Affective	affective	kibrik2001				Denis Arsentjev
-4	Botlikh			yes	Affective	NA	?				Denis Arsentjev
-5	Chamalal			yes	Affective	no affective	kibrikkodzasov1990				Denis Arsentjev
-6	Godoberi			yes	Affective	affective	kibriketal1996				Denis Arsentjev
-7	Karata			yes	Affective	no affective	magomedbekova1971				Denis Arsentjev
-8	Tindi			yes	Affective	NA	?				Denis Arsentjev
-9	Armenian			yes	Affective	NA	?				Denis Arsentjev
-10	Avar			yes	Affective	NA	?				Denis Arsentjev
-11	Dargwa			yes	Affective	no affective	kibrikkodzasov1990				Denis Arsentjev
-12	Khinalug			yes	Affective	NA	?				Denis Arsentjev
-13	Kumyk			yes	Affective	no affective	dmitriev1940				Denis Arsentjev
-14	Nogai			yes	Affective	no affective	baskakov1940				Denis Arsentjev
-15	Lak			yes	Affective	no affective	kibrikkodzasov1990				Denis Arsentjev
-16	Agul			yes	Affective	no affective	kibrikkodzasov1990				Denis Arsentjev
-17	Archi			yes	Affective	no affective	kibrikkodzasov1990				Denis Arsentjev
-18	Budukh			yes	Affective	NA	?				Denis Arsentjev
-19	Kryz			yes	Affective	NA	?				Denis Arsentjev
-20	Lezgian			yes	Affective	no affective	kibrikkodzasov1990				Denis Arsentjev
-21	Rutul			yes	Affective	NA	?				Denis Arsentjev
-22	Tabasaran			yes	Affective	NA	?				Denis Arsentjev
-23	Tsakhur			yes	Affective	affective	kibrikkodzasov1990				Denis Arsentjev
-24	Udi			yes	Affective	NA	?				Denis Arsentjev
-25	Bats			yes	Affective	NA	?				Denis Arsentjev
-26	Chechen			yes	Affective	no affective	nichols1994				Denis Arsentjev
-27	Ingush			yes	Affective	NA	?				Denis Arsentjev
-28	Bezhta			yes	Affective	no affective	kibrikkodzasov1990				Denis Arsentjev
-29	Hinuq			yes	Affective	NA	?				Denis Arsentjev
-30	Hunzib			yes	Affective	no affective	kibrikkodzasov1990				Denis Arsentjev
-31	Tsez			yes	Affective	no affective	kibrikkodzasov1990				Denis Arsentjev
-32	Khwarshi			yes	Affective	no affective	khalilova2009				Denis Arsentjev
-33	North Azerbaijani			yes	Affective	NA	?				Denis Arsentjev
+id	lang	idiom	type	genlang_point	map	feature	value	value_name	source	page	exception	comment	contributor	date
+1	Agul	Burkikhan	village	no	yes	Affective	no affective	Presence of affective case	kibrikkodzasov1990				Denis Arsentjev	11.2019
+2	Agul	Burshag	village	no	yes	Affective	no affective	Presence of affective case	kibrikkodzasov1990				Denis Arsentjev	11.2019
+3	Agul	Fite	village	no	yes	Affective	no affective	Presence of affective case	kibrikkodzasov1990				Denis Arsentjev	11.2019
+4	Agul	Richa	village	no	yes	Affective	no affective	Presence of affective case	kibrikkodzasov1990				Denis Arsentjev	11.2019
+5	Agul	Tpig	village	yes	yes	Affective	no affective	Presence of affective case	kibrikkodzasov1990				Denis Arsentjev	11.2019
+6	Akhvakh	Tad-Magitl'	village	yes	yes	Affective	no affective	Presence of affective case	kibrikkodzasov1990				Denis Arsentjev	11.2019
+7	Andi	Andi	village	yes	yes	Affective	affective	Presence of affective case	kibrikkodzasov1990				Denis Arsentjev	11.2019
+8	Archi	Archib	village	yes	yes	Affective	no affective	Presence of affective case	kibrikkodzasov1990				Denis Arsentjev	11.2019
+9	Armenian	NA	NA	NA	NA	Affective	NA	Presence of affective case	NA				Denis Arsentjev	11.2019
+10	Avar	NA	NA	NA	NA	Affective	NA	Presence of affective case	NA				Denis Arsentjev	11.2019
+11	Bagvalal	Kvanada	village	yes	yes	Affective	affective	Presence of affective case	kibrik2001				Denis Arsentjev	11.2019
+12	Tsova-Tush	NA	NA	NA	NA	Affective	NA	Presence of affective case	NA				Denis Arsentjev	11.2019
+13	Bezhta	Bezhta	village	yes	yes	Affective	no affective	Presence of affective case	kibrikkodzasov1990				Denis Arsentjev	11.2019
+14	Bezhta	Khoshar-Khota	village	no	yes	Affective	no affective	Presence of affective case	kibrikkodzasov1990				Denis Arsentjev	11.2019
+15	Bezhta	Tlyadal	village	no	yes	Affective	no affective	Presence of affective case	kibrikkodzasov1990				Denis Arsentjev	11.2019
+16	Botlikh	NA	NA	NA	NA	Affective	NA	Presence of affective case	NA				Denis Arsentjev	11.2019
+17	Budukh	NA	NA	NA	NA	Affective	NA	Presence of affective case	NA				Denis Arsentjev	11.2019
+18	Chamalal	Gigatl'	village	no	yes	Affective	no affective	Presence of affective case	kibrikkodzasov1990				Denis Arsentjev	11.2019
+19	Chamalal	Nizhnie Gakvari	village	yes	yes	Affective	no affective	Presence of affective case	kibrikkodzasov1990				Denis Arsentjev	11.2019
+20	Chechen	Standard Chechen	language	yes	yes	Affective	no affective	Presence of affective case	nichols1994				Denis Arsentjev	11.2019
+21	Dargwa	Chirag	village	yes	yes	Affective	no affective	Presence of affective case	kibrikkodzasov1990				Denis Arsentjev	11.2019
+22	Godoberi	Godoberi	village	yes	yes	Affective	affective	Presence of affective case	kibriketal1996				Denis Arsentjev	11.2019
+23	Hinuq	NA	NA	NA	NA	Affective	NA	Presence of affective case	NA				Denis Arsentjev	11.2019
+24	Hunzib	Gunzib	village	yes	yes	Affective	no affective	Presence of affective case	kibrikkodzasov1990				Denis Arsentjev	11.2019
+25	Ingush	NA	NA	NA	NA	Affective	NA	Presence of affective case	NA				Denis Arsentjev	11.2019
+26	Karata	Karata	dialect_toplevel	yes	yes	Affective	no affective	Presence of affective case	magomedbekova1971				Denis Arsentjev	11.2019
+27	Khinalug	NA	NA	NA	NA	Affective	NA	Presence of affective case	NA				Denis Arsentjev	11.2019
+28	Khwarshi	Kwantlada	village	yes	yes	Affective	no affective	Presence of affective case	khalilova2009				Denis Arsentjev	11.2019
+29	Kryz	NA	NA	NA	NA	Affective	NA	Presence of affective case	NA				Denis Arsentjev	11.2019
+30	Kumyk	Standard Kumyk	language	yes	yes	Affective	no affective	Presence of affective case	dmitriev1940				Denis Arsentjev	11.2019
+31	Lak	Khosrekh	village	yes	yes	Affective	no affective	Presence of affective case	kibrikkodzasov1990				Denis Arsentjev	11.2019
+32	Lezgian	Khlyut	village	yes	yes	Affective	no affective	Presence of affective case	kibrikkodzasov1990				Denis Arsentjev	11.2019
+33	Nogai	Standard Nogai	language	yes	yes	Affective	no affective	Presence of affective case	baskakov1940			SV: Not certain about which variety the data is from.	Denis Arsentjev	11.2019
+34	North Azerbaijani	NA	NA	NA	NA	Affective	NA	Presence of affective case	NA				Denis Arsentjev	11.2019
+35	Rutul	NA	NA	NA	NA	Affective	NA	Presence of affective case	NA				Denis Arsentjev	11.2019
+36	Tabasaran	NA	NA	NA	NA	Affective	NA	Presence of affective case	NA				Denis Arsentjev	11.2019
+37	Tindi	NA	NA	NA	NA	Affective	NA	Presence of affective case	NA				Denis Arsentjev	11.2019
+38	Tsakhur	Gel'mets	village	no	yes	Affective	affective	Presence of affective case	kibrikkodzasov1990				Denis Arsentjev	11.2019
+39	Tsakhur	Tsakhur	village	yes	yes	Affective	affective	Presence of affective case	kibrikkodzasov1990				Denis Arsentjev	11.2019
+40	Tsez	Kidero	village	yes	yes	Affective	no affective	Presence of affective case	kibrikkodzasov1990				Denis Arsentjev	11.2019
+41	Udi	NA	NA	NA	NA	Affective	NA	Presence of affective case	NA				Denis Arsentjev	11.2019

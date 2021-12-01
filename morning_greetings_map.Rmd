@@ -1,0 +1,32 @@
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE)
+
+# packages
+library(tidyverse)
+library(lingtypology)
+library(RefManageR)
+
+# make this part as a function and add it to example code
+
+bib <- ReadBib(file = "./data/bibliography.bib")
+BibOptions(bib.style = "authoryear", style = "html", cite.style = "authoryear", max.names = 2, sorting = "nyt")
+
+# load data
+fe <- read_tsv("data/features/tables/morning_greetings.tsv") # feature dataset
+fe %>% 
+  head(n=1) -> first_row
+mapname1 <- first_row$value1_name
+mapname2 <- first_row$value2_name
+
+# yml header
+
+feature_id <- '15'
+```
+
+```{r, child="templates/_yml_header_map.Rmd"}
+```
+
+See [chapter](morning_greetings.html).
+
+```{r, child="templates/_example2.Rmd"}
+```

@@ -1,0 +1,168 @@
+
+<!-- # Map 1. `r mapname1`{#m1 .tabset .tabset-fade .tabset-pills}  -->
+
+<!-- ```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width = 9.5, fig.height = 6} -->
+<!-- fe <- fe %>% -->
+<!--   mutate(value = value1) -->
+<!-- ``` -->
+
+<!-- ## Extrapolated data -->
+
+<!-- ```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width = 9.5, fig.height = 6} -->
+<!-- source('../R/features_maker.R') -->
+<!-- extr_map(fe) -->
+<!-- ``` -->
+
+<!-- ## Data granularity -->
+
+<!-- ```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width = 9.5, fig.height = 6} -->
+<!-- source('../R/features_maker.R') -->
+<!-- ubiralka_map(fe) -->
+<!-- ``` -->
+
+<!-- ## General datapoints -->
+
+<!-- ```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width = 9.5, fig.height = 6} -->
+<!-- source('../R/features_maker.R') -->
+<!-- gen_map(fe) -->
+<!-- ``` -->
+
+<!-- ## General datapoints (feature only) -->
+
+<!-- ```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width = 9.5, fig.height = 6} -->
+<!-- source('../R/features_maker.R') -->
+<!-- gen_map_byfe(fe) -->
+<!-- ``` -->
+
+<!-- # Map 2. `r mapname2`{#m2 .tabset .tabset-fade .tabset-pills} -->
+
+<!-- ```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width = 9.5, fig.height = 6} -->
+<!-- fe <- fe %>% -->
+<!--   mutate(value = value2) -->
+<!-- ``` -->
+
+<!-- ## Extrapolated data -->
+
+<!-- ```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width = 9.5, fig.height = 6} -->
+<!-- source('../R/features_maker.R') -->
+<!-- extr_map(fe) -->
+<!-- ``` -->
+
+<!-- ## Data granularity -->
+
+<!-- ```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width = 9.5, fig.height = 6} -->
+<!-- source('../R/features_maker.R') -->
+<!-- ubiralka_map(fe) -->
+<!-- ``` -->
+
+<!-- ## General datapoints -->
+
+<!-- ```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width = 9.5, fig.height = 6} -->
+<!-- source('../R/features_maker.R') -->
+<!-- gen_map(fe) -->
+<!-- ``` -->
+
+<!-- ## General datapoints (feature only) -->
+
+<!-- ```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width = 9.5, fig.height = 6} -->
+<!-- source('../R/features_maker.R') -->
+<!-- gen_map_byfe(fe) -->
+<!-- ``` -->
+
+<!-- # Map 3. `r mapname3`{#m1 .tabset .tabset-fade .tabset-pills}  -->
+
+<!-- ```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width = 9.5, fig.height = 6} -->
+<!-- fe <- fe %>% -->
+<!--   mutate(value = value3) -->
+<!-- ``` -->
+
+<!-- ## Extrapolated data -->
+
+<!-- ```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width = 9.5, fig.height = 6} -->
+<!-- source('../R/features_maker.R') -->
+<!-- extr_map(fe) -->
+<!-- ``` -->
+
+<!-- ## Data granularity -->
+
+<!-- ```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width = 9.5, fig.height = 6} -->
+<!-- source('../R/features_maker.R') -->
+<!-- ubiralka_map(fe) -->
+<!-- ``` -->
+
+<!-- ## General datapoints -->
+
+<!-- ```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width = 9.5, fig.height = 6} -->
+<!-- source('../R/features_maker.R') -->
+<!-- gen_map(fe) -->
+<!-- ``` -->
+
+<!-- ## General datapoints (feature only) -->
+
+<!-- ```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width = 9.5, fig.height = 6} -->
+<!-- source('../R/features_maker.R') -->
+<!-- gen_map_byfe(fe) -->
+<!-- ``` -->
+
+<!-- # Map 4. `r mapname4`{#m1 .tabset .tabset-fade .tabset-pills}  -->
+
+<!-- ```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width = 9.5, fig.height = 6} -->
+<!-- fe <- fe %>% -->
+<!--   mutate(value = value4) -->
+<!-- ``` -->
+
+<!-- ## Extrapolated data -->
+
+<!-- ```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width = 9.5, fig.height = 6} -->
+<!-- source('../R/features_maker.R') -->
+<!-- extr_map(fe) -->
+<!-- ``` -->
+
+<!-- ## Data granularity -->
+
+<!-- ```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width = 9.5, fig.height = 6} -->
+<!-- source('../R/features_maker.R') -->
+<!-- ubiralka_map(fe) -->
+<!-- ``` -->
+
+<!-- ## General datapoints -->
+
+<!-- ```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width = 9.5, fig.height = 6} -->
+<!-- source('../R/features_maker.R') -->
+<!-- gen_map(fe) -->
+<!-- ``` -->
+
+<!-- ## General datapoints (feature only) -->
+
+<!-- ```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width = 9.5, fig.height = 6} -->
+<!-- source('../R/features_maker.R') -->
+<!-- gen_map_byfe(fe) -->
+<!-- ``` -->
+
+# Datatable
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+fe <- fe %>%
+  mutate(value1 = factor(value1)) %>% 
+  mutate(value2 = factor(value2)) %>%
+  mutate(value3 = factor(value3)) %>%
+  mutate(value4 = factor(value4)) %>%
+  mutate(language = lang)
+
+names(fe)[names(fe) == 'value1'] <- tolower(mapname1)
+names(fe)[names(fe) == 'value2'] <- tolower(mapname2)
+names(fe)[names(fe) == 'value3'] <- tolower(mapname3)
+names(fe)[names(fe) == 'value4'] <- tolower(mapname4)
+
+source('../R/features_maker.R')
+d_b(fe, c('language', 'idiom', tolower(mapname1), tolower(mapname2), tolower(mapname3), tolower(mapname4), 'source', 'page'))
+```
+
+```{r, child="_how2cite.Rmd"}
+```
+
+# References
+
+<div class="tocify-extend-page" data-unique="tocify-extend-page" style="height: 0;"></div>
+<!-- remove extra whitespace at bottom produced by floating table of contents and plots. 
+Why do not work on GitHub?-->

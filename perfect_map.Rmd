@@ -1,13 +1,3 @@
----
-title: "Perfect"
-author: "Samira Verhees"
-output: html_document
----
-
----------------------------------------
-
-See [chapter](perfect.html).
-
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, message = FALSE)
 
@@ -21,162 +11,22 @@ bib <- ReadBib(file = "./data/bibliography.bib")
 BibOptions(bib.style = "authoryear", style = "html", cite.style = "authoryear", max.names = 2, sorting = "nyt")
 
 # load data
-fe <- read_csv("data/features/tables/perfects.csv") # feature dataset
-mapname1 <- 'Functions of the perfect: resultative'
-mapname2 <- 'Functions of the perfect: current relevance'
-mapname3 <- 'Functions of the perfect: experiential'
-mapname4 <- 'Functions of the perfect: indirect evidentiality'
-mapname5 <- 'Structure of the perfect: synthetic vs. periphrastic'
-mapname6 <- 'Structure of the perfect: lexical verb and auxiliary'
-mapname7 <- 'Structure of the perfect: lexical verb and auxiliary'
+fe <- read_tsv("data/features/tables/perfect.tsv") # feature dataset
+fe %>% 
+  head(n=1) -> first_row
+mapname1 <- first_row$value1_name
+mapname2 <- first_row$value2_name
 
+# yml header
+
+feature_id <- '13'
 ```
 
-# Map 1. `r mapname1`{.tabset .tabset-fade .tabset-pills}
-
-## Map: Extrapolated data
-
-```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width = 9.5}
-fe <- fe %>%
-  mutate(value = value1)
-source('./R/features_maker.R')
-extr_map(fe)
+```{r, child="templates/_yml_header_map.Rmd"}
 ```
 
-## Map: General datapoints
+See [chapter](perfect.html).
 
-```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width = 9.5}
-source('./R/features_maker.R')
-gen_map(fe)
+
+```{r, child="templates/_example2.Rmd"}
 ```
-
-# Map 2. `r mapname2`{.tabset .tabset-fade .tabset-pills}
-
-
-
-## Map: Extrapolated data
-
-```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width = 9.5}
-fe <- fe %>%
-  mutate(value = value2)
-source('./R/features_maker.R')
-extr_map(fe)
-```
-
-## Map: General datapoints
-
-```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width = 9.5}
-source('./R/features_maker.R')
-gen_map(fe)
-```
-
-# Map 3. `r mapname3`{.tabset .tabset-fade .tabset-pills}
-
-## Map: Extrapolated data
-
-```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width = 9.5}
-fe <- fe %>%
-  mutate(value = value3)
-source('./R/features_maker.R')
-extr_map(fe)
-```
-
-## Map: General datapoints
-
-```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width = 9.5}
-source('./R/features_maker.R')
-gen_map(fe)
-```
-
-# Map 4. `r mapname4`{.tabset .tabset-fade .tabset-pills}
-
-## Map: Extrapolated data
-
-```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width = 9.5}
-fe <- fe %>%
-  mutate(value = value4)
-source('./R/features_maker.R')
-extr_map(fe)
-```
-
-## Map: General datapoints
-
-```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width = 9.5}
-source('./R/features_maker.R')
-gen_map(fe)
-```
-
-# Map 5. `r mapname5`{.tabset .tabset-fade .tabset-pills}
-
-## Map: Extrapolated data
-
-```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width = 9.5}
-fe <- fe %>%
-  mutate(value = value5)
-source('./R/features_maker.R')
-extr_map(fe)
-```
-
-## Map: General datapoints
-
-```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width = 9.5}
-source('./R/features_maker.R')
-gen_map(fe)
-```
-
-# Map 6. `r mapname6`{.tabset .tabset-fade .tabset-pills}
-
-## Map: Extrapolated data
-
-```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width = 9.5}
-fe <- fe %>%
-  mutate(value = value6)
-source('./R/features_maker.R')
-extr_map(fe)
-```
-
-## Map: General datapoints
-
-```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width = 9.5}
-source('./R/features_maker.R')
-gen_map(fe)
-```
-
-# Map 7. `r mapname7`{.tabset .tabset-fade .tabset-pills}
-
-## Map: Extrapolated data
-
-```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width = 9.5}
-fe <- fe %>%
-  mutate(value = value7)
-source('./R/features_maker.R')
-extr_map(fe)
-```
-
-## Map: General datapoints
-
-```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width = 9.5}
-source('./R/features_maker.R')
-gen_map(fe)
-```
-
-# Datatable
-
-```{r, echo=FALSE, warning=FALSE, message=FALSE}
-fe <- fe %>% 
-  mutate(value1 = factor(value1)) %>% 
-   mutate(value2 = factor(value2))
-source('./R/features_maker.R')
-d_b(fe, c('lang', 'family', 'aff', 'idiom', 'feature', 'value1', 'value2', 'value3', 'value4', 'value5', 'value6', 'value7', 'source', 'page'))
-```
-
-# References
-
-```{r results = "asis", echo = FALSE}
-PrintBibliography(bib, .opts = list(check.entries = FALSE))
-```
-
-<div class="tocify-extend-page" data-unique="tocify-extend-page" style="height: 0;"></div>
-<!-- remove extra whitespace at bottom produced by floating table of contents and plots. 
-Why do not work on GitHub?-->
-

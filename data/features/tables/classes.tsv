@@ -1,34 +1,52 @@
-id	lang	idiom	type	core	feature	value	source	page	exception	comment	contributor
-1	Akhvakh			yes	Number of classes	3	kartozia2018				Inga Kartozia
-2	Andi			yes	Number of classes	5	kartozia2018				Inga Kartozia
-3	Bagvalal			yes	Number of classes	3	kartozia2018				Inga Kartozia
-4	Botlikh			yes	Number of classes	3	kartozia2018				Inga Kartozia
-5	Chamalal			yes	Number of classes	5	kartozia2018				Inga Kartozia
-6	Godoberi			yes	Number of classes	3	kartozia2018				Inga Kartozia
-7	Karata			yes	Number of classes	3	kartozia2018				Inga Kartozia
-8	Tindi			yes	Number of classes	3	kartozia2018				Inga Kartozia
-9	Armenian			yes	Number of classes	0	kartozia2018				Inga Kartozia
-10	Avar			yes	Number of classes	3	kartozia2018				Inga Kartozia
-11	Dargwa			yes	Number of classes	3	kartozia2018				Inga Kartozia
-12	Khinalugh			yes	Number of classes	4	kartozia2018				Inga Kartozia
-13	Kumyk			yes	Number of classes	0	kartozia2018				Inga Kartozia
-14	Nogai			yes	Number of classes	0	kartozia2018				Inga Kartozia
-15	Lak			yes	Number of classes	4	kartozia2018				Inga Kartozia
-16	Aghul			yes	Number of classes	0	kartozia2018				Inga Kartozia
-17	Archi			yes	Number of classes	3	kartozia2018				Inga Kartozia
-18	Budukh			yes	Number of classes	4	kartozia2018				Inga Kartozia
-19	Kryz			yes	Number of classes	4	kartozia2018				Inga Kartozia
-20	Lezgian			yes	Number of classes	0	kartozia2018				Inga Kartozia
-21	Rutul			yes	Number of classes	4	kartozia2018				Inga Kartozia
-22	Tabasaran			yes	Number of classes	2	kartozia2018				Inga Kartozia
-23	Tsakhur			yes	Number of classes	4	kartozia2018				Inga Kartozia
-24	Udi			yes	Number of classes	0	kartozia2018				Inga Kartozia
-25	Bats			yes	Number of classes	NA	kartozia2018				Inga Kartozia
-26	Chechen			yes	Number of classes	5	kartozia2018				Inga Kartozia
-27	Ingush			yes	Number of classes	5	kartozia2018				Inga Kartozia
-28	Bezhta			yes	Number of classes	4	kartozia2018				Inga Kartozia
-29	Hinuq			yes	Number of classes	5	kartozia2018				Inga Kartozia
-30	Hunzib			yes	Number of classes	5	kartozia2018				Inga Kartozia
-31	Tsez			yes	Number of classes	4	kartozia2018				Inga Kartozia
-32	Xvarshi			yes	Number of classes	5	kartozia2018				Inga Kartozia
-33	North Azerbaijani			yes	Number of classes	0	kartozia2018				Inga Kartozia
+id	lang	idiom	type	genlang_point	map	feature	value	value_name	source	page	comment	contributor	date
+1	Agul	Agul	language	yes	yes	Number of classes	0	Number of agreement classes	magometov1970	NA		Inga Kartozia	11.2019
+2	Akhvakh	Northern Akhvakh	dialect_toplevel	yes	yes	Number of classes	3	Number of agreement classes	magomedbekova1967	32--35		Inga Kartozia	11.2019
+3	Andi	Gagatli	village	yes	yes	Number of classes	5	Number of agreement classes	salimov2010	47--62		Inga Kartozia	11.2019
+4	Andi	Rikvani	village	no	yes	Number of classes	6	Number of agreement classes	suleymanov1957	131--162		Inga Kartozia	11.2019
+5	Andi	Lower Andi	dialect_toplevel	no	yes	Number of classes	3	Number of agreement classes	alekseev1998	228		Inga Kartozia	11.2019
+6	Andi	Muni	village	no	yes	Number of classes	3	Number of agreement classes	alekseev1998	228		Inga Kartozia	11.2019
+7	Archi	Archi	language	yes	yes	Number of classes	3	Number of agreement classes	kibrik1994a	307--308	CN: check type and value	Inga Kartozia	11.2019
+8	Avar	Zaqatala	dialect_nt1	no	yes	Number of classes	3	Number of agreement classes	saidova2007	46--47		Inga Kartozia	11.2019
+9	Avar	Standard Avar	language	yes	yes	Number of classes	3	Number of agreement classes	alekseevataev1997	41	CN: reference changed	Inga Kartozia	11.2019
+10	Bagvalal	Kvanada	village	yes	yes	Number of classes	3	Number of agreement classes	kibrik2001	64--66		Inga Kartozia	11.2019
+11	Bezhta	Bezhta	village	yes	yes	Number of classes	4	Number of agreement classes	madieva1965	50--57		Inga Kartozia	11.2019
+12	Bezhta	Tlyadal	village	no	no	Number of classes	5	Number of agreement classes	testelecxalilov1998	52	CN: I checked the reference and I don't understand this entry	Inga Kartozia	11.2019
+13	Botlikh	Botlikh	village	yes	yes	Number of classes	3	Number of agreement classes	gudava1962	29--49, 253--254		Inga Kartozia	11.2019
+14	Budukh	Budukh	village	yes	yes	Number of classes	4	Number of agreement classes	talibov2007	52--63		Inga Kartozia	11.2019
+15	Chamalal	Gadyri	dialect_toplevel	no	yes	Number of classes	5	Number of agreement classes	bokarev1949a	22--26		Inga Kartozia	11.2019
+16	Chamalal	Gigatli	dialect_toplevel	no	yes	Number of classes	5	Number of agreement classes	bokarev1949a	22--26		Inga Kartozia	11.2019
+17	Chamalal	Upper Gakvari	village	yes	yes	Number of classes	5	Number of agreement classes	bokarev1949a	22--26		Inga Kartozia	11.2019
+18	Chechen	Standard Chechen	language	yes	yes	Number of classes	5	Number of agreement classes	nichols1994	21--22		Inga Kartozia	11.2019
+19	Dargwa	Standard Dargwa	language	yes	yes	Number of classes	3	Number of agreement classes	sumbatovalander2014	433--435		Inga Kartozia	11.2019
+20	Dargwa	Mehweb	village	no	yes	Number of classes	4	Number of agreement classes	sumbatovalander2014	433--435		Inga Kartozia	11.2019
+21	Dargwa	Muiri	dialect_nt1	no	yes	Number of classes	3	Number of agreement classes	magometov1982	15--23		Inga Kartozia	11.2019
+22	Dargwa	Tanty	village	no	yes	Number of classes	3	Number of agreement classes	sumbatovalander2014	433--435	CN: reference changed 	Inga Kartozia	11.2019
+23	Dargwa	Kaitag	dialect_toplevel	no	yes	Number of classes	3	Number of agreement classes	temirbulatova2004	60		Inga Kartozia	11.2019
+24	Dargwa	Kubachi	village	no	yes	Number of classes	3	Number of agreement classes	magometov1963	66--70		Inga Kartozia	11.2019
+25	Dargwa	Urkarakh	village	no	yes	Number of classes	3	Number of agreement classes	magometov1963	66--70	CN: no evident reference to Urkarakh	Inga Kartozia	11.2019
+26	Dargwa	Urakhi	village	no	yes	Number of classes	3	Number of agreement classes	shakhbanova2007	47--65	CN: check type	Inga Kartozia	11.2019
+27	Dargwa	Butri	village	no	yes	Number of classes	3	Number of agreement classes	shakhbanova2007	47--65	CN: check type	Inga Kartozia	11.2019
+28	Godoberi	Godoberi	village	yes	yes	Number of classes	3	Number of agreement classes	saidova1973	40--41		Inga Kartozia	11.2019
+29	Hinuq	Hinuq	village	yes	yes	Number of classes	5	Number of agreement classes	forker2013	115--129		Inga Kartozia	11.2019
+30	Hunzib	Hunzib	language	yes	yes	Number of classes	5	Number of agreement classes	vanderberg1995	35		Inga Kartozia	11.2019
+31	Ingush	Standard Ingush	language	yes	yes	Number of classes	5	Number of agreement classes	nichols1994ingush	93--94		Inga Kartozia	11.2019
+32	Karata	Karata	dialect_toplevel	yes	yes	Number of classes	3	Number of agreement classes	magomedbekova1971	41--43		Inga Kartozia	11.2019
+33	Khinalug	Khinalug	language	yes	yes	Number of classes	4	Number of agreement classes	kibrik1994b	373--374	CN: check type	Inga Kartozia	11.2019
+34	Khwarshi	Kwantlada	village	yes	yes	Number of classes	5	Number of agreement classes	khalilova2009	41--47		Inga Kartozia	11.2019
+35	Kryz	Kryz	language	yes	yes	Number of classes	4	Number of agreement classes	saadiev1994	412--413	CN: check type	Inga Kartozia	11.2019
+36	Lak	Standard Lak	language	yes	yes	Number of classes	4	Number of agreement classes	forker2018	868--869	CN: reference changed	Inga Kartozia	11.2019
+37	Lak	Arakul	dialect_toplevel	no	yes	Number of classes	4	Number of agreement classes	khajdakov1966	20	CN: check type	Inga Kartozia	11.2019
+38	Lak	Bartkhi	dialect_toplevel	no	yes	Number of classes	4	Number of agreement classes	khajdakov1966	43--44	CN: check type	Inga Kartozia	11.2019
+39	Lak	Shadni	dialect_toplevel	no	yes	Number of classes	4	Number of agreement classes	khajdakov1966	63--64	CN: check type	Inga Kartozia	11.2019
+40	Lak	Ashtikul	dialect_toplevel	no	yes	Number of classes	4	Number of agreement classes	khajdakov1966	86	CN: check idiom and type	Inga Kartozia	11.2019
+41	Lak	Vikhlin	dialect_toplevel	no	yes	Number of classes	4	Number of agreement classes	khajdakov1966	94--95	CN: check type	Inga Kartozia	11.2019
+42	Lak	Vitskhi	dialect_toplevel	no	yes	Number of classes	4	Number of agreement classes	khajdakov1966	110	CN: check type	Inga Kartozia	11.2019
+43	Lezgian	Standard Lezgian	language	yes	yes	Number of classes	0	Number of agreement classes	haspelmath1993	6		Inga Kartozia	11.2019
+44	Rutul	Rutul	language	yes	yes	Number of classes	4	Number of agreement classes	ibragimov1978	42--46, 145--146, 171--172, 240--241	CN: check type	Inga Kartozia	11.2019
+45	Tabasaran	Standard Tabasaran	language	yes	yes	Number of classes	2	Number of agreement classes	magometov1965	79--93	CN: check idiom and type	Inga Kartozia	11.2019
+46	Tabasaran	Northern Tabasaran	dialect_toplevel	no	yes	Number of classes	2	Number of agreement classes	magometov1965	79--93		Inga Kartozia	11.2019
+47	Tindi	Tindi	language	yes	yes	Number of classes	3	Number of agreement classes	magomedbekova1998	27	CN: check type	Inga Kartozia	11.2019
+48	Tsakhur	Mishlesh	village	yes	yes	Number of classes	4	Number of agreement classes	ibragimov1990	54--63		Inga Kartozia	11.2019
+49	Tsez	Kidero	dialect_nt1	yes	yes	Number of classes	4	Number of agreement classes	bokarev1959	180--182		Inga Kartozia	11.2019
+50	Tsova-Tush	Zemo-Alvani	village	yes	yes	Number of classes	5	Number of agreement classes	holiskygagua1994	158--159		Inga Kartozia	11.2019
+51	Udi	Udi 	language	yes	yes	Number of classes	0	Number of agreement classes	harris2002	176--177	CN: check type	Inga Kartozia	11.2019

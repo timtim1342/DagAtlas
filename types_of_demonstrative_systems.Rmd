@@ -1,19 +1,17 @@
----
-title: "Types of demonstrative systems"
-author: "Timofey Mukhin"
-output: html_document
-bibliography: 
-  - ./data/features/ref_bibs/types_of_demonstrative_systems.bib
-link-citations: true
----
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE)
 
----------------------------------------
+# yml header
+
+feature_id <- '11'
+```
+
+```{r, child="templates/_yml_header.Rmd"}
+```
 
 # Chapter
 
 See [data and maps](types_of_demonstrative_systems_map.html).
-
-General chapter: [Demonstratives](demonstratives.html)
 
 ## Types of systems
 
@@ -31,5 +29,8 @@ Anderson and Keenan’s approach is criticized for inaccurate terms in such work
 |Polycentric|17|
 
 Languages belonging to the same branch do not behave similarly. Only demonstrative systems of Andic languages tend to be polycentric, with the exception of Karata and Bagvalal, whose systems are described as monocentric.
+
+```{r, child="templates/_how2cite.Rmd"}
+```
 
 # References

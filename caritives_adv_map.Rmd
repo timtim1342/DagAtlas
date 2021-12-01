@@ -1,0 +1,31 @@
+```{r setup, include=FALSE} 
+# make this part as a function and add it to example code
+knitr::opts_chunk$set(echo = FALSE, message = FALSE)
+
+# packages
+library(tidyverse)
+library(lingtypology)
+library(RefManageR)
+
+bib <- ReadBib(file = "./data/bibliography.bib")
+BibOptions(bib.style = "authoryear", style = "html", cite.style = "authoryear", max.names = 2, sorting = "nyt")
+
+# load data
+fe <- read_tsv("data/features/tables/caritives_adv.tsv") # feature dataset
+
+fe %>% 
+  head(n=1) -> first_row
+mapname <- paste(toupper(substr(first_row$value_name, 1, 1)), substr(first_row$value_name, 2, nchar(first_row$value_name)), sep="")
+
+# yml header
+
+feature_id <- '18'
+```
+
+```{r, child="templates/_yml_header_map.Rmd"}
+```
+
+See [chapter]().
+
+```{r, child="templates/_example.Rmd"}
+```

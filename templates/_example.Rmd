@@ -1,0 +1,51 @@
+
+<!-- # Map 1. `r mapname`{.tabset .tabset-fade .tabset-pills} -->
+
+<!-- ## Extrapolated data -->
+
+<!-- ```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width = 9.5, fig.height = 6} -->
+<!-- source('../R/features_maker.R') -->
+<!-- extr_map(fe) -->
+<!-- ``` -->
+
+<!-- ## Data granularity -->
+
+<!-- ```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width = 9.5, fig.height = 6} -->
+<!-- source('../R/features_maker.R') -->
+<!-- ubiralka_map(fe) -->
+<!-- ``` -->
+
+<!-- ## General datapoints -->
+
+<!-- ```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width = 9.5, fig.height = 6} -->
+<!-- source('../R/features_maker.R') -->
+<!-- gen_map(fe) -->
+<!-- ``` -->
+
+<!-- ## General datapoints (feature only) -->
+
+<!-- ```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width = 9.5, fig.height = 6} -->
+<!-- source('../R/features_maker.R') -->
+<!-- gen_map_byfe(fe) -->
+<!-- ``` -->
+
+# Datatable
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+fe <- fe %>%
+  mutate(value = factor(value)) %>% 
+  mutate(language = lang)
+
+names(fe)[names(fe) == 'value'] <- tolower(mapname)
+source('../R/features_maker.R')
+d_b(fe, c('language', 'idiom', tolower(mapname), 'source', 'page'))
+```
+
+```{r, child="_how2cite.Rmd"}
+```
+
+# References
+
+<div class="tocify-extend-page" data-unique="tocify-extend-page" style="height: 0;"></div>
+<!-- remove extra whitespace at bottom produced by floating table of contents and plots. 
+Why do not work on GitHub?-->

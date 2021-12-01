@@ -1,14 +1,23 @@
-id	title	author	area	major_topic	filename
-1	Number of agreement classes	Inga Kartozia	Morphology	Classes	classes
-2	Presence of Affective	Denis Arsentjev	Morphology		affective
-3	Evidentiality as part of the tense system	Samira Verhees	Morphology	Evidentiality	evidentiality_tense
-4	Gemination	George Moroz, Violetta Ivanova	Phonology	Phonology	gemination
-5	System of laterals	George Moroz, Violetta Ivanova	Phonology	Phonology	laterals
-6	Presence of voiced uvular stop	George Moroz, Violetta Ivanova	Phonology	Phonology	voiced_uvular
-7	Presence of nasalization	George Moroz, Violetta Ivanova	Phonology	Phonology	nasalization
-8	Presence of pharyngealization	George Moroz, Violetta Ivanova	Phonology	Phonology	pharyngealization
-9	Elevation in the demonstrative system	Timofey Mukhin	Nominal Categories	Demonstratives	elevation
-10	Distance contrasts expressed by demonstratives	Timofey Mukhin	Nominal Categories	Demonstratives	distance_contrasts
-11	Types of demonstrative systems	Timofey Mukhin	Nominal Categories	Demonstratives	types_of_demonstrative_systems
-12	Standard of comparison	Chiara Naccarato	Morphology		standard_of_comparison
-13	Perfect	Samira Verhees	Morphology	Evidentiality	perfect
+id	title	author	cdate	udate	area	major_topic	filename	filename_backup
+1	Number of agreement classes	Inga Kartozia	2020	August 2021	Morphology	Classes	classes	
+2	Presence of Affective	Denis Arsentjev	2020	August 2021	Morphology		affective	
+3	Evidentiality as part of the tense system	Samira Verhees	2020	November 2020	Morphology	Evidentiality	evidentiality_tense	
+4	Gemination	George Moroz, Violetta Ivanova	2020	November 2020	Phonology	Phonology	in progress	gemination
+5	System of laterals	George Moroz, Violetta Ivanova	2020	November 2020	Phonology	Phonology	in progress	laterals
+6	Presence of voiced uvular stop	George Moroz, Violetta Ivanova	2020	November 2020	Phonology	Phonology	in progress	voiced_uvular
+7	Presence of nasalization	George Moroz, Violetta Ivanova	2020	November 2020	Phonology	Phonology	in progress	nasalization
+8	Presence of pharyngealization	George Moroz, Violetta Ivanova	2020	November 2020	Phonology	Phonology	in progress	pharyngealization
+9	Elevation in the demonstrative system	Timofey Mukhin	2020	November 2020	Nominal Categories	Demonstratives	elevation	
+10	Distance contrasts expressed by demonstratives	Timofey Mukhin	2020	November 2020	Nominal Categories	Demonstratives	distance_contrasts	
+11	Types of demonstrative systems	Timofey Mukhin	2020	November 2020	Nominal Categories	Demonstratives	types_of_demonstrative_systems	
+12	Standard of comparison	Chiara Naccarato	2020	November 2020	Morphology		standard_of_comparison	
+13	Perfect	Samira Verhees	2020	November 2020	Morphology	Evidentiality	perfect	
+14	Particles of reported speech and inference	Samira Verhees	2020	November 2020	Morphology	Evidentiality	particles	
+15	Morning greetings	Chiara Naccarato, Samira Verhees	2021	November 2021	Lexicon		morning_greetings	
+16	Ordinal numerals	Polina Nasledskova, Ivan Netkachev	2021	November 2021	Lexicon		ordinals	
+17	Comitative	Sara Zadykian, Chiara Naccarato	2021	November 2021	Morphology		comitative	
+18	Caritives (adverbial)	Anastasia Panova	2021	November 2021	Morphology		caritives_adv	
+19	Caritives (attributive)	Anastasia Panova	2021	November 2021	Morphology		caritives_attr	
+20	Preverbs	Evgeniya Klyagina	2021	November 2021	Morphology		preverbs	
+21	Optatives	Nina Dobrushina	2021	November 2021	Morphology		optatives	
+22	Prohibitive and its relation with the imperative	Samira Ochs	2021	November 2021	Morphology		prohibitives	

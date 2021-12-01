@@ -1,0 +1,164 @@
+---
+title: "About"
+output: 
+  html_document:
+    include:
+      in_header: ./html/header_about.html
+    toc: true
+    toc_depth: 2
+bibliography: ./data/about.bib
+link-citations: true
+    
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE)
+
+# packages
+library(tidyverse)
+library(lingtypology)
+library(DT)
+
+library(RefManageR)
+
+# load data
+villages <- read_tsv("./data/tald_villages.csv") # villages dataset
+fe <- read_tsv("./data/example.csv") # example dataset
+
+# preparation of data
+fe <- fe %>% 
+  filter(core == 'yes')
+
+fe_vill <- inner_join(fe, villages, by = "lang") # merge villages, coordinates, and language metadata with feature information
+fe_vill$datapoint <- "extrapolated datapoint"
+```
+
+***
+
+# Daghestan as a linguistic area
+
+Daghestan is the most linguistically diverse part of the Caucasus, with at least 40 different languages (and many more highly divergent idioms) spoken on a territory of 50,300 km^2^ consisting mostly of mountainous terrain. The majority of the languages spoken here belong to the East Caucasian (or Nakh-Daghestanian) language family: one of the three language families indigenous to the Caucasus. For the most part, the languages of the East Caucasian family are spoken only in the eastern Caucasus area (with the exception of some relatively recent diasporic communities), and they have no proven relationship to any other languages or language families.
+
+Other languages spoken in Daghestan include three Turkic languages: Nogai, Kumyk (Kipchak) and Azerbaijani (Oghuz); and three Indo-European languages: Russian (Slavic, the major language of administration, education, and urban areas), Armenian (Armenic), and Tat (Iranian). Arabic is the language of religion, as most people in Daghestan are Sunni Muslims. The official languages of Daghestan (in alphabetical order) are Aghul, Avar, Azerbaijani, Chechen, Dargwa, Kumyk, Lezgian, Lak, Nogai, Russian, Rutul, Tabasaran, Tat, Tsakhur.
+
+Historically there was no single lingua franca for the whole area. As a result, Daghestanians were known for having a command of multiple locally important languages, which they picked up in the course of seasonal labor migration, trading at cardinal markets, and other types of contact. Currently these patterns are disappearing fast due to the expansion of Russian. See also [the Atlas of Multilingualism in Daghestan](https://multidagestan.com) [@dobrushinaetal2017].
+
+# Philosophy of TALD
+
+The Typological Atlas of Daghestan (TALD) is a tool for the visualization of information about linguistic structures typical of Daghestan. It also provides a bibliography of resources on certain languages, dialects, and topics.[^1]
+
+Originally the idea was to create a resource similar to the World Atlas of Language Structures ([WALS](https://wals.info)) Online [@dryerhaspelmath2013] that would specialize in the languages of Daghestan and their neighbors. The scope of the project currently covers all East Caucasian speech communities in the Caucasus and all other languages spoken in Daghestan, Chechnya, and Ingushetia, with the exception of Russian and Arabic.
+
+[^1]: Note that this bibliography is ever expanding and by far not exhaustive.
+
+### Map 1. All villages and languages {#m1}
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width=9.5, fig.height=6}
+
+# all villages reordered
+villages$lang <- factor(villages$lang, levels =c(
+  "Dargwa", "Lak", "Tsova-Tush", "Ingush", "Chechen", "Khinalug",
+  "Archi", "Tsakhur", "Rutul", "Kryz", "Budukh", "Udi",
+  "Lezgian", "Agul", "Tabasaran", "Avar", "Andi", "Botlikh",
+  "Godoberi", "Chamalal", "Bagvalal", "Tindi", "Karata",
+  "Akhvakh", "Tsez", "Hinuq", "Bezhta", "Hunzib", "Khwarshi",
+  "Armenian", "Kumyk", "Nogai", "Azerbaijani", "Tat", "Georgian"))
+
+map.feature(lang.gltc(villages$gltc_lang),
+            latitude = villages$lat,
+            longitude = villages$lon,
+            features = villages$lang, # color feature = language
+            color = villages$lang_col,
+            label = villages$lang,
+            zoom.control = T,
+            popup = paste("<b>Village:</b>", villages$village),
+            width = 3, stroke.radius = 8,
+            legend = T
+            )
+```
+
+In the approach of WALS, each language is represented by a single point on the map. TALD currently offers two alternative visualizations (see [Map 2](#m2)):
+
+- a WALS-style map with one point on the map for each language
+- a map with one point for each village of the area, colored according to the language spoken there[^2]
+
+[^2]: This visualization makes use of [the East Caucasian villages dataset](https://github.com/sverhees/master_villages) [@morozverhees2020].
+
+### Map 2. First consonant of the word for ‘bridge’ {#m2 .tabset .tabset-fade .tabset-pills}
+
+#### WALS style
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width = 9.5, fig.height=6}
+fe$datapoint <- "general datapoint"
+# draw a map
+map.feature(lang.gltc(fe$gltc_lang),
+            features = fe$lang, # color feature = language
+            stroke.features = fe$value, # stroke.feature = your feature value
+             color = fe$lang_col,
+            stroke.color = c("black", "white"),
+            label = fe$lang,
+            zoom.control = T,
+            popup = paste("<b>Datapoint:</b>", fe$datapoint),
+            width = 3, stroke.radius = 8,
+            legend = FALSE)
+```
+
+#### TALD style
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.width = 9.5, fig.height=6}
+map.feature(lang.gltc(fe_vill$gltc_lang.x),
+            latitude = fe_vill$lat,
+            longitude = fe_vill$lon,
+            features = fe_vill$lang, # color feature = language
+            color = fe_vill$lang_col.x,
+            stroke.features = fe_vill$value, # stroke.feature = your feature value
+            stroke.color = c("black", "white"),
+            label = fe_vill$lang,
+            zoom.control = T,
+            popup = paste("<b>Village:</b>", fe_vill$village, "<br>",
+                          "<b>Datapoint:</b>", fe_vill$datapoint),
+            width = 3, stroke.radius = 8,
+            legend = FALSE)
+```
+
+### {-}
+
+A benefit of the second type of visualization is that it shows the boundaries of languages more accurately. Unfortunately, we often lack detailed information about grammatical features for specific idioms and village lects. As a result, these visualizations overgeneralize and erase dialectal differences. We currently mitigate this drawback by collecting data from as many different idioms as we can, and marking for each data point (i.e. village) whether its value is based on general information about the language, a local dialect, or the idiom of this particular village. Our aim is to keep improving the datasets when new information becomes available. 
+
+As our atlas and the descriptive efforts of Caucasiologists progress, the maps will become incrementally more accurate.
+
+# The atlas
+
+The atlas essentially consists of datasets about linguistic features. Each dataset has its own page with a short text about the feature and its distribution, maps, and a searchable table for the data. Pages about features cross-reference each other and are linked to general chapters.
+<!-- надо что-то с этим сделать -->
+
+# How to cite{.tabset .tabset-fade .tabset-pills} 
+
+## Text
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE, results='asis'}
+# bib <- ReadBib(file = "./data/how_to_cite.bib")
+# Cite(bib['tald2020'])
+# PrintBibliography(bib['tald2020'], .opts = list(style="markdown", max.names=6))
+
+```
+
+Daniel, Michael, George Moroz, Timofey Mukhin, Chiara Naccarato, Samira Verhees and Konstantin Filatov. 2020. _Typological Atlas of the languages of Daghestan (TALD)_. Moscow: Linguistic Convergence Laboratory, HSE University. URL: http://lingconlab.ru/dagatlas. Accessed on 
+<!--html_preserve-->
+<span id="currentDate"></span>
+<script>
+  var today = new Date();
+  var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate() + '.';
+  document.getElementById("currentDate").innerHTML = date;
+</script>
+<!--/html_preserve-->
+
+## BibTeX
+
+```{r comment=''}
+cat(readLines('./data/how_to_cite.bib'), sep = '\n')
+```
+
+# References
+
+<div class="tocify-extend-page" data-unique="tocify-extend-page" style="height: 0;"></div>
+<!-- remove extra whitespace at bottom produced by floating table of contents and plots. -->

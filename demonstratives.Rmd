@@ -5,8 +5,24 @@ author: "Timofey Mukhin"
 
 ---------------------------------------
 
+Old:
+
 -[Types of demonstrative systems](types_of_demonstrative_systems.html)
 
 -[The number of distance contrasts expressed by demonstratives](distance_contrasts.html)
 
 -[Elevation in the demonstrative systems](elevation.html)
+
+-[Anaphoric demonstratives](anaphoric_mean.html)
+
+New:
+
+-[Elevation in the demonstrative systems](demonstratives/elevation_map_new.html)
+
+-[Inventory of demonstratives](demonstratives/inventory_map_new.html)
+
+-[Types of demonstrative systems](demonstratives/system_type.html)
+
+-[The number of distance contrasts expressed by demonstratives](demonstratives/number_of_distance_contrasts_map_new.html)
+
+-[Anaphoric demonstratives](demonstratives/main_anaphor_map_new.html)

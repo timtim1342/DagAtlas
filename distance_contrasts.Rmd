@@ -1,19 +1,17 @@
----
-title: "Distance contrasts expressed by demonstratives"
-author: "Timofey Mukhin"
-output: html_document
-bibliography: 
-  - ./data/features/ref_bibs/distance_contrasts.bib
-link-citations: true
----
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE)
 
----------------------------------------
+# yml header
+
+feature_id <- '10'
+```
+
+```{r, child="templates/_yml_header.Rmd"}
+```
 
 # Chapter
 
 See [data and maps](distance_contrasts_map.html).
-
-General chapter: [Demonstratives](demonstratives.html)
 
 ## Number of contrasts
 
@@ -31,6 +29,9 @@ Both mono- and polycentric demonstratives may distinguish more than two ways of 
 In the languages of Daghestan, demonstrative systems with a three-way contrast are more common, whereas in general in the languages of the world systems expressing a two-way contrast are the most frequent option (see a similar map made by [@diessel2013] for WALS). 
 
 According to Anderson and Keenan’s approach, only systems that distinguish three (or more) ways of contrast are divided into distal- or person-oriented types. Note that two-way contrast systems can also have demonstratives defined relative to different deictic centers. In the sample, there are 4 such languages: Akhvakh, Chamalal, Tindi and Lak. In these languages, demonstratives express two-way contrast, but they are described relative to two deictic centers (i.e. **this, in the speaker’s domain** and **this, in the hearer’s domain**), thus they are polycentric. 
+
+```{r, child="templates/_how2cite.Rmd"}
+```
 
 [^1]: In this paper I refer to demonstratives of both mono- and polycentric systems that mark a three-way contrast as proximal, medial and distal and those that express a two-way contrast as proximal and non-proximal.
 
